@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colours */
+  --color-parchment:   #FAF7F2;
+  --color-amber:       #D97706;
+  --color-amber-light: #FEF3C7;
+  --color-ink:         #1A1A1A;
+  --color-ink-muted:   #6B7280;
+  --color-up:          #16A34A;
+  --color-down:        #DC2626;
+  --color-row-alt:     #F5F0E8;
+  --color-border:      #E8E0D0;
+
+  /* Fonts — variable names set in layout.jsx via next/font */
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-mono:  var(--font-jetbrains), ui-monospace, monospace;
+}
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #1A1A1A;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html { scroll-behavior: smooth; }
+
+/* Prose for IssueBody */
+.issue-prose h1        { display: none; }
+.issue-prose hr        { border-color: #E8E0D0; margin: 2rem 0; }
+.issue-prose p         { margin-bottom: 1.25rem; line-height: 1.75; }
+.issue-prose strong    { font-weight: 600; }
+.issue-prose ol        { list-style: decimal; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+.issue-prose ol li     { margin-bottom: 0.75rem; line-height: 1.75; }
