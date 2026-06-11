@@ -24,7 +24,7 @@ export default function Header() {
               <div className="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-none group-hover:text-[#60A5FA] transition-colors duration-200">
                 Downstream
               </div>
-              <div className="font-mono text-xs text-[#3B82F6] tracking-widest uppercase mt-1">
+              <div className="font-sans text-xs text-[#3B82F6] tracking-widest uppercase mt-1">
                 Follow the chain.
               </div>
             </div>
@@ -32,10 +32,10 @@ export default function Header() {
 
           {/* Right side: date + description */}
           <div className="sm:text-right">
-            <div className="font-mono text-[11px] text-[#64748B] uppercase tracking-widest">
+            <div className="font-sans text-[11px] text-[#64748B] uppercase tracking-widest">
               Daily macro implication chains
             </div>
-            <div className="font-mono text-[11px] text-[#475569] mt-0.5">
+            <div className="font-sans text-[11px] text-[#475569] mt-0.5">
               Rates · FX · Equities · Commodities
             </div>
           </div>
