@@ -28,8 +28,8 @@ export default async function IssuePage({ params }) {
       <div className="min-h-screen bg-[#020817]">
         <Header />
         <main className="max-w-7xl mx-auto px-4 py-20 text-center">
-          <p className="font-mono text-[#64748B]">Issue not found.</p>
-          <Link href="/" className="font-mono text-xs text-[#3B82F6] mt-4 inline-block hover:underline">
+          <p className="font-sans text-[#64748B]">Issue not found.</p>
+          <Link href="/" className="font-sans text-xs text-[#3B82F6] mt-4 inline-block hover:underline">
             ← Back
           </Link>
         </main>
@@ -43,7 +43,7 @@ export default async function IssuePage({ params }) {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
         <div>
-          <Link href="/" className="font-mono text-[10px] text-[#64748B] hover:text-[#3B82F6] transition-colors uppercase tracking-wider">
+          <Link href="/" className="font-sans text-[10px] text-[#64748B] hover:text-[#3B82F6] transition-colors uppercase tracking-wider">
             ← All issues
           </Link>
           <h1 className="text-2xl sm:text-3xl font-semibold text-white tracking-tight mt-3">
@@ -57,10 +57,10 @@ export default async function IssuePage({ params }) {
 
       <footer className="border-t border-[#1E293B] mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
-          <Link href="/" className="font-mono text-xs text-[#64748B] hover:text-[#3B82F6] transition-colors">
+          <Link href="/" className="font-sans text-xs text-[#64748B] hover:text-[#3B82F6] transition-colors">
             Downstream
           </Link>
-          <span className="font-mono text-xs text-[#64748B]">{date}</span>
+          <span className="font-sans text-xs text-[#64748B]">{date}</span>
         </div>
       </footer>
     </div>

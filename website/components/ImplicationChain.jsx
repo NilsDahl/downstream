@@ -18,7 +18,7 @@ function DriverCard({ text }) {
       <CardContent className="p-5">
         <div className="flex items-center gap-2 mb-3">
           <div className="w-1.5 h-1.5 rounded-full bg-[#3B82F6]" />
-          <span className="font-mono text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
+          <span className="font-sans text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
             The Driver
           </span>
         </div>
@@ -34,7 +34,7 @@ function ChainNode({ label, body, index }) {
       <CardContent className="p-5">
         <div className="flex items-start gap-3">
           <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#1E293B] border border-[#334155] flex items-center justify-center mt-0.5">
-            <span className="font-mono text-[10px] text-[#64748B]">{index + 1}</span>
+            <span className="font-sans text-[10px] text-[#64748B]">{index + 1}</span>
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="font-semibold text-[#F8FAFC] text-sm mb-2 leading-snug">{label}</h3>
@@ -54,7 +54,7 @@ function WatchCard({ text }) {
       <CardContent className="p-5">
         <div className="flex items-center gap-2 mb-3">
           <div className="w-1.5 h-1.5 rounded-full bg-[#1D4ED8]" />
-          <span className="font-mono text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
+          <span className="font-sans text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
             What to Watch
           </span>
         </div>
@@ -72,7 +72,7 @@ export default function ImplicationChain({ chain }) {
   return (
     <section>
       <div className="flex items-center gap-3 mb-5">
-        <span className="font-mono text-[11px] uppercase tracking-widest text-[#64748B]">
+        <span className="font-sans text-[11px] uppercase tracking-widest text-[#64748B]">
           Implication Chain
         </span>
         <div className="flex-1 h-px bg-[#1E293B]" />

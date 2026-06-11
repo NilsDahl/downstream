@@ -35,10 +35,10 @@ export default function RatesPanel({ rates }) {
   return (
     <Card className="bg-[#0F172A] border-[#1E293B] overflow-hidden">
       <CardHeader className="px-4 py-3 border-b border-[#1E293B] flex flex-row items-center justify-between space-y-0">
-        <span className="font-mono text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">
+        <span className="font-sans text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">
           Yield Curves
         </span>
-        <div className="flex gap-3 font-mono text-[10px] text-[#64748B] uppercase tracking-wider">
+        <div className="flex gap-3 font-sans text-[10px] text-[#64748B] uppercase tracking-wider">
           <span className="w-14 text-right">Level</span>
           <span className="w-14 text-right">Δ bp</span>
         </div>
@@ -52,7 +52,7 @@ export default function RatesPanel({ rates }) {
                 onClick={() => toggle(econ)}
                 className="w-full flex items-center justify-between px-4 py-1.5 text-left bg-[#1E293B]/50 hover:bg-[#1E293B] transition-colors border-b border-[#1E293B]"
               >
-                <span className="font-mono text-[10px] uppercase tracking-widest text-[#64748B]">
+                <span className="font-sans text-[10px] uppercase tracking-widest text-[#64748B]">
                   {ECONOMY_LABELS[econ] ?? econ}
                 </span>
                 <span className="text-[#64748B] text-xs">{collapsed[econ] ? '▸' : '▾'}</span>
@@ -62,9 +62,9 @@ export default function RatesPanel({ rates }) {
                   key={a.key}
                   className={`flex items-center px-4 py-1.5 border-b border-[#1E293B] last:border-0 ${i % 2 === 1 ? 'bg-[#1E293B]/20' : ''}`}
                 >
-                  <span className="flex-1 font-mono text-xs text-[#CBD5E1]">{a.label}</span>
-                  <span className="font-mono text-xs text-[#F8FAFC] w-14 text-right">{fmtLevel(a.level)}</span>
-                  <span className={`font-mono text-xs w-14 text-right ${bpsColor(a.change_bps)}`}>{fmtBps(a.change_bps)}</span>
+                  <span className="flex-1 font-sans text-xs text-[#CBD5E1]">{a.label}</span>
+                  <span className="font-sans text-xs text-[#F8FAFC] w-14 text-right">{fmtLevel(a.level)}</span>
+                  <span className={`font-sans text-xs w-14 text-right ${bpsColor(a.change_bps)}`}>{fmtBps(a.change_bps)}</span>
                 </div>
               ))}
             </div>

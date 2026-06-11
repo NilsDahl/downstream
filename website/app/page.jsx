@@ -24,7 +24,7 @@ export default function Home() {
           <section>
             {/* Date heading */}
             <div className="mb-7">
-              <div className="font-mono text-[10px] uppercase tracking-widest text-[#3B82F6] mb-1">
+              <div className="font-sans text-[10px] uppercase tracking-widest text-[#3B82F6] mb-1">
                 Latest Issue
               </div>
               <h1 className="text-2xl sm:text-3xl font-semibold text-white tracking-tight">
@@ -39,7 +39,7 @@ export default function Home() {
           </section>
         ) : (
           <div className="text-center py-24">
-            <p className="font-mono text-[#64748B]">No issues yet — run the pipeline.</p>
+            <p className="font-sans text-[#64748B]">No issues yet — run the pipeline.</p>
           </div>
         )}
 
@@ -48,7 +48,7 @@ export default function Home() {
         {/* About */}
         <section id="about" className="border-t border-[#1E293B] pt-10">
           <div className="max-w-2xl space-y-5 text-sm text-[#94A3B8] leading-relaxed">
-            <div className="font-mono text-[10px] uppercase tracking-widest text-[#64748B] mb-1">About</div>
+            <div className="font-sans text-[10px] uppercase tracking-widest text-[#64748B] mb-1">About</div>
             <p>
               Downstream traces cause-and-effect through financial markets. Not "oil up 3%" —
               but oil up → inflation expectations shift → Fed pauses → bonds sell off → EUR/USD drops.
@@ -67,8 +67,8 @@ export default function Home() {
 
       <footer className="border-t border-[#1E293B] mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
-          <span className="font-mono text-xs text-[#64748B]">Downstream</span>
-          <span className="font-mono text-xs text-[#64748B]">{latest?.date ?? ''}</span>
+          <span className="font-sans text-xs text-[#64748B]">Downstream</span>
+          <span className="font-sans text-xs text-[#64748B]">{latest?.date ?? ''}</span>
         </div>
       </footer>
     </div>

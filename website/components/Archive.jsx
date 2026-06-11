@@ -13,7 +13,7 @@ function IssueCard({ date, driver, movers }) {
     <Link href={`/issue/${date}`} className="block group">
       <Card className="h-full bg-[#0F172A] border-[#1E293B] hover:border-[#1D4ED8]/50 transition-all duration-150 overflow-hidden">
         <CardContent className="p-5 flex flex-col gap-3 h-full">
-          <div className="font-mono text-[10px] text-[#64748B] uppercase tracking-wider">
+          <div className="font-sans text-[10px] text-[#64748B] uppercase tracking-wider">
             {formatDate(date)}
           </div>
           {driver && (
@@ -27,7 +27,7 @@ function IssueCard({ date, driver, movers }) {
                 <Badge
                   key={i}
                   variant="outline"
-                  className={`font-mono text-[10px] border px-2 py-0.5 ${
+                  className={`font-sans text-[10px] border px-2 py-0.5 ${
                     m.positive
                       ? 'text-[#22C55E] border-[#22C55E]/30 bg-[#22C55E]/5'
                       : 'text-[#EF4444] border-[#EF4444]/30 bg-[#EF4444]/5'
@@ -51,7 +51,7 @@ export default function Archive({ issues }) {
   return (
     <section id="archive">
       <div className="flex items-center gap-3 mb-5">
-        <span className="font-mono text-[11px] uppercase tracking-widest text-[#64748B]">Archive</span>
+        <span className="font-sans text-[11px] uppercase tracking-widest text-[#64748B]">Archive</span>
         <div className="flex-1 h-px bg-[#1E293B]" />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
