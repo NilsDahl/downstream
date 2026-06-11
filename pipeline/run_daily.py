@@ -51,7 +51,10 @@ def main():
     # Step 1: fetch market data
     run_step("fetch_data", "fetch_data.py")
 
-    # Step 2: generate draft (uses today's snapshot by default)
+    # Step 2: fetch news headlines (uses today's snapshot for dynamic queries)
+    run_step("fetch_news", "fetch_news.py")
+
+    # Step 3: generate draft (uses today's snapshot + news by default)
     run_step("generate_draft", "generate_draft.py")
 
     log("=== Pipeline complete ===")

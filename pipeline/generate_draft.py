@@ -146,16 +146,56 @@ Output format — use exactly this structure:
 """
 
 
+def load_news_context(snapshot_date: str) -> str | None:
+    news_path = os.path.join(
+        os.path.dirname(__file__), "..", "content", "news", f"{snapshot_date}.json"
+    )
+    if not os.path.exists(news_path):
+        return None
+    with open(news_path) as f:
+        data = json.load(f)
+    headlines = data.get("headlines", [])
+    if not headlines:
+        return None
+    lines = []
+    for h in headlines:
+        source = h.get("source", "Unknown")
+        headline = h.get("headline", "").strip()
+        description = (h.get("description") or "").strip()
+        if description:
+            lines.append(f"- [{source}] {headline} — {description}")
+        else:
+            lines.append(f"- [{source}] {headline}")
+    return "\n".join(lines)
+
+
 def build_user_prompt(snapshot: dict) -> str:
     summary       = build_market_summary(snapshot)
     snapshot_date = snapshot.get("date", date.today().isoformat())
-    return (
+    news_context  = load_news_context(snapshot_date)
+
+    prompt = (
         f"Date: {snapshot_date}\n\n"
         f"Market snapshot — previous session closes, all changes vs prior session:\n\n"
         f"{summary}\n\n"
-        f"Write today's Downstream implication chain analysis. "
-        f"Use only the exact figures above — do not invent or approximate any number."
     )
+
+    if news_context:
+        prompt += (
+            f"You also have the following news headlines from the last 24 hours.\n"
+            f"Use them to ground the chain in actual drivers — not just\n"
+            f"\"oil rose\" but \"oil rose on renewed OPEC+ supply concerns.\"\n"
+            f"Only reference a headline if it is directly relevant to a\n"
+            f"chain node. Do not summarize the news — use it as evidence\n"
+            f"for the mechanism you are already describing.\n\n"
+            f"News headlines:\n{news_context}\n\n"
+        )
+
+    prompt += (
+        "Write today's Downstream implication chain analysis. "
+        "Use only the exact figures above — do not invent or approximate any number."
+    )
+    return prompt
 
 
 # ─────────────────────────────────────────────────────────────
