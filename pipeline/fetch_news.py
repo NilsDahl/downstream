@@ -18,12 +18,38 @@ import requests
 NEWSAPI_URL = "https://newsapi.org/v2/everything"
 
 STATIC_QUERIES = [
-    "Federal Reserve OR Fed rate",
-    "ECB OR European Central Bank",
-    "oil price OR crude OR OPEC",
-    "inflation OR CPI",
-    "China economy OR PBOC",
-    "Treasury bonds OR yield curve",
+    # Central banks
+    "Federal Reserve OR Fed rate OR FOMC",
+    "ECB OR European Central Bank OR Lagarde",
+    "Bank of England OR BOE OR Bailey",
+    "Bank of Japan OR BOJ OR Ueda",
+    "Riksbank OR Swedish central bank",
+    "PBOC OR People's Bank of China",
+
+    # Rates & credit
+    "Treasury bonds OR yield curve OR UST",
+    "inflation OR CPI OR PCE",
+    "interest rates OR rate cut OR rate hike",
+    "credit spreads OR high yield OR investment grade",
+
+    # Commodities
+    "oil price OR crude OR OPEC OR Brent",
+    "natural gas OR LNG",
+    "gold price OR precious metals",
+    "copper OR industrial metals",
+    "wheat OR corn OR soybeans OR food prices",
+
+    # FX & macro
+    "dollar index OR DXY OR dollar strength",
+    "euro dollar OR EURUSD",
+    "emerging markets OR EM currency",
+    "China economy OR GDP OR property market",
+
+    # Risk & geopolitics
+    "geopolitical risk OR sanctions OR trade war",
+    "recession OR economic slowdown OR PMI",
+    "VIX OR market volatility OR risk off",
+    "earnings OR corporate profits",
 ]
 
 # Maps asset labels to targeted search queries for dynamic headline fetching
