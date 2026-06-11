@@ -25,11 +25,11 @@ export default async function IssuePage({ params }) {
 
   if (!issue) {
     return (
-      <div className="min-h-screen bg-[#020817]">
+      <div className="min-h-screen bg-background">
         <Header />
         <main className="max-w-7xl mx-auto px-4 py-20 text-center">
-          <p className="font-sans text-[#64748B]">Issue not found.</p>
-          <Link href="/" className="font-sans text-xs text-[#3B82F6] mt-4 inline-block hover:underline">
+          <p className="text-subtle">Issue not found.</p>
+          <Link href="/" className="text-xs text-primary-light mt-4 inline-block hover:underline">
             ← Back
           </Link>
         </main>
@@ -38,15 +38,15 @@ export default async function IssuePage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#020817]">
+    <div className="min-h-screen bg-background">
       <Header />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
         <div>
-          <Link href="/" className="font-sans text-[10px] text-[#64748B] hover:text-[#3B82F6] transition-colors uppercase tracking-wider">
+          <Link href="/" className="text-[10px] text-subtle hover:text-primary-light transition-colors uppercase tracking-wider">
             ← All issues
           </Link>
-          <h1 className="text-2xl sm:text-3xl font-semibold text-white tracking-tight mt-3">
+          <h1 className="text-2xl sm:text-3xl font-semibold text-foreground tracking-tight mt-3">
             {formatDate(date)}
           </h1>
         </div>
@@ -55,12 +55,12 @@ export default async function IssuePage({ params }) {
         <ImplicationChain chain={issue.chain} />
       </main>
 
-      <footer className="border-t border-[#1E293B] mt-12">
+      <footer className="border-t border-border mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
-          <Link href="/" className="font-sans text-xs text-[#64748B] hover:text-[#3B82F6] transition-colors">
+          <Link href="/" className="text-xs text-subtle hover:text-primary-light transition-colors">
             Downstream
           </Link>
-          <span className="font-sans text-xs text-[#64748B]">{date}</span>
+          <span className="text-xs text-subtle">{date}</span>
         </div>
       </footer>
     </div>

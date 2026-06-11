@@ -4,8 +4,8 @@ import ReactMarkdown from 'react-markdown'
 function VerticalConnector() {
   return (
     <div className="flex flex-col items-center py-1">
-      <div className="w-px h-4 bg-[#1D4ED8]/50" />
-      <svg width="12" height="8" viewBox="0 0 12 8" className="text-[#1D4ED8]">
+      <div className="w-px h-4 bg-primary/50" />
+      <svg width="12" height="8" viewBox="0 0 12 8" className="text-primary">
         <path d="M6 8 L0 0 L12 0 Z" fill="currentColor" />
       </svg>
     </div>
@@ -14,15 +14,15 @@ function VerticalConnector() {
 
 function DriverCard({ text }) {
   return (
-    <Card className="border-[#1D4ED8] bg-[#1E3A5F]/30 overflow-hidden">
+    <Card className="border-primary bg-accent/30 overflow-hidden">
       <CardContent className="p-5">
         <div className="flex items-center gap-2 mb-3">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#3B82F6]" />
-          <span className="font-sans text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
+          <div className="w-1.5 h-1.5 rounded-full bg-primary-light" />
+          <span className="text-[10px] uppercase tracking-widest text-primary-light font-semibold">
             The Driver
           </span>
         </div>
-        <p className="text-[#F8FAFC] text-sm leading-relaxed">{text}</p>
+        <p className="text-foreground text-sm leading-relaxed">{text}</p>
       </CardContent>
     </Card>
   )
@@ -30,15 +30,15 @@ function DriverCard({ text }) {
 
 function ChainNode({ label, body, index }) {
   return (
-    <Card className="border-[#1E293B] bg-[#0F172A] hover:border-[#334155] transition-colors overflow-hidden">
+    <Card className="border-border bg-card hover:border-muted-foreground/30 transition-colors overflow-hidden">
       <CardContent className="p-5">
         <div className="flex items-start gap-3">
-          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#1E293B] border border-[#334155] flex items-center justify-center mt-0.5">
-            <span className="font-sans text-[10px] text-[#64748B]">{index + 1}</span>
+          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-muted border border-border flex items-center justify-center mt-0.5">
+            <span className="text-[10px] text-subtle">{index + 1}</span>
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-semibold text-[#F8FAFC] text-sm mb-2 leading-snug">{label}</h3>
-            <div className="chain-prose text-sm text-[#94A3B8] leading-relaxed">
+            <h3 className="font-semibold text-foreground text-sm mb-2 leading-snug">{label}</h3>
+            <div className="chain-prose text-sm text-muted-foreground leading-relaxed">
               <ReactMarkdown>{body}</ReactMarkdown>
             </div>
           </div>
@@ -50,15 +50,15 @@ function ChainNode({ label, body, index }) {
 
 function WatchCard({ text }) {
   return (
-    <Card className="border-[#1D4ED8]/50 bg-[#020817] overflow-hidden">
+    <Card className="border-primary/50 bg-background overflow-hidden">
       <CardContent className="p-5">
         <div className="flex items-center gap-2 mb-3">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#1D4ED8]" />
-          <span className="font-sans text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
+          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+          <span className="text-[10px] uppercase tracking-widest text-primary-light font-semibold">
             What to Watch
           </span>
         </div>
-        <div className="chain-prose text-sm text-[#94A3B8] leading-relaxed">
+        <div className="chain-prose text-sm text-muted-foreground leading-relaxed">
           <ReactMarkdown>{text}</ReactMarkdown>
         </div>
       </CardContent>
@@ -72,10 +72,10 @@ export default function ImplicationChain({ chain }) {
   return (
     <section>
       <div className="flex items-center gap-4 mb-6">
-        <span className="font-sans text-xl font-semibold text-white">
+        <span className="text-xl font-semibold text-foreground">
           Implication Chain
         </span>
-        <div className="flex-1 h-px bg-[#1E293B]" />
+        <div className="flex-1 h-px bg-border" />
       </div>
 
       <div className="w-full space-y-0">
