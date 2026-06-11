@@ -1,23 +1,12 @@
-// ImplicationChain — the editorial heart of Downstream.
-// Horizontal sequence of cards connected by arrows; vertical on mobile.
+import { Card, CardContent } from '@/components/ui/card'
+import ReactMarkdown from 'react-markdown'
 
-function Arrow() {
+function VerticalConnector() {
   return (
-    <div className="flex-shrink-0 flex items-center justify-center w-6 md:w-8 text-amber">
-      {/* Vertical on mobile, horizontal on desktop */}
-      <svg
-        className="hidden md:block"
-        width="24" height="16" viewBox="0 0 24 16" fill="none"
-        aria-hidden="true"
-      >
-        <path d="M0 8 H20 M14 2 L22 8 L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-      <svg
-        className="md:hidden"
-        width="16" height="24" viewBox="0 0 16 24" fill="none"
-        aria-hidden="true"
-      >
-        <path d="M8 0 V20 M2 14 L8 22 L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <div className="flex flex-col items-center py-1">
+      <div className="w-px h-4 bg-[#1D4ED8]/50" />
+      <svg width="12" height="8" viewBox="0 0 12 8" className="text-[#1D4ED8]">
+        <path d="M6 8 L0 0 L12 0 Z" fill="currentColor" />
       </svg>
     </div>
   )
@@ -25,54 +14,55 @@ function Arrow() {
 
 function DriverCard({ text }) {
   return (
-    <div className="flex-shrink-0 w-64 md:w-72 rounded-lg border-2 border-amber bg-amber-light p-4">
-      <div className="font-mono text-[10px] uppercase tracking-widest text-amber mb-2">
-        The Driver
-      </div>
-      <p className="font-serif text-sm text-ink leading-snug">{text}</p>
-    </div>
+    <Card className="border-[#1D4ED8] bg-[#1E3A5F]/30 overflow-hidden">
+      <CardContent className="p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-1.5 h-1.5 rounded-full bg-[#3B82F6]" />
+          <span className="font-mono text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
+            The Driver
+          </span>
+        </div>
+        <p className="text-[#F8FAFC] text-sm leading-relaxed">{text}</p>
+      </CardContent>
+    </Card>
   )
 }
 
 function ChainNode({ label, body, index }) {
   return (
-    <div className="flex-shrink-0 w-64 md:w-72 rounded-lg border border-border bg-white p-4 shadow-sm">
-      <div className="font-mono text-[10px] uppercase tracking-widest text-ink-muted mb-1">
-        Node {index + 1}
-      </div>
-      <div className="font-serif text-sm font-semibold text-ink mb-2 leading-snug">
-        {label}
-      </div>
-      <p className="text-xs text-ink-muted leading-relaxed line-clamp-4">{body}</p>
-    </div>
+    <Card className="border-[#1E293B] bg-[#0F172A] hover:border-[#334155] transition-colors overflow-hidden">
+      <CardContent className="p-5">
+        <div className="flex items-start gap-3">
+          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#1E293B] border border-[#334155] flex items-center justify-center mt-0.5">
+            <span className="font-mono text-[10px] text-[#64748B]">{index + 1}</span>
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="font-semibold text-[#F8FAFC] text-sm mb-2 leading-snug">{label}</h3>
+            <div className="chain-prose text-sm text-[#94A3B8] leading-relaxed">
+              <ReactMarkdown>{body}</ReactMarkdown>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
   )
 }
 
-function WatchNode({ text }) {
-  // Parse numbered items if present
-  const items = text
-    .split(/\n\s*\d+\.\s+/)
-    .map(s => s.trim())
-    .filter(Boolean)
-
+function WatchCard({ text }) {
   return (
-    <div className="flex-shrink-0 w-64 md:w-80 rounded-lg border-2 border-ink bg-ink p-4 shadow-sm">
-      <div className="font-mono text-[10px] uppercase tracking-widest text-parchment/60 mb-2">
-        What to Watch
-      </div>
-      {items.length > 1 ? (
-        <ol className="space-y-2">
-          {items.map((item, i) => (
-            <li key={i} className="flex gap-2">
-              <span className="font-mono text-[10px] text-amber mt-0.5 flex-shrink-0">{i + 1}.</span>
-              <p className="text-xs text-parchment/90 leading-relaxed line-clamp-3">{item.replace(/^\*\*[^*]+\*\*\s*/, '')}</p>
-            </li>
-          ))}
-        </ol>
-      ) : (
-        <p className="text-xs text-parchment/90 leading-relaxed">{text}</p>
-      )}
-    </div>
+    <Card className="border-[#1D4ED8]/50 bg-[#020817] overflow-hidden">
+      <CardContent className="p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-1.5 h-1.5 rounded-full bg-[#1D4ED8]" />
+          <span className="font-mono text-[10px] uppercase tracking-widest text-[#3B82F6] font-semibold">
+            What to Watch
+          </span>
+        </div>
+        <div className="chain-prose text-sm text-[#94A3B8] leading-relaxed">
+          <ReactMarkdown>{text}</ReactMarkdown>
+        </div>
+      </CardContent>
+    </Card>
   )
 }
 
@@ -81,27 +71,29 @@ export default function ImplicationChain({ chain }) {
 
   return (
     <section>
-      <h2 className="font-mono text-xs uppercase tracking-widest text-ink-muted mb-4">
-        Implication Chain
-      </h2>
+      <div className="flex items-center gap-3 mb-5">
+        <span className="font-mono text-[11px] uppercase tracking-widest text-[#64748B]">
+          Implication Chain
+        </span>
+        <div className="flex-1 h-px bg-[#1E293B]" />
+      </div>
 
-      {/* Horizontal scroll on desktop, vertical stack on mobile */}
-      <div className="flex flex-col md:flex-row md:items-start md:overflow-x-auto md:pb-4 gap-0 md:gap-0">
+      <div className="max-w-3xl space-y-0">
         {chain.driver && (
           <>
             <DriverCard text={chain.driver} />
-            {chain.nodes.length > 0 && <Arrow />}
+            {chain.nodes.length > 0 && <VerticalConnector />}
           </>
         )}
 
         {chain.nodes.map((node, i) => (
-          <div key={i} className="flex flex-col md:flex-row md:items-start">
+          <div key={i}>
             <ChainNode label={node.label} body={node.body} index={i} />
-            {(i < chain.nodes.length - 1 || chain.watchText) && <Arrow />}
+            {(i < chain.nodes.length - 1 || chain.watchText) && <VerticalConnector />}
           </div>
         ))}
 
-        {chain.watchText && <WatchNode text={chain.watchText} />}
+        {chain.watchText && <WatchCard text={chain.watchText} />}
       </div>
     </section>
   )

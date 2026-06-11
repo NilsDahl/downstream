@@ -1,4 +1,10 @@
 // Client-safe utilities (no Node.js imports)
+import { clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+export function cn(...inputs) {
+  return twMerge(clsx(inputs))
+}
 
 const USD_BASE_PAIRS = new Set([
   'usdjpy','usdchf','usdsek','usdnok','usddkk','usdcad',

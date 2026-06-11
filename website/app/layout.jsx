@@ -1,9 +1,9 @@
-import { Playfair_Display, JetBrains_Mono } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const playfair = Playfair_Display({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-inter',
   display: 'swap',
 })
 
@@ -20,8 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${jetbrains.variable}`}>
-      <body className="bg-parchment text-ink antialiased min-h-screen">
+    <html lang="en" className={`${inter.variable} ${jetbrains.variable} dark`}>
+      <body className="min-h-screen bg-[#020817] text-[#F8FAFC] antialiased">
         {children}
       </body>
     </html>

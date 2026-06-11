@@ -2,7 +2,6 @@ import { getAllDates, getIssue } from '../../../lib/content.js'
 import Header           from '../../../components/Header.jsx'
 import MarketSnapshot   from '../../../components/MarketSnapshot.jsx'
 import ImplicationChain from '../../../components/ImplicationChain.jsx'
-import IssueBody        from '../../../components/IssueBody.jsx'
 import Link             from 'next/link'
 
 export async function generateStaticParams() {
@@ -11,14 +10,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { date } = await params
-  return {
-    title: `Downstream — ${date}`,
-  }
+  return { title: `Downstream — ${date}` }
 }
 
-function formatDate(dateStr) {
-  const d = new Date(dateStr + 'T12:00:00Z')
-  return d.toLocaleDateString('en-GB', {
+function formatDate(d) {
+  return new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
   })
 }
@@ -29,12 +25,12 @@ export default async function IssuePage({ params }) {
 
   if (!issue) {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-[#020817]">
         <Header />
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <p className="font-serif text-xl text-ink-muted">Issue not found.</p>
-          <Link href="/" className="font-mono text-xs text-amber mt-4 inline-block hover:underline">
-            ← Back to latest
+        <main className="max-w-7xl mx-auto px-4 py-20 text-center">
+          <p className="font-mono text-[#64748B]">Issue not found.</p>
+          <Link href="/" className="font-mono text-xs text-[#3B82F6] mt-4 inline-block hover:underline">
+            ← Back
           </Link>
         </main>
       </div>
@@ -42,30 +38,29 @@ export default async function IssuePage({ params }) {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#020817]">
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
         <div>
-          <Link href="/" className="font-mono text-xs text-ink-muted hover:text-amber transition-colors">
+          <Link href="/" className="font-mono text-[10px] text-[#64748B] hover:text-[#3B82F6] transition-colors uppercase tracking-wider">
             ← All issues
           </Link>
-          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-ink mt-3">
+          <h1 className="text-2xl sm:text-3xl font-semibold text-white tracking-tight mt-3">
             {formatDate(date)}
           </h1>
         </div>
 
         <MarketSnapshot   snapshot={issue.snapshot} />
         <ImplicationChain chain={issue.chain} />
-        <IssueBody        content={issue.content} />
       </main>
 
-      <footer className="border-t border-border mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
-          <Link href="/" className="font-serif text-sm text-ink-muted hover:text-amber transition-colors">
+      <footer className="border-t border-[#1E293B] mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
+          <Link href="/" className="font-mono text-xs text-[#64748B] hover:text-[#3B82F6] transition-colors">
             Downstream
           </Link>
-          <span className="font-mono text-xs text-ink-muted">{date}</span>
+          <span className="font-mono text-xs text-[#64748B]">{date}</span>
         </div>
       </footer>
     </div>

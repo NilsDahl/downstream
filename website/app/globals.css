@@ -1,38 +1,78 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
-  /* Colours */
-  --color-parchment:   #FAF7F2;
-  --color-amber:       #D97706;
-  --color-amber-light: #FEF3C7;
-  --color-ink:         #1A1A1A;
-  --color-ink-muted:   #6B7280;
-  --color-up:          #16A34A;
-  --color-down:        #DC2626;
-  --color-row-alt:     #F5F0E8;
-  --color-border:      #E8E0D0;
-
-  /* Fonts — variable names set in layout.jsx via next/font */
-  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans:  var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono:  var(--font-jetbrains), ui-monospace, monospace;
+  --font-serif: var(--font-jetbrains), ui-monospace, monospace;
+
+  /* Brand blue palette */
+  --color-brand:       #1D4ED8;
+  --color-brand-light: #3B82F6;
+  --color-brand-dim:   #1E3A5F;
+
+  /* Dark theme surfaces */
+  --color-surface-0: #020817;
+  --color-surface-1: #0F172A;
+  --color-surface-2: #1E293B;
+  --color-surface-3: #334155;
+
+  /* Text */
+  --color-text-primary:  #F8FAFC;
+  --color-text-secondary:#94A3B8;
+  --color-text-muted:    #64748B;
+
+  /* Borders */
+  --color-border-subtle: #1E293B;
+  --color-border:        #334155;
+
+  /* Semantic */
+  --color-up:   #22C55E;
+  --color-down: #EF4444;
 }
 
+/* shadcn CSS variable mapping */
 :root {
-  --background: #FAF7F2;
-  --foreground: #1A1A1A;
+  --background:        #020817;
+  --foreground:        #F8FAFC;
+  --card:              #0F172A;
+  --card-foreground:   #F8FAFC;
+  --popover:           #0F172A;
+  --popover-foreground:#F8FAFC;
+  --primary:           #1D4ED8;
+  --primary-foreground:#F8FAFC;
+  --secondary:         #1E293B;
+  --secondary-foreground:#F8FAFC;
+  --muted:             #1E293B;
+  --muted-foreground:  #94A3B8;
+  --accent:            #1E3A5F;
+  --accent-foreground: #F8FAFC;
+  --destructive:       #EF4444;
+  --destructive-foreground:#F8FAFC;
+  --border:            #1E293B;
+  --input:             #1E293B;
+  --ring:              #1D4ED8;
+  --radius:            0.5rem;
+  --chart-1: #3B82F6;
+  --chart-2: #22C55E;
+  --chart-3: #EF4444;
+  --chart-4: #F59E0B;
+  --chart-5: #8B5CF6;
 }
+
+* { border-color: var(--border); }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans);
 }
 
 html { scroll-behavior: smooth; }
 
-/* Prose for IssueBody */
-.issue-prose h1        { display: none; }
-.issue-prose hr        { border-color: #E8E0D0; margin: 2rem 0; }
-.issue-prose p         { margin-bottom: 1.25rem; line-height: 1.75; }
-.issue-prose strong    { font-weight: 600; }
-.issue-prose ol        { list-style: decimal; padding-left: 1.5rem; margin-bottom: 1.25rem; }
-.issue-prose ol li     { margin-bottom: 0.75rem; line-height: 1.75; }
+/* Chain node prose */
+.chain-prose p   { margin-bottom: 0.75rem; line-height: 1.7; }
+.chain-prose ol  { list-style: decimal; padding-left: 1.25rem; }
+.chain-prose ol li { margin-bottom: 0.5rem; line-height: 1.7; }
+.chain-prose strong { color: #F8FAFC; font-weight: 600; }
