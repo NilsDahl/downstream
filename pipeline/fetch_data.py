@@ -331,6 +331,56 @@ def _warn(msg: str):
 # Fetcher: yfinance (batch download)
 # ─────────────────────────────────────────────────────────────
 
+def _yf_parse_df(key: str, ticker: str, df) -> dict | None:
+    """Turn a Close/Volume DataFrame into a snapshot record. Returns None on failure."""
+    df = df[df["Close"].notna()].copy()
+    if len(df) < 2:
+        return None
+
+    # Futures-specific quality filters
+    if ticker.endswith("=F") and "Volume" in df.columns:
+        # Drop zero-volume bars (stale carry-forward / dead contracts)
+        traded = df[df["Volume"] > 0]
+        if len(traded) >= 2:
+            df = traded
+        elif len(traded) == 1:
+            last_idx = df.index.get_loc(traded.index[-1])
+            if last_idx >= 1:
+                df = df.iloc[last_idx - 1 : last_idx + 1]
+
+        if len(df) < 2:
+            return None
+
+        # Detect likely contract rolls: very large move + volume on the last bar
+        # is less than 20% of the prior 3-bar average → probable roll, not real move
+        if len(df) >= 3 and "Volume" in df.columns:
+            last_vol = float(df["Volume"].iloc[-1])
+            avg_prev = float(df["Volume"].iloc[-4:-1].mean()) if len(df) >= 4 else float(df["Volume"].iloc[:-1].mean())
+            last_close = float(df["Close"].iloc[-1])
+            prev_close = float(df["Close"].iloc[-2])
+            pct_move   = abs(last_close - prev_close) / abs(prev_close) * 100 if prev_close else 0
+            if pct_move > 4 and avg_prev > 0 and last_vol < 0.25 * avg_prev:
+                _warn(f"yfinance: {key} ({ticker}) flagged as likely roll "
+                      f"({pct_move:.1f}% move, vol={last_vol:.0f} vs avg={avg_prev:.0f}) — skipping")
+                return None
+
+    prev  = float(df["Close"].iloc[-2])
+    last  = float(df["Close"].iloc[-1])
+    as_of = df.index[-1].strftime("%Y-%m-%d")
+
+    if _clean(last) is None or _clean(prev) is None:
+        return None
+
+    if key in RATE_ASSETS:
+        return _record(key, "yfinance", ticker=ticker, as_of=as_of,
+            level=round(last, 4), prev_level=round(prev, 4),
+            change_bps=_bps(prev, last))
+    else:
+        return _record(key, "yfinance", ticker=ticker, as_of=as_of,
+            close=round(last, 6), prev_close=round(prev, 6),
+            change_pct=_pct(prev, last))
+
+
 def fetch_yfinance(keys_tickers: dict[str, str]) -> dict[str, dict]:
     if not keys_tickers:
         return {}
@@ -338,68 +388,53 @@ def fetch_yfinance(keys_tickers: dict[str, str]) -> dict[str, dict]:
     tickers = list(keys_tickers.values())
     key_map = {v: k for k, v in keys_tickers.items()}   # ticker → key
 
+    # Batch download
+    results = {}
+    failed_tickers = set()
     try:
         raw = yf.download(
             tickers, period="5d", auto_adjust=True,
             progress=False, threads=True, group_by="ticker",
         )
-    except Exception as exc:
-        _warn(f"yfinance download failed: {exc}")
-        return {}
+        for ticker, key in key_map.items():
+            try:
+                if len(tickers) == 1:
+                    df = raw[["Close", "Volume"]].copy()
+                elif ticker not in raw.columns.get_level_values(0):
+                    failed_tickers.add(ticker)
+                    continue
+                else:
+                    df = raw[ticker][["Close", "Volume"]].copy()
 
-    results = {}
-    for ticker, key in key_map.items():
-        try:
-            # Handle both single-ticker (flat) and multi-ticker (MultiIndex) DataFrames
-            if isinstance(raw.columns, type(None)) or len(tickers) == 1:
-                df = raw[["Close", "Volume"]].copy()
-            else:
-                if ticker not in raw.columns.get_level_values(0):
+                record = _yf_parse_df(key, ticker, df)
+                if record:
+                    results[key] = record
+                else:
+                    failed_tickers.add(ticker)
+            except Exception:
+                failed_tickers.add(ticker)
+    except Exception as exc:
+        _warn(f"yfinance batch download failed: {exc}")
+        failed_tickers = set(tickers)
+
+    # Individual retry for anything that failed in the batch
+    if failed_tickers:
+        _warn(f"yfinance: retrying {len(failed_tickers)} tickers individually")
+        for ticker in failed_tickers:
+            key = key_map[ticker]
+            try:
+                hist = yf.Ticker(ticker).history(period="7d", auto_adjust=True)
+                if hist.empty:
                     _warn(f"yfinance: no data for {key} ({ticker})")
                     continue
-                df = raw[ticker][["Close", "Volume"]].copy()
-
-            df = df[df["Close"].notna()]
-            if len(df) < 2:
-                _warn(f"yfinance: insufficient history for {key} ({ticker})")
-                continue
-
-            # For futures (ticker ends in =F): drop zero-volume bars — they are
-            # stale carry-forward prices from illiquid or rolled contracts.
-            if ticker.endswith("=F") and "Volume" in df.columns:
-                traded = df[df["Volume"] > 0]
-                if len(traded) >= 2:
-                    df = traded
-                elif len(traded) == 1:
-                    # Keep at least 2 rows: last traded + the bar before it
-                    last_idx = df.index.get_loc(traded.index[-1])
-                    if last_idx >= 1:
-                        df = df.iloc[last_idx - 1 : last_idx + 1]
-
-            if len(df) < 2:
-                _warn(f"yfinance: no traded data for {key} ({ticker})")
-                continue
-
-            prev  = float(df["Close"].iloc[-2])
-            last  = float(df["Close"].iloc[-1])
-            as_of = df.index[-1].strftime("%Y-%m-%d")
-
-            if _clean(last) is None or _clean(prev) is None:
-                _warn(f"yfinance: NaN price for {key} ({ticker})")
-                continue
-
-            if key in RATE_ASSETS:
-                results[key] = _record(key, "yfinance",
-                    ticker=ticker, as_of=as_of,
-                    level=round(last, 4), prev_level=round(prev, 4),
-                    change_bps=_bps(prev, last))
-            else:
-                results[key] = _record(key, "yfinance",
-                    ticker=ticker, as_of=as_of,
-                    close=round(last, 6), prev_close=round(prev, 6),
-                    change_pct=_pct(prev, last))
-        except Exception as exc:
-            _warn(f"yfinance parse error for {key} ({ticker}): {exc}")
+                df = hist[["Close", "Volume"]].copy()
+                record = _yf_parse_df(key, ticker, df)
+                if record:
+                    results[key] = record
+                else:
+                    _warn(f"yfinance: {key} ({ticker}) still failed after retry")
+            except Exception as exc:
+                _warn(f"yfinance retry error for {key} ({ticker}): {exc}")
 
     return results
 
@@ -433,27 +468,47 @@ def fetch_fred(fred) -> dict[str, dict]:
 # ─────────────────────────────────────────────────────────────
 
 def _ecb_fetch(series_key: str) -> tuple[float, float, str] | None:
-    url = f"{ECB_BASE}/{series_key}?lastNObservations=2&format=jsondata"
+    base_url = f"{ECB_BASE}/{series_key}?lastNObservations=2"
+
+    # Try JSON first
     try:
-        r = requests.get(url, timeout=15,
+        r = requests.get(f"{base_url}&format=jsondata", timeout=15,
                          headers={"Accept": "application/json"},
                          verify=certifi.where())
         r.raise_for_status()
-        body   = r.json()
-        # Series key varies by dataset depth — use whichever key is present
+        body        = r.json()
         series_dict = body["dataSets"][0]["series"]
-        series_k    = next(iter(series_dict))
-        obs         = series_dict[series_k]["observations"]
-        dates  = body["structure"]["dimensions"]["observation"][0]["values"]
-        sorted_keys = sorted(obs.keys(), key=int)
-        if len(sorted_keys) < 2:
-            return None
-        prev  = float(obs[sorted_keys[-2]][0])
-        last  = float(obs[sorted_keys[-1]][0])
-        as_of = dates[int(sorted_keys[-1])]["id"]
-        return prev, last, as_of
+        if series_dict:                                    # ECB sometimes returns {}
+            series_k    = next(iter(series_dict))
+            obs         = series_dict[series_k]["observations"]
+            dates       = body["structure"]["dimensions"]["observation"][0]["values"]
+            sorted_keys = sorted(obs.keys(), key=int)
+            if len(sorted_keys) >= 2:
+                prev  = float(obs[sorted_keys[-2]][0])
+                last  = float(obs[sorted_keys[-1]][0])
+                as_of = dates[int(sorted_keys[-1])]["id"]
+                return prev, last, as_of
     except Exception:
-        return None
+        pass
+
+    # Fall back to XML — ECB JSON occasionally returns empty series
+    try:
+        import re as _re
+        r = requests.get(base_url, timeout=15,
+                         headers={"Accept": "application/xml"},
+                         verify=certifi.where())
+        r.raise_for_status()
+        vals  = _re.findall(r'ObsValue value="([^"]+)"', r.text)
+        dates = _re.findall(r'ObsDimension value="([^"]+)"', r.text)
+        if len(vals) >= 2 and len(dates) >= 2:
+            prev  = float(vals[-2])
+            last  = float(vals[-1])
+            as_of = dates[-1]
+            return prev, last, as_of
+    except Exception:
+        pass
+
+    return None
 
 
 def fetch_ecb() -> dict[str, dict]:

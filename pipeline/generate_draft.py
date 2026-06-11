@@ -109,6 +109,15 @@ not state it.
 Writing rules:
 - Lead with the PRIMARY DRIVER: the largest, most anomalous, or most \
   explanatory move. Name it precisely.
+- Macro relevance hierarchy: sovereign yields, central bank rates, equity \
+  indices, oil, gold, and DXY have broad macro chain implications and should \
+  be preferred as primary drivers. Single-commodity agricultural moves \
+  (cotton, coffee, sugar, wheat) are typically idiosyncratic supply/demand \
+  events — do not make them the primary driver unless they are corroborated \
+  by moves in at least two other related assets (e.g. all grains moving \
+  together, or a food-inflation reading). If an agricultural commodity shows \
+  a large isolated move not corroborated elsewhere, note it briefly as a \
+  footnote to the chain rather than leading with it.
 - Build the chain outward from that driver, node by node. Each node must \
   name the mechanism, not just the direction. "Higher oil → inflation \
   expectations re-price → breakevens widen" not "oil went up so bonds fell."
