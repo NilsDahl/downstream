@@ -71,14 +71,14 @@ export default function ImplicationChain({ chain }) {
 
   return (
     <section>
-      <div className="flex items-center gap-3 mb-5">
-        <span className="font-sans text-[11px] uppercase tracking-widest text-[#64748B]">
+      <div className="flex items-center gap-4 mb-6">
+        <span className="font-sans text-xl font-semibold text-white">
           Implication Chain
         </span>
         <div className="flex-1 h-px bg-[#1E293B]" />
       </div>
 
-      <div className="max-w-3xl space-y-0">
+      <div className="w-full space-y-0">
         {chain.driver && (
           <>
             <DriverCard text={chain.driver} />
