@@ -98,8 +98,14 @@ def build_market_summary(snapshot: dict) -> str:
 
 SYSTEM_PROMPT = """\
 You are the author of Downstream, a daily macro-finance brief for finance \
-students and young professionals. Your job: identify the primary driver in \
-today's market moves and trace its implication chain through related assets.
+students and young professionals. Your job: identify the primary driver of \
+today's macro narrative and trace its implication chain through related assets.
+
+The primary driver is whatever best explains the day — it may be a news \
+catalyst, a market move, or both together. A significant news event that \
+caused a modest market move takes priority over a larger but unrelated price \
+swing. Read the news and the snapshot as co-equal inputs: together they tell \
+you what the day is actually about.
 
 CRITICAL DATA RULE: Every number you cite must be copied verbatim from \
 the market snapshot provided. Do not round, re-derive, or approximate any \
@@ -107,8 +113,13 @@ price, yield, or percentage change. If a figure is not in the snapshot, do \
 not state it.
 
 Writing rules:
-- Lead with the PRIMARY DRIVER: the largest, most anomalous, or most \
-  explanatory move. Name it precisely.
+- Lead with the PRIMARY DRIVER: the single catalyst — news event, policy \
+  signal, or market move — that most coherently explains the day's pattern \
+  across assets. Name it precisely, with its exact figure if it is in the \
+  snapshot.
+- If a news catalyst is the driver, anchor it to the market data: show which \
+  assets moved in response and by how much. If a market move is the driver, \
+  anchor it to the news: name the mechanism behind it.
 - Macro relevance hierarchy: sovereign yields, central bank rates, equity \
   indices, oil, gold, and DXY have broad macro chain implications and should \
   be preferred as primary drivers. Single-commodity agricultural moves \
@@ -132,7 +143,7 @@ Writing rules:
 
 Output format — use exactly this structure:
 
-**The driver:** [one sentence with the exact figure from the snapshot]
+**The driver:** [one sentence naming the catalyst and its exact figure or source]
 
 **The chain:**
 
@@ -162,10 +173,12 @@ def load_news_context(snapshot_date: str) -> str | None:
         source = h.get("source", "Unknown")
         headline = h.get("headline", "").strip()
         description = (h.get("description") or "").strip()
+        bucket = h.get("bucket", "")
+        tag = f"[{bucket}] " if bucket else ""
         if description:
-            lines.append(f"- [{source}] {headline} — {description}")
+            lines.append(f"- {tag}[{source}] {headline} — {description}")
         else:
-            lines.append(f"- [{source}] {headline}")
+            lines.append(f"- {tag}[{source}] {headline}")
     return "\n".join(lines)
 
 
@@ -174,26 +187,29 @@ def build_user_prompt(snapshot: dict) -> str:
     snapshot_date = snapshot.get("date", date.today().isoformat())
     news_context  = load_news_context(snapshot_date)
 
-    prompt = (
-        f"Date: {snapshot_date}\n\n"
+    prompt = f"Date: {snapshot_date}\n\n"
+
+    if news_context:
+        prompt += (
+            f"News headlines — last 24 hours:\n{news_context}\n\n"
+        )
+
+    prompt += (
         f"Market snapshot — previous session closes, all changes vs prior session:\n\n"
         f"{summary}\n\n"
     )
 
     if news_context:
         prompt += (
-            f"You also have the following news headlines from the last 24 hours.\n"
-            f"Use them to ground the chain in actual drivers — not just\n"
-            f"\"oil rose\" but \"oil rose on renewed OPEC+ supply concerns.\"\n"
-            f"Only reference a headline if it is directly relevant to a\n"
-            f"chain node. Do not summarize the news — use it as evidence\n"
-            f"for the mechanism you are already describing.\n\n"
-            f"News headlines:\n{news_context}\n\n"
+            "Use both inputs together to decide what today is about. The primary driver\n"
+            "may be a news catalyst, a market move, or their intersection — whichever\n"
+            "most coherently explains the pattern across assets. Do not treat news as\n"
+            "a footnote to the data; treat it as a co-equal input in choosing the chain.\n\n"
         )
 
     prompt += (
         "Write today's Downstream implication chain analysis. "
-        "Use only the exact figures above — do not invent or approximate any number."
+        "Use only the exact figures from the snapshot — do not invent or approximate any number."
     )
     return prompt
 

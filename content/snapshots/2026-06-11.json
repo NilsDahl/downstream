@@ -7,10 +7,10 @@
       "sub_category": "us",
       "source": "FRED",
       "series_id": "SOFR",
-      "as_of": "2026-06-09",
-      "level": 3.6,
-      "prev_level": 3.63,
-      "change_bps": -3.0
+      "as_of": "2026-06-10",
+      "level": 3.59,
+      "prev_level": 3.6,
+      "change_bps": -1.0
     },
     "us_t_1m": {
       "label": "US 1M",
@@ -362,9 +362,9 @@
       "source": "yfinance",
       "ticker": "EURUSD=X",
       "as_of": "2026-06-11",
-      "close": 1.154068,
+      "close": 1.152074,
       "prev_close": 1.153536,
-      "change_pct": 0.0462
+      "change_pct": -0.1267
     },
     "gbpusd": {
       "label": "GBP/USD",
@@ -373,9 +373,9 @@
       "source": "yfinance",
       "ticker": "GBPUSD=X",
       "as_of": "2026-06-11",
-      "close": 1.336327,
+      "close": 1.332782,
       "prev_close": 1.33722,
-      "change_pct": -0.0668
+      "change_pct": -0.3319
     },
     "usdjpy": {
       "label": "USD/JPY",
@@ -384,9 +384,9 @@
       "source": "yfinance",
       "ticker": "JPY=X",
       "as_of": "2026-06-11",
-      "close": 160.520996,
+      "close": 160.518005,
       "prev_close": 160.384003,
-      "change_pct": 0.0854
+      "change_pct": 0.0836
     },
     "usdchf": {
       "label": "USD/CHF",
@@ -395,9 +395,9 @@
       "source": "yfinance",
       "ticker": "CHF=X",
       "as_of": "2026-06-11",
-      "close": 0.79892,
+      "close": 0.80048,
       "prev_close": 0.79926,
-      "change_pct": -0.0425
+      "change_pct": 0.1526
     },
     "usdsek": {
       "label": "USD/SEK",
@@ -406,9 +406,9 @@
       "source": "yfinance",
       "ticker": "SEK=X",
       "as_of": "2026-06-11",
-      "close": 9.52931,
+      "close": 9.55075,
       "prev_close": 9.48299,
-      "change_pct": 0.4885
+      "change_pct": 0.7145
     },
     "usdnok": {
       "label": "USD/NOK",
@@ -417,9 +417,9 @@
       "source": "yfinance",
       "ticker": "NOK=X",
       "as_of": "2026-06-11",
-      "close": 9.5199,
+      "close": 9.52718,
       "prev_close": 9.51005,
-      "change_pct": 0.1036
+      "change_pct": 0.1801
     },
     "usddkk": {
       "label": "USD/DKK",
@@ -428,9 +428,9 @@
       "source": "yfinance",
       "ticker": "DKK=X",
       "as_of": "2026-06-11",
-      "close": 6.47775,
+      "close": 6.48914,
       "prev_close": 6.47905,
-      "change_pct": -0.0201
+      "change_pct": 0.1557
     },
     "audusd": {
       "label": "AUD/USD",
@@ -439,9 +439,9 @@
       "source": "yfinance",
       "ticker": "AUDUSD=X",
       "as_of": "2026-06-11",
-      "close": 0.69979,
+      "close": 0.69891,
       "prev_close": 0.702311,
-      "change_pct": -0.359
+      "change_pct": -0.4843
     },
     "nzdusd": {
       "label": "NZD/USD",
@@ -450,9 +450,9 @@
       "source": "yfinance",
       "ticker": "NZDUSD=X",
       "as_of": "2026-06-11",
-      "close": 0.578603,
+      "close": 0.577767,
       "prev_close": 0.58075,
-      "change_pct": -0.3697
+      "change_pct": -0.5136
     },
     "usdcad": {
       "label": "USD/CAD",
@@ -461,9 +461,9 @@
       "source": "yfinance",
       "ticker": "CAD=X",
       "as_of": "2026-06-11",
-      "close": 1.39791,
+      "close": 1.40194,
       "prev_close": 1.39538,
-      "change_pct": 0.1813
+      "change_pct": 0.4701
     },
     "usdcny": {
       "label": "USD/CNY",
@@ -472,9 +472,9 @@
       "source": "yfinance",
       "ticker": "CNY=X",
       "as_of": "2026-06-11",
-      "close": 6.7765,
+      "close": 6.775,
       "prev_close": 6.7725,
-      "change_pct": 0.0591
+      "change_pct": 0.0369
     },
     "usdbrl": {
       "label": "USD/BRL",
@@ -483,9 +483,9 @@
       "source": "yfinance",
       "ticker": "BRL=X",
       "as_of": "2026-06-11",
-      "close": 5.1853,
+      "close": 5.1378,
       "prev_close": 5.1901,
-      "change_pct": -0.0925
+      "change_pct": -1.0077
     },
     "usdmxn": {
       "label": "USD/MXN",
@@ -494,9 +494,9 @@
       "source": "yfinance",
       "ticker": "MXN=X",
       "as_of": "2026-06-11",
-      "close": 17.390921,
+      "close": 17.3909,
       "prev_close": 17.45402,
-      "change_pct": -0.3615
+      "change_pct": -0.3616
     },
     "usdzar": {
       "label": "USD/ZAR",
@@ -505,9 +505,9 @@
       "source": "yfinance",
       "ticker": "ZAR=X",
       "as_of": "2026-06-11",
-      "close": 16.496759,
+      "close": 16.494499,
       "prev_close": 16.4487,
-      "change_pct": 0.2922
+      "change_pct": 0.2784
     },
     "usdinr": {
       "label": "USD/INR",
@@ -516,9 +516,9 @@
       "source": "yfinance",
       "ticker": "INR=X",
       "as_of": "2026-06-11",
-      "close": 95.760002,
+      "close": 95.75,
       "prev_close": 95.360298,
-      "change_pct": 0.4192
+      "change_pct": 0.4087
     },
     "usdtry": {
       "label": "USD/TRY",
@@ -527,9 +527,9 @@
       "source": "yfinance",
       "ticker": "TRY=X",
       "as_of": "2026-06-11",
-      "close": 46.1493,
+      "close": 46.1502,
       "prev_close": 46.119999,
-      "change_pct": 0.0635
+      "change_pct": 0.0655
     },
     "usdkrw": {
       "label": "USD/KRW",
@@ -538,9 +538,9 @@
       "source": "yfinance",
       "ticker": "KRW=X",
       "as_of": "2026-06-11",
-      "close": 1529.640015,
+      "close": 1531.219971,
       "prev_close": 1525.810059,
-      "change_pct": 0.251
+      "change_pct": 0.3546
     },
     "usdsgd": {
       "label": "USD/SGD",
@@ -549,9 +549,9 @@
       "source": "yfinance",
       "ticker": "SGD=X",
       "as_of": "2026-06-11",
-      "close": 1.28782,
+      "close": 1.28887,
       "prev_close": 1.28739,
-      "change_pct": 0.0334
+      "change_pct": 0.115
     },
     "eurgbp": {
       "label": "EUR/GBP",
@@ -560,9 +560,9 @@
       "source": "yfinance",
       "ticker": "EURGBP=X",
       "as_of": "2026-06-11",
-      "close": 0.86339,
+      "close": 0.86404,
       "prev_close": 0.86241,
-      "change_pct": 0.1136
+      "change_pct": 0.189
     },
     "eurjpy": {
       "label": "EUR/JPY",
@@ -571,9 +571,9 @@
       "source": "yfinance",
       "ticker": "EURJPY=X",
       "as_of": "2026-06-11",
-      "close": 185.197006,
+      "close": 184.871002,
       "prev_close": 185.001999,
-      "change_pct": 0.1054
+      "change_pct": -0.0708
     },
     "eursek": {
       "label": "EUR/SEK",
@@ -582,9 +582,9 @@
       "source": "yfinance",
       "ticker": "EURSEK=X",
       "as_of": "2026-06-11",
-      "close": 10.9946,
+      "close": 10.99987,
       "prev_close": 10.93853,
-      "change_pct": 0.5126
+      "change_pct": 0.5608
     },
     "dxy": {
       "label": "DXY",
@@ -593,9 +593,9 @@
       "source": "yfinance",
       "ticker": "DX-Y.NYB",
       "as_of": "2026-06-11",
-      "close": 100.060997,
+      "close": 100.216003,
       "prev_close": 99.949997,
-      "change_pct": 0.1111
+      "change_pct": 0.2661
     },
     "sp500": {
       "label": "S&P 500",
@@ -603,10 +603,10 @@
       "sub_category": "us",
       "source": "yfinance",
       "ticker": "^GSPC",
-      "as_of": "2026-06-10",
-      "close": 7266.990234,
-      "prev_close": 7386.649902,
-      "change_pct": -1.6199
+      "as_of": "2026-06-11",
+      "close": 7290.370117,
+      "prev_close": 7266.990234,
+      "change_pct": 0.3217
     },
     "ndx": {
       "label": "Nasdaq 100",
@@ -614,10 +614,10 @@
       "sub_category": "us",
       "source": "yfinance",
       "ticker": "^NDX",
-      "as_of": "2026-06-10",
-      "close": 28508.029297,
-      "prev_close": 29084.5,
-      "change_pct": -1.9821
+      "as_of": "2026-06-11",
+      "close": 28745.826172,
+      "prev_close": 28508.029297,
+      "change_pct": 0.8341
     },
     "djia": {
       "label": "Dow Jones",
@@ -625,10 +625,10 @@
       "sub_category": "us",
       "source": "yfinance",
       "ticker": "^DJI",
-      "as_of": "2026-06-10",
-      "close": 49918.78125,
-      "prev_close": 50872.109375,
-      "change_pct": -1.874
+      "as_of": "2026-06-11",
+      "close": 50210.28125,
+      "prev_close": 49918.78125,
+      "change_pct": 0.5839
     },
     "rut": {
       "label": "Russell 2000",
@@ -636,10 +636,10 @@
       "sub_category": "us",
       "source": "yfinance",
       "ticker": "^RUT",
-      "as_of": "2026-06-10",
-      "close": 2835.459961,
-      "prev_close": 2867.02002,
-      "change_pct": -1.1008
+      "as_of": "2026-06-11",
+      "close": 2878.021729,
+      "prev_close": 2835.459961,
+      "change_pct": 1.5011
     },
     "stoxx50": {
       "label": "Euro Stoxx 50",
@@ -648,9 +648,9 @@
       "source": "yfinance",
       "ticker": "^STOXX50E",
       "as_of": "2026-06-11",
-      "close": 6073.819824,
+      "close": 6068.350098,
       "prev_close": 6009.950195,
-      "change_pct": 1.0627
+      "change_pct": 0.9717
     },
     "dax": {
       "label": "DAX",
@@ -659,9 +659,9 @@
       "source": "yfinance",
       "ticker": "^GDAXI",
       "as_of": "2026-06-11",
-      "close": 24275.660156,
+      "close": 24252.279297,
       "prev_close": 24195.310547,
-      "change_pct": 0.3321
+      "change_pct": 0.2355
     },
     "cac40": {
       "label": "CAC 40",
@@ -670,9 +670,9 @@
       "source": "yfinance",
       "ticker": "^FCHI",
       "as_of": "2026-06-11",
-      "close": 8239.120117,
+      "close": 8214.650391,
       "prev_close": 8161.830078,
-      "change_pct": 0.947
+      "change_pct": 0.6472
     },
     "ftse100": {
       "label": "FTSE 100",
@@ -681,9 +681,9 @@
       "source": "yfinance",
       "ticker": "^FTSE",
       "as_of": "2026-06-11",
-      "close": 10348.830078,
+      "close": 10344.110352,
       "prev_close": 10254.799805,
-      "change_pct": 0.9169
+      "change_pct": 0.8709
     },
     "omx30": {
       "label": "OMX Stockholm 30",
@@ -692,9 +692,9 @@
       "source": "yfinance",
       "ticker": "^OMX",
       "as_of": "2026-06-11",
-      "close": 3079.226807,
+      "close": 3074.44458,
       "prev_close": 3054.040039,
-      "change_pct": 0.8247
+      "change_pct": 0.6681
     },
     "nikkei": {
       "label": "Nikkei 225",
@@ -735,10 +735,10 @@
       "sub_category": "asia",
       "source": "yfinance",
       "ticker": "^AXJO",
-      "as_of": "2026-06-11",
-      "close": 8633.200195,
-      "prev_close": 8653.299805,
-      "change_pct": -0.2323
+      "as_of": "2026-06-10",
+      "close": 8653.299805,
+      "prev_close": 8604.200195,
+      "change_pct": 0.5706
     },
     "msci_em": {
       "label": "MSCI EM",
@@ -746,10 +746,10 @@
       "sub_category": "em",
       "source": "yfinance",
       "ticker": "EEM",
-      "as_of": "2026-06-10",
-      "close": 64.660004,
-      "prev_close": 65.82,
-      "change_pct": -1.7624
+      "as_of": "2026-06-11",
+      "close": 65.540001,
+      "prev_close": 64.660004,
+      "change_pct": 1.361
     },
     "bovespa": {
       "label": "Bovespa",
@@ -757,10 +757,10 @@
       "sub_category": "em",
       "source": "yfinance",
       "ticker": "^BVSP",
-      "as_of": "2026-06-10",
-      "close": 168619.0,
-      "prev_close": 169813.0,
-      "change_pct": -0.7031
+      "as_of": "2026-06-11",
+      "close": 168962.640625,
+      "prev_close": 168619.0,
+      "change_pct": 0.2038
     },
     "sensex": {
       "label": "Sensex",
@@ -780,9 +780,9 @@
       "source": "yfinance",
       "ticker": "^VIX",
       "as_of": "2026-06-11",
-      "close": 20.85,
+      "close": 21.23,
       "prev_close": 22.219999,
-      "change_pct": -6.1656
+      "change_pct": -4.4554
     },
     "brent": {
       "label": "Brent Crude",
@@ -791,9 +791,9 @@
       "source": "yfinance",
       "ticker": "BZ=F",
       "as_of": "2026-06-11",
-      "close": 91.910004,
+      "close": 92.82,
       "prev_close": 93.099998,
-      "change_pct": -1.2782
+      "change_pct": -0.3008
     },
     "wti": {
       "label": "WTI Crude",
@@ -802,9 +802,9 @@
       "source": "yfinance",
       "ticker": "CL=F",
       "as_of": "2026-06-11",
-      "close": 88.910004,
+      "close": 90.160004,
       "prev_close": 90.029999,
-      "change_pct": -1.244
+      "change_pct": 0.1444
     },
     "natgas": {
       "label": "Natural Gas",
@@ -813,9 +813,9 @@
       "source": "yfinance",
       "ticker": "NG=F",
       "as_of": "2026-06-11",
-      "close": 3.109,
+      "close": 3.09,
       "prev_close": 3.185,
-      "change_pct": -2.3862
+      "change_pct": -2.9827
     },
     "rbob": {
       "label": "Gasoline (RBOB)",
@@ -824,9 +824,9 @@
       "source": "yfinance",
       "ticker": "RB=F",
       "as_of": "2026-06-11",
-      "close": 3.0428,
+      "close": 3.0848,
       "prev_close": 3.1099,
-      "change_pct": -2.1576
+      "change_pct": -0.8071
     },
     "heat_oil": {
       "label": "Heating Oil",
@@ -835,9 +835,9 @@
       "source": "yfinance",
       "ticker": "HO=F",
       "as_of": "2026-06-11",
-      "close": 3.5628,
+      "close": 3.5899,
       "prev_close": 3.6126,
-      "change_pct": -1.3785
+      "change_pct": -0.6284
     },
     "gold": {
       "label": "Gold",
@@ -846,9 +846,9 @@
       "source": "yfinance",
       "ticker": "GC=F",
       "as_of": "2026-06-11",
-      "close": 4103.0,
+      "close": 4102.0,
       "prev_close": 4108.200195,
-      "change_pct": -0.1266
+      "change_pct": -0.1509
     },
     "silver": {
       "label": "Silver",
@@ -857,9 +857,9 @@
       "source": "yfinance",
       "ticker": "SI=F",
       "as_of": "2026-06-11",
-      "close": 63.645,
+      "close": 64.315002,
       "prev_close": 64.598999,
-      "change_pct": -1.4768
+      "change_pct": -0.4396
     },
     "platinum": {
       "label": "Platinum",
@@ -868,9 +868,9 @@
       "source": "yfinance",
       "ticker": "PL=F",
       "as_of": "2026-06-11",
-      "close": 1660.800049,
+      "close": 1686.5,
       "prev_close": 1688.0,
-      "change_pct": -1.6114
+      "change_pct": -0.0889
     },
     "palladium": {
       "label": "Palladium",
@@ -879,9 +879,9 @@
       "source": "yfinance",
       "ticker": "PA=F",
       "as_of": "2026-06-11",
-      "close": 1254.5,
+      "close": 1271.0,
       "prev_close": 1200.900024,
-      "change_pct": 4.4633
+      "change_pct": 5.8373
     },
     "copper": {
       "label": "Copper",
@@ -890,9 +890,9 @@
       "source": "yfinance",
       "ticker": "HG=F",
       "as_of": "2026-06-11",
-      "close": 6.246,
+      "close": 6.2685,
       "prev_close": 6.249,
-      "change_pct": -0.048
+      "change_pct": 0.312
     },
     "aluminium": {
       "label": "Aluminium",
@@ -901,9 +901,9 @@
       "source": "yfinance",
       "ticker": "ALUM.L",
       "as_of": "2026-06-11",
-      "close": 4.657,
+      "close": 4.678,
       "prev_close": 4.6235,
-      "change_pct": 0.7246
+      "change_pct": 1.1788
     },
     "zinc_idx": {
       "label": "Zinc (LSE)",
@@ -912,9 +912,9 @@
       "source": "yfinance",
       "ticker": "ZINC.L",
       "as_of": "2026-06-11",
-      "close": 11.83,
+      "close": 11.86,
       "prev_close": 11.875,
-      "change_pct": -0.3789
+      "change_pct": -0.1263
     },
     "nickel_idx": {
       "label": "Nickel (GSCI)",
@@ -923,9 +923,9 @@
       "source": "yfinance",
       "ticker": "^SPGSIK",
       "as_of": "2026-06-11",
-      "close": 282.666992,
+      "close": 283.542603,
       "prev_close": 282.670013,
-      "change_pct": -0.0011
+      "change_pct": 0.3087
     },
     "iron_ore": {
       "label": "Iron Ore",
@@ -934,9 +934,9 @@
       "source": "yfinance",
       "ticker": "IRON.L",
       "as_of": "2026-06-11",
-      "close": 0.022,
+      "close": 0.021,
       "prev_close": 0.023,
-      "change_pct": -4.3478
+      "change_pct": -8.6957
     },
     "corn": {
       "label": "Corn",
@@ -945,9 +945,9 @@
       "source": "yfinance",
       "ticker": "ZC=F",
       "as_of": "2026-06-11",
-      "close": 416.0,
+      "close": 417.0,
       "prev_close": 419.0,
-      "change_pct": -0.716
+      "change_pct": -0.4773
     },
     "wheat": {
       "label": "Wheat",
@@ -956,9 +956,9 @@
       "source": "yfinance",
       "ticker": "ZW=F",
       "as_of": "2026-06-11",
-      "close": 584.25,
+      "close": 585.75,
       "prev_close": 587.5,
-      "change_pct": -0.5532
+      "change_pct": -0.2979
     },
     "soybeans": {
       "label": "Soybeans",
@@ -967,9 +967,9 @@
       "source": "yfinance",
       "ticker": "ZS=F",
       "as_of": "2026-06-11",
-      "close": 1119.25,
+      "close": 1119.75,
       "prev_close": 1123.0,
-      "change_pct": -0.3339
+      "change_pct": -0.2894
     },
     "sugar": {
       "label": "Sugar",
@@ -978,9 +978,9 @@
       "source": "yfinance",
       "ticker": "SB=F",
       "as_of": "2026-06-11",
-      "close": 13.83,
+      "close": 13.81,
       "prev_close": 13.92,
-      "change_pct": -0.6466
+      "change_pct": -0.7902
     },
     "coffee": {
       "label": "Coffee",
@@ -989,9 +989,20 @@
       "source": "yfinance",
       "ticker": "KC=F",
       "as_of": "2026-06-11",
-      "close": 250.300003,
+      "close": 252.649994,
       "prev_close": 248.399994,
-      "change_pct": 0.7649
+      "change_pct": 1.711
+    },
+    "cotton": {
+      "label": "Cotton",
+      "category": "commodities",
+      "sub_category": "agriculture",
+      "source": "yfinance",
+      "ticker": "CT=F",
+      "as_of": "2026-06-11",
+      "close": 76.110001,
+      "prev_close": 71.099998,
+      "change_pct": 7.0464
     },
     "lumber": {
       "label": "Lumber",
@@ -999,10 +1010,10 @@
       "sub_category": "other",
       "source": "yfinance",
       "ticker": "LBR=F",
-      "as_of": "2026-06-10",
-      "close": 620.0,
-      "prev_close": 618.0,
-      "change_pct": 0.3236
+      "as_of": "2026-06-11",
+      "close": 619.5,
+      "prev_close": 620.0,
+      "change_pct": -0.0806
     }
   }
 }
