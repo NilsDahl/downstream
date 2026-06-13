@@ -456,7 +456,7 @@ def main():
         print("Error: NEWSAPI_KEY or CURRENTAPI_KEY must be set", file=sys.stderr)
         sys.exit(1)
 
-    today    = date.today().isoformat()
+    today    = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else date.today().isoformat()
     news_dir = os.path.join(os.path.dirname(__file__), "..", "content", "news")
     os.makedirs(news_dir, exist_ok=True)
     out_path = os.path.join(news_dir, f"{today}.json")
