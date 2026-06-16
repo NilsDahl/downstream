@@ -1,0 +1,325 @@
+{
+  "date": "2026-06-16",
+  "headlines": [
+    {
+      "headline": "Qatar Plans to Rapidly Restart LNG Production After Hormuz Opens",
+      "source": "Bloomberg",
+      "description": "Qatar is planning to rapidly boost liquefied natural gas production once the Strait of Hormuz reopens, aiming to restore most of its export capacity within two months, according to people familiar with the matter.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-16/qatar-plans-to-rapidly-restart-lng-production-after-hormuz-opens",
+      "publishedAt": "2026-06-16T07:11:46+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "RBA interest rates: Reserve Bank holds official cash rate at 4.35% as economy slows and unemployment rises",
+      "source": "The Guardian",
+      "description": "Reserve Bank of Australia decision on Tuesday comes after three consecutive cash rate hikes this year",
+      "url": "https://www.theguardian.com/australia-news/2026/jun/16/rba-interest-rate-announcement-decision-cash-rates-economy-unemployment-inflation",
+      "publishedAt": "2026-06-16T04:30:50+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Bank of Japan hikes rates to highest since 1995 as yen languishes at historic lows",
+      "source": "CNBC",
+      "description": "This is the BOJ's first hike since December, when it raised rates to its current level of 0.75%, also its highest level in over 30 years.",
+      "url": "https://www.cnbc.com/2026/06/16/boj-rate-hike-historic-inflation.html",
+      "publishedAt": "2026-06-16T03:29:53+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Japan raises interest rate to highest since 1995",
+      "source": "BBC News",
+      "description": "The Bank of Japan has been raising rates from near-zero since 2024.",
+      "url": "https://www.bbc.com/news/articles/cjdgl213dpzo",
+      "publishedAt": "2026-06-16T03:21:49+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Woodside Energy\u2019s Louisiana LNG President Abruptly Departs",
+      "source": "Bloomberg",
+      "description": "The top executive at Woodside Energy Group Ltd.\u2019s $17.5 billion liquefied natural gas project in Louisiana has departed, effective Monday, just over a year after she was hired, according to a company memo seen by Bloomberg.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-16/woodside-energy-s-louisiana-lng-president-abruptly-departs",
+      "publishedAt": "2026-06-16T00:30:15+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Watch Warsh Caught Between Trump, Bond Market Bet on Rate Hikes - Bloomberg",
+      "source": "Bloomberg",
+      "description": "Just three weeks into the job, Federal Reserve Chairman Kevin Warsh is already facing an unusually high-stakes test. Inflation is roaring back at the fastest pace in three years. There\u2019s growing dissent among the central bank\u2019s policymakers. And investors have been dumping US Treasury bonds and pili...",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-15/warsh-caught-between-trump-rate-hike-bets-video",
+      "publishedAt": "2026-06-15T14:52:40+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Warsh's Fed is likely to hold rates steady \u2014 what the leadership change could mean for your money",
+      "source": "CNBC",
+      "description": "The Federal Reserve's June meeting, the first helmed by new Fed Chair Kevin Warsh, may impact many consumer borrowing and savings rates down the road.",
+      "url": "https://www.cnbc.com/2026/06/15/warsh-fed-interest-rates.html",
+      "publishedAt": "2026-06-15T13:46:46+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "U.S.-Iran deal explained: What we know \u2014 and what remains unresolved",
+      "source": "CNBC",
+      "description": "Stocks rose after a preliminary U.S.-Iran agreement, but questions remain over Hormuz, Israel and what follows a potential signing in Geneva.",
+      "url": "https://www.cnbc.com/2026/06/15/us-iran-deal-hormuz-markets.html",
+      "publishedAt": "2026-06-15T11:23:19Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "SpaceX tokens are a bust on IPO day\u2014but blame supply and demand, not crypto",
+      "source": "Fortune",
+      "description": "Tokenized stocks didn\u2019t pan out, but the underlying idea is sound.",
+      "url": "https://fortune.com/crypto/2026/06/15/spacex-ipo-tokens-tokenized-stocks-xstocks-kraken/",
+      "publishedAt": "2026-06-15T11:08:08Z",
+      "bucket": "commodities_agri"
+    },
+    {
+      "headline": "\u2018The Vampire Lestat\u2019 Explores Gabriella And Lestat\u2019s Horrific Bond",
+      "source": "Forbes",
+      "description": "The Vampire Lestat's unnerving depiction of Gabriella and Lestat's bond pulls the curtain back on the abuse he suffered as a child and how it shaped the man he became.",
+      "url": "https://www.forbes.com/sites/sabrinareed/2026/06/15/the-vampire-lestat-explores-gabriella-and-lestats-horrific-bond/",
+      "publishedAt": "2026-06-15T11:00:18Z",
+      "bucket": "risk_geopolitics"
+    },
+    {
+      "headline": "Oil shock 'far from over' as analysts warn of new Middle East risk premium",
+      "source": "CNBC",
+      "description": "Commodity analysts warn that oil price volatility is likely to persist, despite the U.S.-Iran peace agreement.",
+      "url": "https://www.cnbc.com/2026/06/15/oil-will-still-cause-volatility-even-with-us-iran-deal-analysts-.html",
+      "publishedAt": "2026-06-15T10:49:47Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Oil Flows Will Remain Uncertain",
+      "source": "Forbes",
+      "description": "The market will fluctuate based on comments about the ceasefire, but also signs of whether and how fast shipping through the Straits will resume.",
+      "url": "https://www.forbes.com/sites/michaellynch/2026/06/15/oil-flows-will-remain-uncertain/",
+      "publishedAt": "2026-06-15T10:23:58Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Treasury yields slide as Iran deal drives rethink on Fed interest rate hikes",
+      "source": "CNBC",
+      "description": "The yield on the 10-year U.S. Treasury note \u2014 the key benchmark for U.S. government borrowing \u2014 fell over 4 basis points to 4.441%.",
+      "url": "https://www.cnbc.com/2026/06/15/treasury-yields-peace-deal-investor-fears-interest-rates.html",
+      "publishedAt": "2026-06-15T09:30:08Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Traders Cut South Africa Rate-Hike Bets on Iran Peace Deal",
+      "source": "Bloomberg",
+      "description": "Traders have scaled back bets on additional South African interest-rate hikes after a US-Iran peace deal sent oil prices tumbling, potentially reducing inflationary pressures.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-15/traders-cut-south-africa-rate-hike-bets-after-iran-peace-deal",
+      "publishedAt": "2026-06-15T08:17:33+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Lagarde Says ECB Has Started to See Second Round Effects",
+      "source": "Bloomberg",
+      "description": "European Central Bank President Christine Lagarde said high energy prices are starting to feed through to other parts of the economy, according to an interview with France Culture.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-15/lagarde-says-ecb-has-started-to-see-second-round-effects",
+      "publishedAt": "2026-06-15T06:23:49+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Zhipu surges 33% as Wall Street raises bets on China AI after Anthropic curbs",
+      "source": "CNBC",
+      "description": "Shares of Chinese AI model developer Zhipu surged as Wall Street banks raised bets on the company's ability to capture global AI demand.",
+      "url": "https://www.cnbc.com/2026/06/15/china-ai-zhipu-minimax-artificial-intelligence-race-washington-trump-anthropic.html",
+      "publishedAt": "2026-06-15T06:14:41Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "LNG tanker heads toward Hormuz as deal lifts reopening hopes",
+      "source": "Bloomberg",
+      "description": "LNG tanker nears Hormuz as US-Iran deal raises hopes for reopening the crucial waterway, impacting global gas prices.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-14/lng-tanker-heads-toward-hormuz-as-deal-raises-hopes-of-reopening",
+      "publishedAt": "2026-06-15T04:10:41Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Copper Pops Higher as US-Iran Agreement Puts Bulls in Charge",
+      "source": "Bloomberg",
+      "description": "Copper rose as an interim peace agreement between the US and Iran eased fears over global economic growth and stoked optimism for metals demand.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-15/copper-pops-higher-as-us-iran-agreement-puts-bulls-in-charge",
+      "publishedAt": "2026-06-15T02:18:04+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Crude oil futures drop after Trump promises an Iran deal will be signed Friday",
+      "source": "NPR",
+      "description": "Oil prices had already fallen quite dramatically on Thursday and Friday, in anticipation of an imminent deal. President Trump has posted online that the Strait of Hormuz will reopen after the deal is signed on Friday.",
+      "url": "https://www.npr.org/2026/06/14/nx-s1-5858115/oil-prices-trump-iran-deal",
+      "publishedAt": "2026-06-15T01:33:09Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Markets cheer U.S.-Iran agreement, but some investors caution deal is yet to be signed",
+      "source": "CNBC",
+      "description": "Asian stocks rallied Monday while oil prices tumbled after the U.S. and Iran agreed to a peace deal aimed at ending nearly four months of conflict.",
+      "url": "https://www.cnbc.com/2026/06/15/us-iran-deal-stocks-bonds-gold-oil.html",
+      "publishedAt": "2026-06-15T01:21:22Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Stock prices soar and oil falls after deal is reached on ending the Iran war",
+      "source": "Associated Press",
+      "description": "Stock markets are rallying worldwide, and oil prices are easing after the United States and Iran reached a tentative deal to get the global flow of crude going again. The S&P 500 rose 1.5% Monday on hopes that this time, the announcement of an Iran-U.S. agree\u2026",
+      "url": "https://apnews.com/article/stocks-markets-iran-trump-oil-musk-f2ee51f1b0686688b3e50068b4b71d70",
+      "publishedAt": "2026-06-15T01:06:48Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Oil prices slide after US and Iran sign peace deal",
+      "source": "BBC News",
+      "description": "Under the agreement, the key Strait of Hormuz waterway will be reopened, US President Donald Trump said.",
+      "url": "https://www.bbc.co.uk/news/articles/c6217106px6o",
+      "publishedAt": "2026-06-15T00:07:57Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "BOJ Set to Hike Rates to Highest Since 1995 Despite Ueda Absence",
+      "source": "Bloomberg",
+      "description": "The Bank of Japan is widely expected to raise its benchmark interest rate to the highest level since 1995 at the first regular policy meeting ever held without the governor in attendance.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-14/boj-set-to-hike-rates-to-highest-since-1995-despite-ueda-absence",
+      "publishedAt": "2026-06-14T23:30:00+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Bailey Defends BOE Gilt Sales After Criticism From Farage",
+      "source": "Bloomberg",
+      "description": "Governor Andrew Bailey defended the Bank of England\u2019s buying and selling of UK government bonds following criticism of the policy, including from Nigel Farage\u2019s populist Reform UK party.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-14/bailey-defends-boe-gilt-sales-after-criticism-from-farage?utm_source=flipboard&utm_content=bloomberg%2Fmagazine%2FMarkets",
+      "publishedAt": "2026-06-14T22:48:42+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "FOMC Chair Warsh Won't Cut Rates Soon, A More Hawkish Fed Looms",
+      "source": "Seeking Alpha",
+      "description": "Kevin Warsh as Fed Chair may not shift rates soon, but hawkish policy amid inflation/oil shocks could pressure gold & silver. Read the full analysis here.",
+      "url": "https://seekingalpha.com/article/4914834-fomc-chair-warsh-wont-cut-rates-soon-a-more-hawkish-fed-looms",
+      "publishedAt": "2026-06-14T12:30:00+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Week Ahead: 7 G10 Central Banks Meet, BOJ To Hike, Warsh Chairs First FOMC, G7 Summit",
+      "source": "Seeking Alpha",
+      "description": "After threatening a new round of intense bombing of Iran, the US relented and suggested an agreement was near. Read more here.",
+      "url": "https://seekingalpha.com/article/4914847-week-ahead-7-g10-central-banks-meet-boj-to-hike-warsh-chairs-first-fomc-g7-summit-possible-us-iran-agreement?source=feed_tag_forex",
+      "publishedAt": "2026-06-14T09:45:00+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "June FOMC Preview: What To Watch In Warsh\u2019s Inaugural Fed Meeting (DJI)",
+      "source": "Seeking Alpha",
+      "description": "Preview the June 17 FOMC meeting under new Fed Chair Kevin Warsh, with key takeaways on rate hike vs cut odds from current economic data\u2014read now.",
+      "url": "https://seekingalpha.com/article/4914560-june-fomc-preview-what-to-watch-in-warshs-inaugural-fed-meeting",
+      "publishedAt": "2026-06-13T12:30:00+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Kevin Warsh Navigates A Hawkish Fed Shift",
+      "source": "Seeking Alpha",
+      "description": "Improved economic momentum and elevated inflation suggest the Federal Reserve will acknowledge the possibility of a future rate hike via new forecasts.",
+      "url": "https://seekingalpha.com/article/4914609-kevin-warsh-navigates-hawkish-fed-shift?source=feed_all_articles",
+      "publishedAt": "2026-06-12T16:11:00+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "ECB's Lagarde Warns of Impact of Prolonged Energy Shock",
+      "source": "Bloomberg",
+      "description": "European Central Bank President Christine Lagarde says euro-zone inflation should return to the 2% target by the second half of 2027, warning that a prolonged war in Iran, and subsequent impact on energy prices, would be a drag on growth. She made the comments at a news conference in Frankfurt after...",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-11/ecb-s-lagarde-warns-of-impact-of-prolonged-energy-shock-video",
+      "publishedAt": "2026-06-11T13:23:57+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "ECB hikes interest rates for first time since 2023 as Iran war ramps-up energy costs",
+      "source": "CNBC",
+      "description": "",
+      "url": "https://www.cnbc.com/2026/06/11/ecb-hikes-interest-rates.html",
+      "publishedAt": "2026-06-11T12:20:48+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "CNBC Daily Open: ECB heads for a hike amid Iran energy price pressures",
+      "source": "CNBC",
+      "description": "The European Central Bank is expected to make its first interest rate hike in nearly three years amid increasing inflationary pressure due to the Iran war.",
+      "url": "https://www.cnbc.com/2026/06/11/cnbc-daily-open-ecb-heads-for-a-hike-amid-iran-energy-price-pressures.html",
+      "publishedAt": "2026-06-11T06:12:48+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Considering An Intraday Trading Strategy With The UVXY ETF (BATS:UVXY)",
+      "source": "Seeking Alpha",
+      "description": "Trade UVXY tactically, not long-term: learn why this leveraged VIX ETF decays, lags spikes, and needs strict stop-loss risk management\u2014read now.",
+      "url": "https://seekingalpha.com/article/4913368-considering-an-intraday-trading-strategy-with-the-uvxy-etf?source=feed_tag_etf_portfolio_strategy",
+      "publishedAt": "2026-06-09T16:53:48+00:00",
+      "bucket": "risk_geopolitics"
+    },
+    {
+      "headline": "Invesco Corporate Bond Fund Q1 2026 Commentary",
+      "source": "Seeking Alpha",
+      "description": "Bond yields, though down from their highs, are still at attractive levels compared to the last 10 years, in our view. Read more here.",
+      "url": "https://seekingalpha.com/article/4913301-invesco-corporate-bond-fund-q1-2026-commentary",
+      "publishedAt": "2026-06-09T14:10:00+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "May CPI Preview: Lower Oil, Stickier Inflation (NYSEARCA:SPY)",
+      "source": "Seeking Alpha",
+      "description": "Track rising inflation forecasts, the CPI vs. PPI gap, and what it means for Fed rate hikes and markets. Click here to read what investors need to know.",
+      "url": "https://seekingalpha.com/article/4913257-may-cpi-preview-lower-oil-stickier-inflation",
+      "publishedAt": "2026-06-09T13:54:31+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Oil prices rise more than $2 on Israel strikes on Lebanon",
+      "source": "Reuters",
+      "description": "U.S. crude futures were up $2.57 at $93.11 per barrel.",
+      "url": "https://www.reuters.com/business/energy/oil-prices-rise-more-than-2-israel-strikes-lebanon-2026-06-07/",
+      "publishedAt": "2026-06-08T01:32:01+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Oil prices rise after Iran fires missiles at Israel, escalating regional tensions",
+      "source": "CNBC",
+      "description": "Oil rises on Monday amid heightened tensions in the Middle East, raising concerns that the conflict may drag on.",
+      "url": "https://www.cnbc.com/2026/06/08/oil-prices-today-us-iran-missile-middle-east-israel-opec.html",
+      "publishedAt": "2026-06-08T00:43:41+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "BOE\u2019s Bailey Warns of Possible AI Rationing on Capacity Limits",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor Andrew Bailey suggested that artificial intelligence may need to be rationed because a lack of energy capacity will restrain the ability for every economic sector to deploy the new technology.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-05/boe-s-bailey-warns-of-possible-ai-rationing-on-capacity-limits",
+      "publishedAt": "2026-06-05T20:22:25+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "EM Stocks, Currencies Dragged Down by Korean Market Selloff",
+      "source": "Bloomberg",
+      "description": "Emerging market assets fell for the third straight session, led by a selloff in South Korean equities as investor enthusiasm for artificial intelligence stocks waned.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-05/em-stocks-currencies-dragged-down-by-korean-market-selloff",
+      "publishedAt": "2026-06-05T07:14:56+00:00",
+      "bucket": "fx_macro"
+    },
+    {
+      "headline": "BOE\u2019s Bailey Says Aging Society With Jobless Youth Toxic for UK",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor Andrew Bailey warned the UK economy faces a worrying combination of an aging population and rapidly rising levels of young people out of work and education.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/boe-s-bailey-says-aging-society-with-jobless-youth-toxic-for-uk",
+      "publishedAt": "2026-06-02T15:48:08+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "EM Currencies Advance on Iran Talks With Rand Leading Gains",
+      "source": "Bloomberg",
+      "description": "Most emerging market currencies advanced outside Asia as hopes of a deal in the Middle East drove down oil prices and boosted risk sentiment.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/em-currencies-advance-on-iran-talks-with-rand-leading-gains",
+      "publishedAt": "2026-06-02T11:36:45+00:00",
+      "bucket": "fx_macro"
+    }
+  ]
+}

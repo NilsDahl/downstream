@@ -1,0 +1,359 @@
+{
+  "date": "2026-06-16",
+  "assets": {
+    "us_sofr": {
+      "label": "SOFR",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "SOFR",
+      "as_of": "2026-06-12",
+      "level": 3.65,
+      "prev_level": 3.6,
+      "change_bps": 5.0
+    },
+    "us_t_1m": {
+      "label": "US 1M",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "DGS1MO",
+      "as_of": "2026-06-12",
+      "level": 3.69,
+      "prev_level": 3.69,
+      "change_bps": 0.0
+    },
+    "us_t_6m": {
+      "label": "US 6M",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "DGS6MO",
+      "as_of": "2026-06-12",
+      "level": 3.82,
+      "prev_level": 3.81,
+      "change_bps": 1.0
+    },
+    "us_t_1y": {
+      "label": "US 1Y",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "DGS1",
+      "as_of": "2026-06-12",
+      "level": 3.86,
+      "prev_level": 3.85,
+      "change_bps": 1.0
+    },
+    "us_t_2y": {
+      "label": "US 2Y",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "DGS2",
+      "as_of": "2026-06-12",
+      "level": 4.09,
+      "prev_level": 4.05,
+      "change_bps": 4.0
+    },
+    "us_t_5y": {
+      "label": "US 5Y",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "DGS5",
+      "as_of": "2026-06-12",
+      "level": 4.21,
+      "prev_level": 4.18,
+      "change_bps": 3.0
+    },
+    "us_t_10y": {
+      "label": "US 10Y",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "DGS10",
+      "as_of": "2026-06-12",
+      "level": 4.48,
+      "prev_level": 4.45,
+      "change_bps": 3.0
+    },
+    "us_t_30y": {
+      "label": "US 30Y",
+      "category": "rates",
+      "sub_category": "us",
+      "source": "FRED",
+      "series_id": "DGS30",
+      "as_of": "2026-06-12",
+      "level": 4.97,
+      "prev_level": 4.95,
+      "change_bps": 2.0
+    },
+    "ez_estr": {
+      "label": "\u20acSTR",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "EST/B.EU000A2X2A25.WT",
+      "as_of": "2026-06-15",
+      "level": 1.931,
+      "prev_level": 1.931,
+      "change_bps": 0.0
+    },
+    "ez_3m": {
+      "label": "EZ 3M",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_3M",
+      "as_of": "2026-06-15",
+      "level": 2.2186,
+      "prev_level": 2.243,
+      "change_bps": -2.44
+    },
+    "ez_6m": {
+      "label": "EZ 6M",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_6M",
+      "as_of": "2026-06-15",
+      "level": 2.325,
+      "prev_level": 2.3499,
+      "change_bps": -2.49
+    },
+    "ez_1y": {
+      "label": "EZ 1Y",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_1Y",
+      "as_of": "2026-06-15",
+      "level": 2.4441,
+      "prev_level": 2.4794,
+      "change_bps": -3.52
+    },
+    "ez_2y": {
+      "label": "EZ 2Y",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_2Y",
+      "as_of": "2026-06-15",
+      "level": 2.5185,
+      "prev_level": 2.5776,
+      "change_bps": -5.91
+    },
+    "ez_5y": {
+      "label": "EZ 5Y",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_5Y",
+      "as_of": "2026-06-15",
+      "level": 2.6445,
+      "prev_level": 2.7171,
+      "change_bps": -7.26
+    },
+    "ez_10y": {
+      "label": "EZ 10Y",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y",
+      "as_of": "2026-06-15",
+      "level": 3.0089,
+      "prev_level": 3.0695,
+      "change_bps": -6.05
+    },
+    "ez_30y": {
+      "label": "EZ 30Y",
+      "category": "rates",
+      "sub_category": "eurozone",
+      "source": "ECB",
+      "series_key": "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_30Y",
+      "as_of": "2026-06-15",
+      "level": 3.5175,
+      "prev_level": 3.5494,
+      "change_bps": -3.18
+    },
+    "se_swestr": {
+      "label": "SWESTR",
+      "category": "rates",
+      "sub_category": "sweden",
+      "source": "Riksbank",
+      "as_of": "2026-06-15",
+      "level": 1.633,
+      "prev_level": 1.629,
+      "change_bps": 0.4
+    },
+    "se_2y": {
+      "label": "SE 2Y",
+      "category": "rates",
+      "sub_category": "sweden",
+      "source": "Riksbank",
+      "series_id": "SEGVB2YC",
+      "as_of": "2026-06-15",
+      "level": 2.223,
+      "prev_level": 2.309,
+      "change_bps": -8.6
+    },
+    "se_5y": {
+      "label": "SE 5Y",
+      "category": "rates",
+      "sub_category": "sweden",
+      "source": "Riksbank",
+      "series_id": "SEGVB5YC",
+      "as_of": "2026-06-15",
+      "level": 2.421,
+      "prev_level": 2.509,
+      "change_bps": -8.8
+    },
+    "se_7y": {
+      "label": "SE 7Y",
+      "category": "rates",
+      "sub_category": "sweden",
+      "source": "Riksbank",
+      "series_id": "SEGVB7YC",
+      "as_of": "2026-06-15",
+      "level": 2.505,
+      "prev_level": 2.591,
+      "change_bps": -8.6
+    },
+    "se_10y": {
+      "label": "SE 10Y",
+      "category": "rates",
+      "sub_category": "sweden",
+      "source": "Riksbank",
+      "series_id": "SEGVB10YC",
+      "as_of": "2026-06-15",
+      "level": 2.799,
+      "prev_level": 2.855,
+      "change_bps": -5.6
+    },
+    "uk_sonia": {
+      "label": "SONIA",
+      "category": "rates",
+      "sub_category": "uk",
+      "source": "BoE",
+      "as_of": "12 Jun 2026",
+      "level": 3.7301,
+      "prev_level": 3.7305,
+      "change_bps": -0.04
+    },
+    "uk_5y": {
+      "label": "Gilt 5Y",
+      "category": "rates",
+      "sub_category": "uk",
+      "source": "BoE",
+      "as_of": "12 Jun 2026",
+      "level": 4.3392,
+      "prev_level": 4.419,
+      "change_bps": -7.98
+    },
+    "uk_10y": {
+      "label": "Gilt 10Y",
+      "category": "rates",
+      "sub_category": "uk",
+      "source": "BoE",
+      "as_of": "12 Jun 2026",
+      "level": 4.8997,
+      "prev_level": 4.9548,
+      "change_bps": -5.51
+    },
+    "uk_20y": {
+      "label": "Gilt 20Y",
+      "category": "rates",
+      "sub_category": "uk",
+      "source": "BoE",
+      "as_of": "12 Jun 2026",
+      "level": 5.5807,
+      "prev_level": 5.6283,
+      "change_bps": -4.76
+    },
+    "de_2y": {
+      "label": "Bund 2Y",
+      "category": "rates",
+      "sub_category": "germany",
+      "source": "Bundesbank",
+      "series_key": "D.I.ZST.ZI.EUR.S1311.B.A604.R02XX.R.A.A._Z._Z.A",
+      "as_of": "2026-06-16",
+      "level": 2.55,
+      "prev_level": 2.54,
+      "change_bps": 1.0
+    },
+    "de_5y": {
+      "label": "Bund 5Y",
+      "category": "rates",
+      "sub_category": "germany",
+      "source": "Bundesbank",
+      "series_key": "D.I.ZST.ZI.EUR.S1311.B.A604.R05XX.R.A.A._Z._Z.A",
+      "as_of": "2026-06-16",
+      "level": 2.63,
+      "prev_level": 2.64,
+      "change_bps": -1.0
+    },
+    "de_10y": {
+      "label": "Bund 10Y",
+      "category": "rates",
+      "sub_category": "germany",
+      "source": "Bundesbank",
+      "series_key": "D.I.ZST.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A",
+      "as_of": "2026-06-16",
+      "level": 3.02,
+      "prev_level": 3.04,
+      "change_bps": -2.0
+    },
+    "de_30y": {
+      "label": "Bund 30Y",
+      "category": "rates",
+      "sub_category": "germany",
+      "source": "Bundesbank",
+      "series_key": "D.I.ZST.ZI.EUR.S1311.B.A604.R30XX.R.A.A._Z._Z.A",
+      "as_of": "2026-06-16",
+      "level": 3.61,
+      "prev_level": 3.64,
+      "change_bps": -3.0
+    },
+    "jp_2y": {
+      "label": "JGB 2Y",
+      "category": "rates",
+      "sub_category": "japan",
+      "source": "MoF Japan",
+      "as_of": "2026/6/15",
+      "level": 1.409,
+      "prev_level": 1.417,
+      "change_bps": -0.8
+    },
+    "jp_5y": {
+      "label": "JGB 5Y",
+      "category": "rates",
+      "sub_category": "japan",
+      "source": "MoF Japan",
+      "as_of": "2026/6/15",
+      "level": 1.901,
+      "prev_level": 1.938,
+      "change_bps": -3.7
+    },
+    "jp_10y": {
+      "label": "JGB 10Y",
+      "category": "rates",
+      "sub_category": "japan",
+      "source": "MoF Japan",
+      "as_of": "2026/6/15",
+      "level": 2.589,
+      "prev_level": 2.643,
+      "change_bps": -5.4
+    },
+    "jp_30y": {
+      "label": "JGB 30Y",
+      "category": "rates",
+      "sub_category": "japan",
+      "source": "MoF Japan",
+      "as_of": "2026/6/15",
+      "level": 3.725,
+      "prev_level": 3.767,
+      "change_bps": -4.2
+    }
+  }
+}
