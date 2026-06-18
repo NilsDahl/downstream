@@ -2,8 +2,9 @@
 run_daily.py — orchestrates fetch_data → generate_draft.
 
 Usage:
-  python run_daily.py              # run now
-  python run_daily.py --schedule   # print the cron line to add
+  python run_daily.py                      # run for today
+  python run_daily.py --date 2026-06-17    # run for a specific date
+  python run_daily.py --schedule           # print the cron line to add
 
 Scheduling (Stockholm time = CET/CEST):
   Add to crontab with:  crontab -e
@@ -45,17 +46,19 @@ def main():
         )
         return
 
+    date_args = ["--date", sys.argv[sys.argv.index("--date") + 1]] if "--date" in sys.argv else []
+
     os.makedirs(os.path.join(ROOT_DIR, "logs"), exist_ok=True)
     log("=== Downstream daily pipeline starting ===")
 
     # Step 1: fetch market data
-    run_step("fetch_data", "fetch_data.py")
+    run_step("fetch_data", "fetch_data.py", date_args)
 
-    # Step 2: fetch news headlines (uses today's snapshot for dynamic queries)
-    run_step("fetch_news", "fetch_news.py")
+    # Step 2: fetch news headlines (uses the snapshot for dynamic queries)
+    run_step("fetch_news", "fetch_news.py", date_args)
 
-    # Step 3: generate draft (uses today's snapshot + news by default)
-    run_step("generate_draft", "generate_draft.py")
+    # Step 3: generate draft (uses the snapshot + news)
+    run_step("generate_draft", "generate_draft.py", date_args)
 
     log("=== Pipeline complete ===")
 

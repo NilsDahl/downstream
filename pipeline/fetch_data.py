@@ -167,7 +167,81 @@ ASSET_META = {
 RATE_ASSETS = {k for k, (_, cat, _) in ASSET_META.items() if cat == "rates"}
 
 # ─────────────────────────────────────────────────────────────
-# yfinance ticker map
+# Twelve Data ticker map  (replaces yfinance)
+# ─────────────────────────────────────────────────────────────
+TD_API_URL = "https://api.twelvedata.com/quote"
+
+TD_TICKERS = {
+    # FX
+    "eurusd":    "EUR/USD",
+    "gbpusd":    "GBP/USD",
+    "usdjpy":    "USD/JPY",
+    "usdchf":    "USD/CHF",
+    "usdsek":    "USD/SEK",
+    "usdnok":    "USD/NOK",
+    "usddkk":    "USD/DKK",
+    "audusd":    "AUD/USD",
+    "nzdusd":    "NZD/USD",
+    "usdcad":    "USD/CAD",
+    "usdcny":    "USD/CNY",
+    "usdbrl":    "USD/BRL",
+    "usdmxn":    "USD/MXN",
+    "usdzar":    "USD/ZAR",
+    "usdinr":    "USD/INR",
+    "usdtry":    "USD/TRY",
+    "usdkrw":    "USD/KRW",
+    "usdsgd":    "USD/SGD",
+    "eurgbp":    "EUR/GBP",
+    "eurjpy":    "EUR/JPY",
+    "eursek":    "EUR/SEK",
+    "dxy":       "DXY",
+    # Equity indices
+    "sp500":     "SPX",
+    "ndx":       "NDX",
+    "djia":      "DJI",
+    "rut":       "RUT",
+    "stoxx50":   "STOXX50E",
+    "dax":       "GDAXI",
+    "cac40":     "FCHI",
+    "ftse100":   "FTSE",
+    "omx30":     "OMX30",
+    "nikkei":    "N225",
+    "hangseng":  "HSI",
+    "csi300":    "CSI300",
+    "asx200":    "AS51",
+    "msci_em":   "EEM",
+    "bovespa":   "IBOV",
+    "sensex":    "SENSEX",
+    "vix":       "VIX",
+    # Energy
+    "brent":     "BRENT",
+    "wti":       "WTI",
+    "natgas":    "NATGAS",
+    "rbob":      "RBOB",
+    "heat_oil":  "HEATOIL",
+    # Precious metals
+    "gold":      "XAU/USD",
+    "silver":    "XAG/USD",
+    "platinum":  "XPT/USD",
+    "palladium": "XPD/USD",
+    # Industrial metals
+    "copper":    "COPPER",
+    "aluminium": "ALUMINIUM",
+    "zinc_idx":  "ZINC",
+    "nickel_idx":"NICKEL",
+    "iron_ore":  "IRONORE",
+    # Agriculture
+    "corn":      "CORN",
+    "wheat":     "WHEAT",
+    "soybeans":  "SOYBEAN",
+    "sugar":     "SUGAR",
+    "coffee":    "COFFEE",
+    "cotton":    "COTTON",
+    "lumber":    "LUMBER",
+}
+
+# ─────────────────────────────────────────────────────────────
+# yfinance ticker map  (kept for reference; replaced by TD_TICKERS)
 # ─────────────────────────────────────────────────────────────
 YFINANCE_TICKERS = {
     # German Bunds: =RR tickers no longer served by Yahoo Finance — omitted
@@ -435,6 +509,77 @@ def fetch_yfinance(keys_tickers: dict[str, str]) -> dict[str, dict]:
                     _warn(f"yfinance: {key} ({ticker}) still failed after retry")
             except Exception as exc:
                 _warn(f"yfinance retry error for {key} ({ticker}): {exc}")
+
+    return results
+
+
+# ─────────────────────────────────────────────────────────────
+# Fetcher: Twelve Data
+# ─────────────────────────────────────────────────────────────
+
+def fetch_twelvedata(keys_tickers: dict[str, str]) -> dict[str, dict]:
+    api_key = os.environ.get("TWELVEDATA_API_KEY", "")
+    if not api_key:
+        _warn("TWELVEDATA_API_KEY not set — skipping Twelve Data fetch")
+        return {}
+    if not keys_tickers:
+        return {}
+
+    results = {}
+    items = list(keys_tickers.items())
+
+    # Batch up to 120 symbols per call (well within TD limits; free tier allows 8 req/min)
+    chunk_size = 60
+    for i in range(0, len(items), chunk_size):
+        chunk = dict(items[i : i + chunk_size])
+        ticker_to_key = {v: k for k, v in chunk.items()}
+        symbol_str = ",".join(chunk.values())
+
+        try:
+            resp = requests.get(
+                TD_API_URL,
+                params={"symbol": symbol_str, "apikey": api_key},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as exc:
+            _warn(f"Twelve Data request error: {exc}")
+            continue
+
+        # Single-symbol response is an unwrapped dict; multi-symbol is keyed by symbol
+        if len(chunk) == 1:
+            data = {list(chunk.values())[0]: data}
+
+        for td_symbol, q in data.items():
+            key = ticker_to_key.get(td_symbol)
+            if not key:
+                continue
+            if not isinstance(q, dict):
+                continue
+            if q.get("status") == "error":
+                _warn(f"twelvedata: {key} ({td_symbol}): {q.get('message', 'unknown error')}")
+                continue
+
+            try:
+                last  = float(q["close"])
+                prev  = float(q["previous_close"])
+                as_of = str(q.get("datetime", ""))[:10]
+            except (KeyError, TypeError, ValueError) as exc:
+                _warn(f"twelvedata: {key} ({td_symbol}): parse error — {exc}")
+                continue
+
+            if _clean(last) is None or _clean(prev) is None:
+                continue
+
+            if key in RATE_ASSETS:
+                results[key] = _record(key, "twelvedata", ticker=td_symbol, as_of=as_of,
+                    level=round(last, 4), prev_level=round(prev, 4),
+                    change_bps=_bps(prev, last))
+            else:
+                results[key] = _record(key, "twelvedata", ticker=td_symbol, as_of=as_of,
+                    close=round(last, 6), prev_close=round(prev, 6),
+                    change_pct=_pct(prev, last))
 
     return results
 
@@ -855,12 +1000,12 @@ def build_snapshot() -> dict[str, dict]:
     data.update(fetched)
     print(f"               {len(fetched)}/{len(JGB_COL_MAP)} series")
 
-    # 7. yfinance — everything not yet fetched
-    yf_needed = {k: v for k, v in YFINANCE_TICKERS.items() if k not in data}
-    print(f"  [yfinance] fetching {len(yf_needed)} assets …")
-    fetched = fetch_yfinance(yf_needed)
+    # 7. Twelve Data — everything not yet fetched
+    td_needed = {k: v for k, v in TD_TICKERS.items() if k not in data}
+    print(f"  [Twelve Data] fetching {len(td_needed)} assets …")
+    fetched = fetch_twelvedata(td_needed)
     data.update(fetched)
-    print(f"             {len(fetched)}/{len(yf_needed)} assets")
+    print(f"                {len(fetched)}/{len(td_needed)} assets")
 
     return data
 
@@ -875,7 +1020,7 @@ def main():
     )
     os.makedirs(snapshot_dir, exist_ok=True)
 
-    today    = date.today().isoformat()
+    today    = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else date.today().isoformat()
     out_path = os.path.join(snapshot_dir, f"{today}.json")
 
     print(f"\nDownstream fetch — {today}")

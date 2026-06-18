@@ -254,7 +254,12 @@ def generate_draft(snapshot_path: str) -> str:
 
 
 def main():
-    if len(sys.argv) > 1:
+    if "--date" in sys.argv:
+        d             = sys.argv[sys.argv.index("--date") + 1]
+        snapshot_path = os.path.join(
+            os.path.dirname(__file__), "..", "content", "snapshots", f"{d}.json"
+        )
+    elif len(sys.argv) > 1:
         snapshot_path = sys.argv[1]
     else:
         today         = date.today().isoformat()
