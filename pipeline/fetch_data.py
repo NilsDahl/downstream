@@ -1,29 +1,36 @@
 """
 fetch_data.py — comprehensive market data fetcher for Downstream.
 
-Sources
--------
-FRED        : SOFR, US Treasury curve (1M, 6M, 1Y, 2Y, 5Y, 10Y, 30Y)
-ECB API     : €STR, ECB AAA euro area govt bond curve (3M, 6M, 1Y, 2Y, 5Y, 10Y, 30Y)
-Riksbank API: SWESTR, Swedish govt bonds (2Y, 5Y, 7Y, 10Y)
-BoE IADB    : SONIA, UK Gilts zero-coupon (5Y, 10Y, 20Y)
-yfinance    : German Bunds, JGBs, all FX, equities, commodities
+Source architecture
+-------------------
+FRED          : US rates — SOFR, Treasury curve 1M-30Y        (key required)
+ECB API       : €STR, eurozone AAA curve 3M-30Y               (no key)
+Riksbank API  : SWESTR, Swedish govt bonds 2Y-10Y             (no key)
+BoE IADB      : SONIA, UK Gilts zero-coupon 5Y/10Y/20Y       (no key)
+Bundesbank    : German Bunds 2Y/5Y/10Y/30Y (Svensson spots)  (no key)
+Japan MoF CSV : JGB yields 2Y/5Y/10Y/30Y                     (no key)
+Alpha Vantage : Commodities — energy, metals, agriculture      (key required, 25 calls/day)
+Twelve Data   : FX pairs, equity indices, bond fallbacks       (key required, 800 calls/day)
+yfinance      : Last-resort fallback only                      (no key, often rate-limited)
 
 Notes on coverage gaps
 ----------------------
-- Zinc / Nickel: LME futures unavailable on yfinance; using DJ/GSCI index proxies
-- BDI (Baltic Dry Index): not available on any free source; needs paid API
-- German Bunds / JGBs: via Reuters =RR tickers on yfinance (may be sparse)
-- BoE gilts: only 5Y, 10Y, 20Y available via IADB; no 1Y/2Y/30Y series
+- BoE gilts: only 5Y, 10Y, 20Y; no 1Y/2Y/30Y on the IADB endpoint
 - ECB curve: shortest tenor is 3M (no 1M spot rate on the AAA curve)
+- BDI (Baltic Dry): no free API — needs Bloomberg / Nasdaq Data Link
+- AV free tier: 25 calls/day, 5/min → 12 s delay enforced between commodity calls
+- TD free tier: 800 calls/day, entire FX+equity batch fits in one call
 
 Output: /content/snapshots/YYYY-MM-DD.json
+Each asset record includes source, as_of, and is_fresh (True if as_of is the
+most recent business day) so the website can flag stale data visually.
 """
 
 import json
 import math
 import os
 import sys
+import time
 from datetime import date, timedelta
 
 import certifi
@@ -172,7 +179,7 @@ RATE_ASSETS = {k for k, (_, cat, _) in ASSET_META.items() if cat == "rates"}
 TD_API_URL = "https://api.twelvedata.com/quote"
 
 TD_TICKERS = {
-    # FX
+    # ── FX pairs (all confirmed on free tier) ──────────────────
     "eurusd":    "EUR/USD",
     "gbpusd":    "GBP/USD",
     "usdjpy":    "USD/JPY",
@@ -194,54 +201,50 @@ TD_TICKERS = {
     "eurgbp":    "EUR/GBP",
     "eurjpy":    "EUR/JPY",
     "eursek":    "EUR/SEK",
-    "dxy":       "DXY",
-    # Equity indices
-    "sp500":     "SPX",
-    "ndx":       "NDX",
-    "djia":      "DJI",
-    "rut":       "RUT",
-    "stoxx50":   "STOXX50E",
-    "dax":       "GDAXI",
-    "cac40":     "FCHI",
-    "ftse100":   "FTSE",
-    "omx30":     "OMX30",
-    "nikkei":    "N225",
-    "hangseng":  "HSI",
-    "csi300":    "CSI300",
-    "asx200":    "AS51",
-    "msci_em":   "EEM",
-    "bovespa":   "IBOV",
-    "sensex":    "SENSEX",
-    "vix":       "VIX",
-    # Energy
+    # ── Precious metals as FX (XAU confirmed; XAG/XPT/XPD need paid) ──
+    "gold":      "XAU/USD",
+    # ── Equity indices: SPX/NDX/FTSE require paid TD plan;
+    #    others return "index unavailable" on free tier.
+    #    Omitted here — handled by yfinance fallback. ────────────
+    # ── Commodities: energy/base metals confirmed; others need paid ──
     "brent":     "BRENT",
     "wti":       "WTI",
     "natgas":    "NATGAS",
-    "rbob":      "RBOB",
-    "heat_oil":  "HEATOIL",
-    # Precious metals
-    "gold":      "XAU/USD",
-    "silver":    "XAG/USD",
-    "platinum":  "XPT/USD",
-    "palladium": "XPD/USD",
-    # Industrial metals
     "copper":    "COPPER",
     "aluminium": "ALUMINIUM",
-    "zinc_idx":  "ZINC",
-    "nickel_idx":"NICKEL",
-    "iron_ore":  "IRONORE",
-    # Agriculture
-    "corn":      "CORN",
-    "wheat":     "WHEAT",
-    "soybeans":  "SOYBEAN",
-    "sugar":     "SUGAR",
-    "coffee":    "COFFEE",
-    "cotton":    "COTTON",
-    "lumber":    "LUMBER",
+    # ── German Bunds fallback (primary: Bundesbank API) ───────
+    "de_2y":    "DE2Y",
+    "de_5y":    "DE5Y",
+    "de_10y":   "DE10Y",
+    "de_30y":   "DE30Y",
+    # ── JGB fallback (primary: Japan MoF CSV) ──────────────────
+    "jp_2y":    "JP2Y",
+    "jp_5y":    "JP5Y",
+    "jp_10y":   "JP10Y",
+    "jp_30y":   "JP30Y",
 }
 
 # ─────────────────────────────────────────────────────────────
-# yfinance ticker map  (kept for reference; replaced by TD_TICKERS)
+# Alpha Vantage — commodity functions (primary for commodities)
+# Free tier: 25 calls/day, 5 calls/min → enforce 12 s between calls
+# ─────────────────────────────────────────────────────────────
+AV_API_URL = "https://www.alphavantage.co/query"
+
+AV_COMMODITY_FUNCTIONS = {
+    "wti":       "WTI",
+    "brent":     "BRENT",
+    "natgas":    "NATURAL_GAS",
+    "copper":    "COPPER",
+    "aluminium": "ALUMINUM",
+    "corn":      "CORN",
+    "wheat":     "WHEAT",
+    "cotton":    "COTTON",
+    "sugar":     "SUGAR",
+    "coffee":    "COFFEE",
+}
+
+# ─────────────────────────────────────────────────────────────
+# yfinance ticker map  (last-resort fallback only)
 # ─────────────────────────────────────────────────────────────
 YFINANCE_TICKERS = {
     # German Bunds: =RR tickers no longer served by Yahoo Finance — omitted
@@ -386,14 +389,26 @@ def _bps(prev, curr):
     return None
 
 
+def _is_fresh(as_of: str) -> bool:
+    """True if as_of is the most recent business day (handles weekends)."""
+    if not as_of:
+        return False
+    today = date.today()
+    # Allow up to 4 calendar days to cover weekends and public holidays
+    cutoff = (today - timedelta(days=4)).isoformat()
+    return as_of >= cutoff
+
+
 def _record(key: str, source: str, **kwargs) -> dict:
     label, category, sub_category = ASSET_META[key]
+    cleaned = {k: _clean(v) for k, v in kwargs.items()}
     return {
         "label":        label,
         "category":     category,
         "sub_category": sub_category,
         "source":       source,
-        **{k: _clean(v) for k, v in kwargs.items()},
+        "is_fresh":     _is_fresh(str(cleaned.get("as_of", ""))),
+        **cleaned,
     }
 
 
@@ -528,9 +543,13 @@ def fetch_twelvedata(keys_tickers: dict[str, str]) -> dict[str, dict]:
     results = {}
     items = list(keys_tickers.items())
 
-    # Batch up to 120 symbols per call (well within TD limits; free tier allows 8 req/min)
-    chunk_size = 60
-    for i in range(0, len(items), chunk_size):
+    # Free tier: 8 credits/minute (1 credit per symbol in batch).
+    # Chunk to 8 symbols and sleep 62 s between chunks to stay within limit.
+    chunk_size = 8
+    for batch_idx, i in enumerate(range(0, len(items), chunk_size)):
+        if batch_idx > 0:
+            time.sleep(62)
+
         chunk = dict(items[i : i + chunk_size])
         ticker_to_key = {v: k for k, v in chunk.items()}
         symbol_str = ",".join(chunk.values())
@@ -541,13 +560,16 @@ def fetch_twelvedata(keys_tickers: dict[str, str]) -> dict[str, dict]:
                 params={"symbol": symbol_str, "apikey": api_key},
                 timeout=30,
             )
+            if resp.status_code == 429:
+                _warn(f"Twelve Data rate limit hit on batch {batch_idx + 1} — stopping")
+                break
             resp.raise_for_status()
             data = resp.json()
         except Exception as exc:
-            _warn(f"Twelve Data request error: {exc}")
+            _warn(f"Twelve Data batch {batch_idx + 1} error: {exc}")
             continue
 
-        # Single-symbol response is an unwrapped dict; multi-symbol is keyed by symbol
+        # Single-symbol response is unwrapped; multi-symbol is keyed by symbol
         if len(chunk) == 1:
             data = {list(chunk.values())[0]: data}
 
@@ -557,6 +579,9 @@ def fetch_twelvedata(keys_tickers: dict[str, str]) -> dict[str, dict]:
                 continue
             if not isinstance(q, dict):
                 continue
+            if q.get("code") == 429:
+                _warn(f"Twelve Data rate limit within batch — stopping")
+                return results
             if q.get("status") == "error":
                 _warn(f"twelvedata: {key} ({td_symbol}): {q.get('message', 'unknown error')}")
                 continue
@@ -580,6 +605,66 @@ def fetch_twelvedata(keys_tickers: dict[str, str]) -> dict[str, dict]:
                 results[key] = _record(key, "twelvedata", ticker=td_symbol, as_of=as_of,
                     close=round(last, 6), prev_close=round(prev, 6),
                     change_pct=_pct(prev, last))
+
+    return results
+
+
+# ─────────────────────────────────────────────────────────────
+# Fetcher: Alpha Vantage (commodities)
+# ─────────────────────────────────────────────────────────────
+
+def fetch_alphavantage(keys_needed: set[str]) -> dict[str, dict]:
+    api_key = os.environ.get("ALPHAVANTAGE_API_KEY", "")
+    if not api_key:
+        _warn("ALPHAVANTAGE_API_KEY not set — skipping Alpha Vantage fetch")
+        return {}
+
+    to_fetch = {k: fn for k, fn in AV_COMMODITY_FUNCTIONS.items() if k in keys_needed}
+    if not to_fetch:
+        return {}
+
+    results = {}
+    for i, (key, function) in enumerate(to_fetch.items()):
+        if i > 0:
+            time.sleep(15)  # stay safely under 5 calls/min on free tier
+        try:
+            resp = requests.get(
+                AV_API_URL,
+                params={"function": function, "interval": "daily", "apikey": api_key},
+                timeout=20,
+            )
+            resp.raise_for_status()
+            body = resp.json()
+        except Exception as exc:
+            _warn(f"Alpha Vantage {key} ({function}): {exc}")
+            continue
+
+        if "Information" in body:
+            _warn(f"Alpha Vantage rate limit hit: {body['Information'][:80]}")
+            break
+        if "data" not in body:
+            _warn(f"Alpha Vantage {key}: unexpected response — {list(body.keys())}")
+            continue
+
+        rows = [r for r in body["data"] if r.get("value") not in (None, ".", "")]
+        if len(rows) < 2:
+            _warn(f"Alpha Vantage {key}: insufficient data ({len(rows)} rows)")
+            continue
+
+        try:
+            last  = float(rows[0]["value"])
+            prev  = float(rows[1]["value"])
+            as_of = rows[0]["date"]
+        except (KeyError, ValueError) as exc:
+            _warn(f"Alpha Vantage {key}: parse error — {exc}")
+            continue
+
+        if _clean(last) is None or _clean(prev) is None:
+            continue
+
+        results[key] = _record(key, "AlphaVantage", function=function, as_of=as_of,
+            close=round(last, 6), prev_close=round(prev, 6),
+            change_pct=_pct(prev, last))
 
     return results
 
@@ -764,9 +849,17 @@ def fetch_boe() -> dict[str, dict]:
         code_to_key = {v: k for k, v in BOE_SERIES.items()}
         series_obs: dict[str, list[tuple[str, float]]] = {k: [] for k in BOE_SERIES}
 
+        def _boe_date(raw: str) -> str:
+            """Normalise BoE date strings ('16 Jun 2026') to ISO-8601."""
+            from datetime import datetime as _dt
+            try:
+                return _dt.strptime(raw.strip(), "%d %b %Y").strftime("%Y-%m-%d")
+            except ValueError:
+                return raw.strip()
+
         for line in lines[1:]:
             parts    = line.split(",")
-            row_date = parts[0].strip()
+            row_date = _boe_date(parts[0])
             for code, key in code_to_key.items():
                 idx = code_to_col.get(code)
                 if idx is None or idx >= len(parts):
@@ -1000,12 +1093,27 @@ def build_snapshot() -> dict[str, dict]:
     data.update(fetched)
     print(f"               {len(fetched)}/{len(JGB_COL_MAP)} series")
 
-    # 7. Twelve Data — everything not yet fetched
+    # 7. Alpha Vantage — commodities (primary; 12 s delay between calls)
+    av_needed = {k for k in AV_COMMODITY_FUNCTIONS if k not in data}
+    print(f"  [Alpha Vantage] fetching {len(av_needed)} commodities …")
+    fetched = fetch_alphavantage(av_needed)
+    data.update(fetched)
+    print(f"                  {len(fetched)}/{len(av_needed)} commodities")
+
+    # 8. Twelve Data — FX, equities, remaining commodities, bond fallbacks
     td_needed = {k: v for k, v in TD_TICKERS.items() if k not in data}
     print(f"  [Twelve Data] fetching {len(td_needed)} assets …")
     fetched = fetch_twelvedata(td_needed)
     data.update(fetched)
     print(f"                {len(fetched)}/{len(td_needed)} assets")
+
+    # 9. yfinance — last-resort fallback for anything still missing
+    yf_needed = {k: v for k, v in YFINANCE_TICKERS.items() if k not in data}
+    if yf_needed:
+        print(f"  [yfinance] fallback for {len(yf_needed)} assets …")
+        fetched = fetch_yfinance(yf_needed)
+        data.update(fetched)
+        print(f"             {len(fetched)}/{len(yf_needed)} assets")
 
     return data
 
