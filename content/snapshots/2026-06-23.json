@@ -665,16 +665,16 @@
       "change_pct": -1.4363
     },
     "ndx": {
-      "label": "Nasdaq 100",
+      "label": "Nasdaq Composite",
       "category": "equities",
       "sub_category": "us",
       "source": "yfinance",
       "is_fresh": true,
-      "ticker": "^NDX",
+      "ticker": "^IXIC",
       "as_of": "2026-06-23",
-      "close": 29347.273438,
-      "prev_close": 30347.080078,
-      "change_pct": -3.2946
+      "close": 25587.0391,
+      "prev_close": 26166.5996,
+      "change_pct": -2.2149
     },
     "djia": {
       "label": "Dow Jones",

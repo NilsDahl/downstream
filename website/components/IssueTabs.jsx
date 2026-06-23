@@ -12,7 +12,7 @@ function TabButton({ label, active, onClick }) {
     <button
       type="button"
       onClick={onClick}
-      className={`pb-3 text-sm font-medium transition-colors border-b-2 whitespace-nowrap ${
+      className={`pb-3 text-sm font-medium transition-colors border-b-2 whitespace-nowrap cursor-pointer select-none ${
         active
           ? 'border-primary text-foreground'
           : 'border-transparent text-subtle hover:text-muted-foreground'

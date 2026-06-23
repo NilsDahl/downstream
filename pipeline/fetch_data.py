@@ -122,7 +122,7 @@ ASSET_META = {
     "dxy":        ("DXY",              "fx", "index"),
     # Equities — US
     "sp500":      ("S&P 500",          "equities", "us"),
-    "ndx":        ("Nasdaq 100",       "equities", "us"),
+    "ndx":        ("Nasdaq Composite",  "equities", "us"),
     "djia":       ("Dow Jones",        "equities", "us"),
     "rut":        ("Russell 2000",     "equities", "us"),
     # Equities — Europe
@@ -275,7 +275,7 @@ YFINANCE_TICKERS = {
     "dxy":        "DX-Y.NYB",
     # Equities
     "sp500":      "^GSPC",
-    "ndx":        "^NDX",
+    "ndx":        "^IXIC",
     "djia":       "^DJI",
     "rut":        "^RUT",
     "stoxx50":    "^STOXX50E",
