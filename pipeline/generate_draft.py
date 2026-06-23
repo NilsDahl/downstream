@@ -7,6 +7,7 @@ Output: /content/drafts/YYYY-MM-DD.md
 
 import json
 import os
+import re
 import sys
 from datetime import date
 
@@ -98,8 +99,8 @@ def build_market_summary(snapshot: dict) -> str:
 
 SYSTEM_PROMPT = """\
 You are the author of Downstream, a daily macro-finance brief for finance \
-students and young professionals. Your job: identify the primary driver of \
-today's macro narrative and trace its implication chain through related assets.
+students and young professionals. Your job: identify the primary driver(s) of \
+today's macro narrative and trace implication chain(s) through related assets.
 
 The primary driver is whatever best explains the day — it may be a news \
 catalyst, a market move, or both together. A significant news event that \
@@ -112,11 +113,22 @@ the market snapshot provided. Do not round, re-derive, or approximate any \
 price, yield, or percentage change. If a figure is not in the snapshot, do \
 not state it.
 
+HOW MANY CHAINS:
+- Most days: ONE chain. Weave all key moves together, naming tensions \
+  explicitly when two forces contradict each other — this is almost always \
+  more coherent than splitting.
+- Use TWO chains only when there are genuinely non-overlapping catalysts with \
+  distinct causal paths that do not meaningfully feed into each other \
+  (e.g. a geopolitical supply shock in energy AND a separate central-bank \
+  policy decision affecting rates and equities, with no intersection).
+- Use THREE chains only in exceptional sessions with three clearly distinct, \
+  non-overlapping macro events.
+- When in doubt, use ONE chain and name tensions within it.
+
 Writing rules:
-- Lead with the PRIMARY DRIVER: the single catalyst — news event, policy \
-  signal, or market move — that most coherently explains the day's pattern \
-  across assets. Name it precisely, with its exact figure if it is in the \
-  snapshot.
+- Lead each chain with its PRIMARY DRIVER: the single catalyst — news event, \
+  policy signal, or market move — that most coherently explains that chain's \
+  pattern across assets.
 - If a news catalyst is the driver, anchor it to the market data: show which \
   assets moved in response and by how much. If a market move is the driver, \
   anchor it to the news: name the mechanism behind it.
@@ -125,23 +137,24 @@ Writing rules:
   be preferred as primary drivers. Single-commodity agricultural moves \
   (cotton, coffee, sugar, wheat) are typically idiosyncratic supply/demand \
   events — do not make them the primary driver unless they are corroborated \
-  by moves in at least two other related assets (e.g. all grains moving \
-  together, or a food-inflation reading). If an agricultural commodity shows \
-  a large isolated move not corroborated elsewhere, note it briefly as a \
-  footnote to the chain rather than leading with it.
+  by moves in at least two other related assets. If an agricultural commodity \
+  shows a large isolated move not corroborated elsewhere, note it briefly as \
+  a footnote to the chain rather than leading with it.
 - Build the chain outward from that driver, node by node. Each node must \
   name the mechanism, not just the direction. "Higher oil → inflation \
   expectations re-price → breakevens widen" not "oil went up so bonds fell."
-- If two moves contradict each other, name the tension explicitly. Do not \
-  paper over it.
-- 4–6 nodes. 2–4 sentences per node. No padding.
-- Close with "What to watch": 2–3 specific, falsifiable signals. Name the \
-  instrument, the level, or the event — not vague market commentary.
+- If two moves contradict each other within a chain, name the tension \
+  explicitly. Do not paper over it.
+- 4–6 nodes per chain. 2–4 sentences per node. No padding.
+- Close each chain with "What to watch": 2–3 specific, falsifiable signals. \
+  Name the instrument, the level, or the event — not vague market commentary.
 - Tone: analytical, precise, no filler.
 - Forbidden phrases: "it remains to be seen", "investors will be watching", \
   "in this environment", "navigating uncertainty", "amid", "backdrop".
 
-Output format — use exactly this structure:
+Output format — for a SINGLE chain:
+
+## Chain 1: [Short descriptive title, 4–7 words]
 
 **The driver:** [one sentence naming the catalyst and its exact figure or source]
 
@@ -153,7 +166,40 @@ Output format — use exactly this structure:
 
 [4–6 nodes total]
 
-**What to watch:** [2–3 sentences, specific and falsifiable]\
+**What to watch:** [2–3 sentences, specific and falsifiable]
+
+Output format — for MULTIPLE chains (repeat the block):
+
+## Chain 1: [Title]
+
+**The driver:** ...
+
+**The chain:**
+
+...
+
+**What to watch:** ...
+
+## Chain 2: [Title]
+
+**The driver:** ...
+
+**The chain:**
+
+...
+
+**What to watch:** ...\
+"""
+
+NEWS_SUMMARY_SYSTEM = """\
+You are summarizing financial market news for a daily macro brief. \
+Write 5–8 bullet points covering the most important stories from today's \
+headlines. Each bullet: lead with **bold key fact** (asset name, move \
+magnitude, institution, or event), then one sentence of context explaining \
+why it matters macroeconomically. Prioritize systemic significance over \
+novelty. Tone: terse, precise. No filler, no opinions, no forbidden phrases \
+(amid, backdrop, navigating uncertainty). \
+Output ONLY the bullet list — no title, no heading, no preamble.\
 """
 
 
@@ -229,6 +275,22 @@ def build_user_prompt(snapshot: dict) -> str:
 # Main
 # ─────────────────────────────────────────────────────────────
 
+def generate_news_summary(snapshot_date: str, client: anthropic.Anthropic) -> str | None:
+    news_context = load_news_context(snapshot_date)
+    if not news_context:
+        return None
+
+    print(f"Generating news summary …")
+    msg = client.messages.create(
+        model=MODEL,
+        max_tokens=600,
+        system=NEWS_SUMMARY_SYSTEM,
+        messages=[{"role": "user", "content": f"Date: {snapshot_date}\n\nHeadlines:\n{news_context}"}],
+    )
+    print(f"News summary tokens — input: {msg.usage.input_tokens}, output: {msg.usage.output_tokens}")
+    return msg.content[0].text.strip()
+
+
 def generate_draft(snapshot_path: str) -> str:
     with open(snapshot_path) as f:
         snapshot = json.load(f)
@@ -238,17 +300,28 @@ def generate_draft(snapshot_path: str) -> str:
 
     user_prompt = build_user_prompt(snapshot)
 
-    print(f"Calling {MODEL} …")
+    print(f"Calling {MODEL} for implication chain(s) …")
     message = client.messages.create(
         model=MODEL,
-        max_tokens=1400,
+        max_tokens=2400,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}],
     )
+    # Strip any leading title / divider Claude adds before the first ## Chain section
+    raw = message.content[0].text
+    chain_start = re.search(r'^## Chain \d+:', raw, re.MULTILINE)
+    chain_text = raw[chain_start.start():].strip() if chain_start else raw.strip()
+    print(f"Chain tokens — input: {message.usage.input_tokens}, output: {message.usage.output_tokens}")
 
-    draft_text = message.content[0].text
+    news_summary = generate_news_summary(snapshot_date, client)
+
+    body_parts = []
+    if news_summary:
+        body_parts.append(f"## News Summary\n\n{news_summary}")
+    body_parts.append(chain_text)
+
     frontmatter = f"---\ndate: {snapshot_date}\nmodel: {MODEL}\n---\n\n"
-    full_draft  = frontmatter + draft_text
+    full_draft  = frontmatter + "\n\n".join(body_parts)
 
     draft_dir = os.path.join(
         os.path.dirname(__file__), "..", "content", "drafts"
@@ -260,7 +333,6 @@ def generate_draft(snapshot_path: str) -> str:
         f.write(full_draft)
 
     print(f"Draft written → {out_path}")
-    print(f"Tokens — input: {message.usage.input_tokens}, output: {message.usage.output_tokens}")
     return out_path
 
 

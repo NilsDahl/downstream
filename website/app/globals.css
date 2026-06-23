@@ -107,3 +107,9 @@ html { scroll-behavior: smooth; }
 .chain-prose ol     { list-style: decimal; padding-left: 1.25rem; }
 .chain-prose ol li  { margin-bottom: 0.5rem; line-height: 1.7; }
 .chain-prose strong { color: var(--foreground); font-weight: 600; }
+
+/* News summary prose */
+.news-prose ul      { list-style: none; padding-left: 0; }
+.news-prose ul li   { margin-bottom: 0.75rem; line-height: 1.7; padding-left: 1rem; position: relative; }
+.news-prose ul li::before { content: "—"; position: absolute; left: 0; color: var(--color-primary); }
+.news-prose strong  { color: var(--foreground); font-weight: 600; }

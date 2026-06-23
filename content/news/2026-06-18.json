@@ -2,6 +2,78 @@
   "date": "2026-06-18",
   "headlines": [
     {
+      "headline": "Gold Falls as Hawkish Fed Outweighs U.S.-Iran Deal Relief",
+      "source": "The Wall Street Journal",
+      "description": "Gold fell in early Asian trade. The precious metal\u2019s price is being weighed down by a more hawkish Fed outweighing relief from the U.S.-Iran interim peace deal, ANZ said.",
+      "url": "https://www.wsj.com/finance/commodities-futures/gold-falls-as-hawkish-fed-outweighs-u-s-iran-deal-relief-a77876f2?mod=rss_markets_main",
+      "publishedAt": "2026-06-19T00:30:00+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "ASEAN countries agree to up cooperation in renewable energy, natural gas, LNG, joint ...",
+      "source": "Reuters",
+      "description": "ASEAN countries on \u200bThursday agreed \u200cto increase cooperation in renewable \u200benergy, \u200bnatural gas, and LNG, \u2060according to \u200ba joint \u200bstatement signed\u00a0...",
+      "url": "https://www.reuters.com/business/energy/asean-countries-agree-up-cooperation-renewable-energy-natural-gas-lng-joint-2026-06-18/",
+      "publishedAt": "2026-06-18T18:15:56+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Warsh Rocks Bond Market in Debut, Sparks Surge in Hike Bets",
+      "source": "Bloomberg",
+      "description": "Traders piled into betting on interest-rate hikes as soon as next month after\u00a0Kevin Warsh\u00a0used his debut press conference as Federal Reserve chairman to make clear the central bank won\u2019t tolerate high inflation.\nJennifer Lee, Senior Economist at BMO Capital Markets, discusses the FOMC decision and w...",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-18/warsh-rocks-bond-market-in-debut-sparks-hike-bet-surge-video",
+      "publishedAt": "2026-06-18T15:44:36+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "The Price of Gold Today, June 18, 2026 \u2014 and the Best Places to Buy - CNBC",
+      "source": "CNBC",
+      "description": "Opening a gold IRA removes the pressure of investing in physical gold. You can diversify your portfolio with precious metals through these gold IRAs.",
+      "url": "https://www.cnbc.com/select/the-price-of-gold-today-june-18-2026/",
+      "publishedAt": "2026-06-18T14:38:37+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Gold And Silver Futures Fall As Fed Holds Rates Steady, Indicates Future Hikes",
+      "source": "Forbes",
+      "description": "Gold and silver futures both declined Thursday morning, one day after the Federal Reserve held rates steady and suggested future hikes are coming.",
+      "url": "https://www.forbes.com/sites/conormurray/2026/06/18/gold-and-silver-futures-fall-as-fed-indicates-future-hikes/",
+      "publishedAt": "2026-06-18T14:04:50+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "BOE\u2019s Bailey Appeals for Help on X Posts Showing Fake Farage Fight",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor Andrew Bailey appealed for help in identifying who is behind a barrage of bizarre social media posts using fake images of him fighting Reform UK leader Nigel Farage.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-18/bank-of-england-s-bailey-appeals-for-help-on-x-posts-of-fake-nigel-farage-fight",
+      "publishedAt": "2026-06-18T13:36:29+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Oil Slides After Trump Signs Iran Deal, Boosting Supply Outlook - WSJ",
+      "source": "The Wall Street Journal",
+      "description": "Front-month WTI crude oil futures are 1.0% lower at $76.00 per barrel. ... of a quick recovery in oil flows out of the Middle East. Continue To\u00a0...",
+      "url": "https://www.wsj.com/finance/commodities-futures/oil-falls-on-prospects-of-fast-reopening-of-strait-of-hormuz-ce60a695",
+      "publishedAt": "2026-06-18T13:11:31+00:00",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Current price of oil as of June 18, 2026 | Fortune",
+      "source": "Fortune",
+      "description": "When oil prices change, it affects your energy costs\u2014and even the price of everyday items. Here\u2019s why.",
+      "url": "https://fortune.com/article/price-of-oil-06-18-2026/",
+      "publishedAt": "2026-06-18T12:40:06+00:00",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "BOE's Bailey Says Holding Rates Is a 'Sensible Decision'",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor\u00a0Andrew Bailey\u00a0tells broadcasters energy prices remain above pre-war levels and that the the central bank needs to assess \"how much damage has been done to the infrastructure for supplying energy\" in the Middle East. \"I think holding is the right position to be in at the mome...",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-18/boe-s-bailey-says-holding-rates-is-a-sensible-decision-video",
+      "publishedAt": "2026-06-18T12:36:48+00:00",
+      "bucket": "central_banks"
+    },
+    {
       "headline": "Treasury yields mixed as investors digest Warsh's first Fed meet",
       "source": "CNBC",
       "description": "The yield on the 10-year U.S. Treasury note \u2014 the key benchmark for U.S. government borrowing \u2014 was largely flat at 4.457%.",
@@ -26,51 +98,35 @@
       "bucket": "central_banks"
     },
     {
-      "headline": "LNG Tanker Heads Toward Hormuz as US-Iran Pact Goes Into Effect",
-      "source": "Bloomberg",
-      "description": "A liquefied natural gas tanker that loaded in Qatar is nearing the Strait of Hormuz, a hint that traffic may increase after an interim US-Iran peace deal went into effect.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-18/lng-tanker-heads-toward-hormuz-as-us-iran-pact-goes-into-effect",
-      "publishedAt": "2026-06-18T01:22:56+00:00",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "Federal Reserve holds interest rates steady but leaves door open to hike",
-      "source": "CBS News",
-      "description": "U.S. inflation is expected to remain elevated through the end of the year, Fed officials say in their latest forecast.",
-      "url": "https://www.cbsnews.com/detroit/news/fed-meeting-fomc-today-kevin-warsh-interest-rates/",
-      "publishedAt": "2026-06-17T21:38:18+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Watch Warsh Says FOMC Had 'Good Family Fight' on Fed Policy as Rates Stay Steady - Bloomberg",
-      "source": "Bloomberg",
-      "description": "Andrew Szczurowski, strategic income portfolio manager at Morgan Stanley Investment Management, said that it is still to be determined if Kevin Warsh will follow through on hawkish signals he gave in his first press conference as Federal Reserve chair as the Fed held rates steady. Szczurowski, who w...",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-17/warsh-says-fomc-had-good-family-fight-on-fed-policy-video",
-      "publishedAt": "2026-06-17T21:29:24+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "How surging gold prices led to the biggest jump on this year's Southeast Asia 500 | Fortune",
-      "source": "Fortune",
-      "description": "Surging gold prices helped lift Indonesia's Hartadinata Abadi up 115 places on the Southeast Asia 500, as investors flocked to the safe haven asset.",
-      "url": "https://fortune.com/2026/06/17/gold-prices-hartadinata-abadi-indonesia-southeast-asia-500/",
-      "publishedAt": "2026-06-17T21:00:00+00:00",
-      "bucket": "commodities_metals"
-    },
-    {
-      "headline": "The market didn't like what it heard from the Fed and its new leader Kevin Warsh",
+      "headline": "Oil falls as International Energy Agency forecasts supply glut next year after U.S.-Iran deal",
       "source": "CNBC",
-      "description": "The S&P 500 closed down 1.2%, as bond yields rose.",
-      "url": "https://www.cnbc.com/2026/06/17/the-market-didnt-like-what-it-heard-from-the-fed-and-its-new-leader-kevin-warsh.html",
-      "publishedAt": "2026-06-17T20:55:56+00:00",
+      "description": "Oil declines as Mideast peace prospects rise following U.S.-Iran deal.",
+      "url": "https://www.cnbc.com/2026/06/18/oil-prices-today-wti-brent.html",
+      "publishedAt": "2026-06-18T01:49:22Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "CNBC Daily Open: Warsh's Fed debut and Iran-U.S. deal in focus",
+      "source": "CNBC",
+      "description": "Kevin Warsh chaired his first Fed meeting, sending stocks lower while Trump reportedly signed the deal with Iran.",
+      "url": "https://www.cnbc.com/2026/06/18/cnbc-daily-open-warshs-fed-debut-and-iran-us-deal-in-focus.html",
+      "publishedAt": "2026-06-18T01:40:11Z",
       "bucket": "central_banks"
     },
     {
-      "headline": "Watch Fmr. Fed Vice Chair Blinder on FOMC Decision, Inflation - Bloomberg",
-      "source": "Bloomberg",
-      "description": "Alan Blinder, former Federal Reserve Vice Chair and current professor at Princeton University, provided insights on the Federal Reserve's newly outlined five task forces, emphasizing the market's keen interest in the Fed's communications strategy and its approach to using existing economic data. Bli...",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-17/fmr-fed-vice-chair-blinder-on-fomc-decision-inflation-video",
-      "publishedAt": "2026-06-17T20:55:56+00:00",
+      "headline": "Stock market today: Live updates",
+      "source": "CNBC",
+      "description": "After hitting a fresh intraday all-time high, the Dow Jones Industrial Average ultimately closed more than 500 points lower on Wednesday.",
+      "url": "https://www.cnbc.com/2026/06/17/stock-market-today-live-updates.html",
+      "publishedAt": "2026-06-17T22:11:14Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Analysis: Chairman Kevin Warsh\u2019s task forces are the key to understanding the new Fed",
+      "source": "CNBC",
+      "description": "The new leader of the Fed left interest rates alone but made clear how he plans to rewire the central bank.",
+      "url": "https://www.cnbc.com/2026/06/17/kevin-warsh-fed-interest-rates-risk-analysis.html",
+      "publishedAt": "2026-06-17T21:04:15Z",
       "bucket": "central_banks"
     },
     {
@@ -78,40 +134,80 @@
       "source": "CNBC",
       "description": "The Federal Reserve and Chairman Kevin Warsh on Wednesday followed the script on interest rates closely.",
       "url": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html",
-      "publishedAt": "2026-06-17T20:42:42+00:00",
-      "bucket": "rates_credit"
+      "publishedAt": "2026-06-17T20:42:42Z",
+      "bucket": "central_banks"
     },
     {
-      "headline": "US Fed begins Warsh era with hold on interest rates, may hike later this year",
-      "source": "South China Morning Post",
-      "description": "The Trump appointee is taking over amid repeated demands by the US president for rate cuts even as inflation becomes a growing concern.",
-      "url": "https://www.scmp.com/news/world/united-states-canada/article/3357477/us-fed-begins-warsh-era-hold-interest-rates-may-hike-later-year",
-      "publishedAt": "2026-06-17T20:33:32+00:00",
-      "bucket": "rates_credit"
+      "headline": "Hudbay Announces Pricing for US$52 Million of Municipal Bonds for Copper World at 4.50%",
+      "source": "Financial Post",
+      "description": "TORONTO, June 17, 2026 (GLOBE NEWSWIRE) \u2014 Hudbay Minerals Inc. (\u201cHudbay\u201d or the \u201cCompany\u201d) (TSX, NYSE: HBM) today announced the pricing of an offering of US$52 million in aggregate principal amount of 4.50% Arizona Industrial Development Authority Solid Waste\u2026",
+      "url": "https://financialpost.com/globe-newswire/hudbay-announces-pricing-for-us52-million-of-municipal-bonds-for-copper-world-at-4-50",
+      "publishedAt": "2026-06-17T20:34:55Z",
+      "bucket": "dynamic"
     },
     {
-      "headline": "Fed Holds Rates Steady As Warsh Takes Helm: Fed Special",
+      "headline": "Warsh experiences worst 'Fed day' S&P 500 performance for a new chair since 1994",
+      "source": "CNBC",
+      "description": "The S&P 500 tumbled more than 1% in Wednesday's session, with losses steepening during Warsh' innagural press conference as chair.",
+      "url": "https://www.cnbc.com/2026/06/17/warsh-fed-meeting-stock-market.html",
+      "publishedAt": "2026-06-17T20:18:42Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Jeffrey Gundlach says Fed's Warsh is not going to be the 'easy money' chairman many hoped for",
+      "source": "CNBC",
+      "description": "Gundlach said Warsh's stance reduces the risk of overly accommodative monetary policy that could reignite inflation and push longer-term borrowing costs higher.",
+      "url": "https://www.cnbc.com/2026/06/17/jeffrey-gundlach-says-feds-warsh-is-not-going-to-be-the-easy-money-chairman-many-hoped-for.html",
+      "publishedAt": "2026-06-17T20:00:38Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Fed holds rates steady, officials split over possible hikes this year",
       "source": "Bloomberg",
-      "description": "Bloomberg's Scarlet Fu and Lisa Abramowicz discuss remarks from Fed Chair Kevin Warsh following the Federal Reserve's latest policy decision on a special edition of Bloomberg Surveillance. Federal Reserve officials left interest rates unchanged and were split over whether they expect to raise rates ...",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-17/fed-hold-rates-steady-as-warsh-takes-helm-fed-special-video",
-      "publishedAt": "2026-06-17T20:20:16+00:00",
-      "bucket": "rates_credit"
+      "description": "The meeting, chaired for the first time by Kevin Warsh, signalled a shift in the Fed\u2019s communication strategy as it grapples with rising inflation pressures from energy costs and geopolitical tensions",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-17/fed-holds-rates-steady-officials-split-over-hikes-this-year",
+      "publishedAt": "2026-06-17T18:37:01Z",
+      "bucket": "central_banks"
     },
     {
-      "headline": "Here's why a gold investment makes sense right now",
-      "source": "CBS News",
-      "description": "The benefits of a gold investment this June are multiple. Here's why it's especially worth investing in right now.",
-      "url": "https://www.cbsnews.com/news/why-gold-investment-makes-sense-june-2026/",
-      "publishedAt": "2026-06-17T18:26:51+00:00",
-      "bucket": "commodities_metals"
+      "headline": "Fed projections call for a rate hike in 2026, but Chairman Warsh abstained",
+      "source": "CNBC",
+      "description": "The median projection called for the federal funds rate to end 2026 at 3.8%, a quarter percentage point above the current target range.",
+      "url": "https://www.cnbc.com/2026/06/17/fed-projections-call-for-a-rate-hike-in-2026-but-chairman-warsh-likely-abstained.html",
+      "publishedAt": "2026-06-17T18:36:01Z",
+      "bucket": "central_banks"
     },
     {
-      "headline": "U.S. Natural Gas Futures Pull Back in Early Trading - WSJ",
-      "source": "The Wall Street Journal",
-      "description": "0940 ET \u2013 U.S. natural gas futures are lower following three sessions of gains with the market weighing the weather outlook and the pick-up in LNG\u00a0...",
-      "url": "https://www.wsj.com/finance/commodities-futures/u-s-natural-gas-futures-pull-back-in-early-trading-c62b8b93",
-      "publishedAt": "2026-06-17T13:52:56+00:00",
-      "bucket": "commodities_energy"
+      "headline": "Fed holds interest rates steady: Here's what that means for credit cards, savings rates, mortgages and car loans",
+      "source": "CNBC",
+      "description": "Here\u2019s a look at how the Fed's June interest rate decision may affect your finances.",
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rates-unchanged-june.html",
+      "publishedAt": "2026-06-17T18:05:47Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Fed interest rate decision June 2026:",
+      "source": "CNBC",
+      "description": "The Federal Reserve on Wednesday released its interest rate decision.",
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+      "publishedAt": "2026-06-17T18:01:44Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Copper Miner Antofagasta Seeks to Link Ore Sales to Spot Market",
+      "source": "Bloomberg",
+      "description": "Chile\u2019s Antofagasta Plc has approached Chinese copper smelters with a proposal to price contractual sales of copper ore using spot-market indexes, a fresh sign that a decades-old system based on fixed-price deals is under strain.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-17/copper-miner-antofagasta-seeks-to-link-ore-sales-to-spot-market",
+      "publishedAt": "2026-06-17T16:25:48+00:00",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Iraq Takes Steps to Boost Oil Exports When Hormuz Reopens",
+      "source": "Financial Post",
+      "description": "Iraq is preparing to boost oil exports from its southern ports with a formal deal to open the Strait of Hormuz scheduled to be signed on Friday.",
+      "url": "https://financialpost.com/pmn/business-pmn/iraq-takes-steps-to-boost-oil-exports-when-hormuz-reopens",
+      "publishedAt": "2026-06-17T15:03:14Z",
+      "bucket": "dynamic"
     },
     {
       "headline": "ECB\u2019s Lagarde Warns AI Is Huge Risk for Financial Stability",
@@ -122,60 +218,20 @@
       "bucket": "central_banks"
     },
     {
-      "headline": "Inside Donald Trump\u2019s Billion-Dollar Golf Empire",
-      "source": "Forbes",
-      "description": "Fifteen courses in four countries carry the president\u2019s name, with more on the way. Here\u2019s a swing through the vast green in his portfolio.",
-      "url": "https://www.forbes.com/sites/brettknight/2026/06/17/inside-donald-trumps-billion-dollar-golf-empire/",
-      "publishedAt": "2026-06-17T10:30:00Z",
-      "bucket": "central_banks"
+      "headline": "Falco Resources Announces Updated Feasibility Study for Horne 5 Project, Delivering After-Tax NPV5% C$3.35 Billion, IRR of 28.2% and Cash Flow of C$6.4 Billion at Base Case Gold Price of US$3,600/Oz",
+      "source": "Financial Post",
+      "description": "(All dollar amounts are expressed in Canadian Dollars ($) unless otherwise stated) MONTREAL, June 17, 2026 (GLOBE NEWSWIRE) \u2014 Falco Resources Ltd. (FPC: TSX-V) (\u201cFalco\u201d or the \u201cCorporation\u201d) is pleased to announce the results of an updated feasibility study (\u2026",
+      "url": "https://financialpost.com/globe-newswire/falco-resources-announces-updated-feasibility-study-for-horne-5-project-delivering-after-tax-npv5-c3-35-billion-irr-of-28-2-and-cash-flow-of-c6-4-billion-at-base-case-gold-price-of-us3600-oz",
+      "publishedAt": "2026-06-17T11:46:11Z",
+      "bucket": "dynamic"
     },
     {
-      "headline": "Gold Should Have Notable Upside - WSJ",
-      "source": "The Wall Street Journal",
-      "description": "Find insight on Canadian precious metals miners, palm oil prices, London's miners and more in the latest Market Talks covering Basic Materials.",
-      "url": "https://www.wsj.com/finance/commodities-futures/balance-of-risks-for-gold-tilt-upward-from-here-01ee6451",
-      "publishedAt": "2026-06-17T10:03:10+00:00",
-      "bucket": "commodities_metals"
-    },
-    {
-      "headline": "Treasury yields inch higher as investors await Fed interest rates decision",
-      "source": "CNBC",
-      "description": "The yield on the 10-year U.S. Treasury note \u2014 the key benchmark for U.S. government borrowing \u2014 rose over 1 basis point to 4.439%.",
-      "url": "https://www.cnbc.com/2026/06/17/treasury-yields-investors-await-warsh-fed-decision.html",
-      "publishedAt": "2026-06-17T09:10:26Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "3 things to know about the new Fed chief's first meeting",
-      "source": "NPR",
-      "description": "Kevin Warsh takes questions from reporters for the first time since taking over as Chairman of the Federal Reserve.  Warsh and his colleagues are expected to hold interest rates steady today.",
-      "url": "https://www.npr.org/2026/06/17/nx-s1-5860084/fed-chief-warsh-first-fomc-meeting",
-      "publishedAt": "2026-06-17T09:00:00Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Trump faces Supreme Court showdown as major rulings loom",
-      "source": "NBC News",
-      "description": "The Supreme Court is set to issue key rulings, including on Trump\u2019s effort to curb birthright citizenship and fire a member of the Federal Reserve.",
-      "url": "https://www.nbcnews.com/politics/supreme-court/trump-supreme-court-showdown-major-rulings-loom-rcna349824",
-      "publishedAt": "2026-06-17T09:00:00Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Inflation and Kevin Warsh take center stage at the Fed\u2019s interest rate meeting",
-      "source": "NBC News",
-      "description": "Rising inflation and new Federal Reserve chairman Kevin Warsh take the stage when the central bank meets to decide on the path forward for interest rates.",
-      "url": "https://www.nbcnews.com/business/economy/inflation-kevin-warsh-fed-fomc-meeting-rcna350411",
-      "publishedAt": "2026-06-17T09:00:00Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "G7 leaders to boost Ukraine air defences, tighten sanctions on Russia",
-      "source": "Al Jazeera English",
-      "description": "A statement from the G7 summit in France says leaders are united in their 'unwavering support for Ukraine'.",
-      "url": "https://www.aljazeera.com/news/2026/6/17/g7-leaders-to-boost-ukraine-air-defences-tighten-sanctions-on-russia",
-      "publishedAt": "2026-06-17T08:50:31Z",
-      "bucket": "central_banks"
+      "headline": "Drills Are Turning At Goliath Resources Fully Funded 50,000 Meter Expansion Drill Program On High-Grade Gold Surebet Discovery, Golden Triangle, B.C.",
+      "source": "Financial Post",
+      "description": "Drilling has commenced on the high-grade gold Surebet Discovery with 2 drills on site and 5 additional drills arriving shortly for a total of 7 drill rigs to carry out the fully funded 2026 planned drill program.\u00a0 This year\u2019s plan is targeting 50,000 meters o\u2026",
+      "url": "https://financialpost.com/globe-newswire/drills-are-turning-at-goliath-resources-fully-funded-50000-meter-expansion-drill-program-on-high-grade-gold-surebet-discovery-golden-triangle-b-c",
+      "publishedAt": "2026-06-17T10:35:14Z",
+      "bucket": "dynamic"
     },
     {
       "headline": "From supply shock to oil glut: IEA flags scale of demand destruction caused by Iran war",
@@ -183,15 +239,15 @@
       "description": "The energy supply shock triggered by the Iran War has prompted the IEA to slash its global oil demand forecast.",
       "url": "https://www.cnbc.com/2026/06/17/global-oil-demand-suppy-energy-prices-iea-inventories.html",
       "publishedAt": "2026-06-17T08:39:42Z",
-      "bucket": "commodities_energy"
+      "bucket": "dynamic"
     },
     {
-      "headline": "Central banks are bringing gold reserves home as geopolitical risks rise",
-      "source": "CNBC",
-      "description": "Central banks expect gold reserves to rise and more are storing bullion at home amid geopolitical and currency risks.",
-      "url": "https://www.cnbc.com/2026/06/17/central-banks-gold-reserves-domestic-storage.html",
-      "publishedAt": "2026-06-17T07:28:36Z",
-      "bucket": "central_banks"
+      "headline": "Oil prices continue slide amid hopes for peace, opening of Strait of Hormuz",
+      "source": "Al Jazeera English",
+      "description": "Brent crude drops to lowest price since early March, before signing of framework deal to end US-Israel war on Iran.",
+      "url": "https://www.aljazeera.com/economy/2026/6/17/oil-prices-continue-slide-amid-hopes-for-peace-opening-of-strait-of-hormuz",
+      "publishedAt": "2026-06-17T07:44:52Z",
+      "bucket": "dynamic"
     },
     {
       "headline": "The City of London's vanishing analysts",
@@ -216,14 +272,6 @@
       "url": "https://www.bloomberg.com/news/articles/2026-06-15/lagarde-says-ecb-has-started-to-see-second-round-effects",
       "publishedAt": "2026-06-15T06:23:49+00:00",
       "bucket": "central_banks"
-    },
-    {
-      "headline": "Copper Pops Higher as US-Iran Agreement Puts Bulls in Charge",
-      "source": "Bloomberg",
-      "description": "Copper rose as an interim peace agreement between the US and Iran eased fears over global economic growth and stoked optimism for metals demand.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-15/copper-pops-higher-as-us-iran-agreement-puts-bulls-in-charge",
-      "publishedAt": "2026-06-15T02:18:04+00:00",
-      "bucket": "commodities_metals"
     },
     {
       "headline": "BOJ Set to Hike Rates to Highest Since 1995 Despite Ueda Absence",
@@ -266,60 +314,12 @@
       "bucket": "central_banks"
     },
     {
-      "headline": "Considering An Intraday Trading Strategy With The UVXY ETF (BATS:UVXY)",
-      "source": "Seeking Alpha",
-      "description": "Trade UVXY tactically, not long-term: learn why this leveraged VIX ETF decays, lags spikes, and needs strict stop-loss risk management\u2014read now.",
-      "url": "https://seekingalpha.com/article/4913368-considering-an-intraday-trading-strategy-with-the-uvxy-etf?source=feed_tag_etf_portfolio_strategy",
-      "publishedAt": "2026-06-09T16:53:48+00:00",
-      "bucket": "risk_geopolitics"
-    },
-    {
-      "headline": "Invesco Corporate Bond Fund Q1 2026 Commentary",
-      "source": "Seeking Alpha",
-      "description": "Bond yields, though down from their highs, are still at attractive levels compared to the last 10 years, in our view. Read more here.",
-      "url": "https://seekingalpha.com/article/4913301-invesco-corporate-bond-fund-q1-2026-commentary",
-      "publishedAt": "2026-06-09T14:10:00+00:00",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "May CPI Preview: Lower Oil, Stickier Inflation (NYSEARCA:SPY)",
-      "source": "Seeking Alpha",
-      "description": "Track rising inflation forecasts, the CPI vs. PPI gap, and what it means for Fed rate hikes and markets. Click here to read what investors need to know.",
-      "url": "https://seekingalpha.com/article/4913257-may-cpi-preview-lower-oil-stickier-inflation",
-      "publishedAt": "2026-06-09T13:54:31+00:00",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "Oil prices rise more than $2 on Israel strikes on Lebanon",
-      "source": "Reuters",
-      "description": "U.S. crude futures were up $2.57 at $93.11 per barrel.",
-      "url": "https://www.reuters.com/business/energy/oil-prices-rise-more-than-2-israel-strikes-lebanon-2026-06-07/",
-      "publishedAt": "2026-06-08T01:32:01+00:00",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "Oil prices rise after Iran fires missiles at Israel, escalating regional tensions",
-      "source": "CNBC",
-      "description": "Oil rises on Monday amid heightened tensions in the Middle East, raising concerns that the conflict may drag on.",
-      "url": "https://www.cnbc.com/2026/06/08/oil-prices-today-us-iran-missile-middle-east-israel-opec.html",
-      "publishedAt": "2026-06-08T00:43:41+00:00",
-      "bucket": "commodities_energy"
-    },
-    {
       "headline": "BOE\u2019s Bailey Warns of Possible AI Rationing on Capacity Limits",
       "source": "Bloomberg",
       "description": "Bank of England Governor Andrew Bailey suggested that artificial intelligence may need to be rationed because a lack of energy capacity will restrain the ability for every economic sector to deploy the new technology.",
       "url": "https://www.bloomberg.com/news/articles/2026-06-05/boe-s-bailey-warns-of-possible-ai-rationing-on-capacity-limits",
       "publishedAt": "2026-06-05T20:22:25+00:00",
       "bucket": "central_banks"
-    },
-    {
-      "headline": "EM Stocks, Currencies Dragged Down by Korean Market Selloff",
-      "source": "Bloomberg",
-      "description": "Emerging market assets fell for the third straight session, led by a selloff in South Korean equities as investor enthusiasm for artificial intelligence stocks waned.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-05/em-stocks-currencies-dragged-down-by-korean-market-selloff",
-      "publishedAt": "2026-06-05T07:14:56+00:00",
-      "bucket": "fx_macro"
     }
   ]
 }

@@ -66,34 +66,52 @@ function WatchCard({ text }) {
   )
 }
 
-export default function ImplicationChain({ chain }) {
-  if (!chain || (!chain.driver && chain.nodes.length === 0)) return null
+function SingleChain({ chain }) {
+  if (!chain || (!chain.driver && !chain.nodes?.length)) return null
+
+  return (
+    <div className="space-y-0">
+      {chain.title && (
+        <div className="mb-4">
+          <span className="text-[10px] uppercase tracking-widest text-primary-light font-semibold">
+            {chain.title}
+          </span>
+        </div>
+      )}
+
+      {chain.driver && (
+        <>
+          <DriverCard text={chain.driver} />
+          {chain.nodes?.length > 0 && <VerticalConnector />}
+        </>
+      )}
+
+      {chain.nodes?.map((node, i) => (
+        <div key={i}>
+          <ChainNode label={node.label} body={node.body} index={i} />
+          {(i < chain.nodes.length - 1 || chain.watchText) && <VerticalConnector />}
+        </div>
+      ))}
+
+      {chain.watchText && <WatchCard text={chain.watchText} />}
+    </div>
+  )
+}
+
+const GRID_CLASS = { 2: 'md:grid-cols-2', 3: 'md:grid-cols-3' }
+
+export default function ImplicationChain({ chains }) {
+  if (!chains?.length) return null
+
+  const isMulti = chains.length > 1
+  const colClass = GRID_CLASS[chains.length] ?? 'md:grid-cols-2'
 
   return (
     <section>
-      <div className="flex items-center gap-4 mb-6">
-        <span className="text-xl font-semibold text-foreground">
-          Implication Chain
-        </span>
-        <div className="flex-1 h-px bg-border" />
-      </div>
-
-      <div className="w-full space-y-0">
-        {chain.driver && (
-          <>
-            <DriverCard text={chain.driver} />
-            {chain.nodes.length > 0 && <VerticalConnector />}
-          </>
-        )}
-
-        {chain.nodes.map((node, i) => (
-          <div key={i}>
-            <ChainNode label={node.label} body={node.body} index={i} />
-            {(i < chain.nodes.length - 1 || chain.watchText) && <VerticalConnector />}
-          </div>
+      <div className={isMulti ? `grid grid-cols-1 gap-8 ${colClass}` : ''}>
+        {chains.map((chain, i) => (
+          <SingleChain key={i} chain={chain} />
         ))}
-
-        {chain.watchText && <WatchCard text={chain.watchText} />}
       </div>
     </section>
   )

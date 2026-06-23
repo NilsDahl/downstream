@@ -97,6 +97,30 @@ function enrichCommodities(assets) {
 }
 
 // ─── Markdown chain parser ───────────────────────────────────
+export function parseIssue(content) {
+  const body = content.replace(/^#[^\n]+\n/, '').trim()
+
+  // New format: has ## section headers
+  if (/(?:^|\n)## /.test(body)) {
+    const summaryMatch = body.match(/## News Summary\n+([\s\S]+?)(?=\n## Chain \d+:|$)/)
+    const newsSummary = summaryMatch ? summaryMatch[1].trim() : ''
+
+    const chains = []
+    const chainRe = /## Chain \d+: (.+)\n+([\s\S]+?)(?=\n## Chain \d+:|$)/g
+    let m
+    while ((m = chainRe.exec(body)) !== null) {
+      chains.push({ title: m[1].trim(), ...parseChain(m[2].trim()) })
+    }
+    return {
+      chains: chains.length ? chains : [{ title: null, ...parseChain(body) }],
+      newsSummary,
+    }
+  }
+
+  // Legacy format
+  return { chains: [{ title: null, ...parseChain(body) }], newsSummary: '' }
+}
+
 export function parseChain(content) {
   // Remove h1 title if present
   const body = content.replace(/^#[^\n]+\n/, '').trim()
@@ -177,10 +201,10 @@ export function getIssue(date) {
     ? JSON.parse(fs.readFileSync(snapshotPath, 'utf8'))
     : null
 
-  const chain    = parseChain(content)
+  const { chains, newsSummary } = parseIssue(content)
   const snapshot = rawSnapshot ? transformSnapshot(rawSnapshot) : null
 
-  return { date, frontmatter, content, chain, snapshot }
+  return { date, frontmatter, content, chains, newsSummary, snapshot }
 }
 
 export function getLatestIssue() {
@@ -194,7 +218,8 @@ export function getAllIssues() {
     const draftPath    = path.join(DRAFTS_DIR, `${date}.md`)
     const snapshotPath = path.join(SNAPSHOTS_DIR, `${date}.json`)
     const { data: frontmatter, content } = matter(fs.readFileSync(draftPath, 'utf8'))
-    const { driver } = parseChain(content)
+    const { chains } = parseIssue(content)
+    const driver = chains[0]?.driver || ''
     const rawSnapshot = fs.existsSync(snapshotPath)
       ? JSON.parse(fs.readFileSync(snapshotPath, 'utf8'))
       : null

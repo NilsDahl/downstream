@@ -1,8 +1,6 @@
 import { getLatestIssue, getAllIssues } from '../lib/content.js'
-import Header           from '../components/Header.jsx'
-import MarketSnapshot   from '../components/MarketSnapshot.jsx'
-import ImplicationChain from '../components/ImplicationChain.jsx'
-import Archive          from '../components/Archive.jsx'
+import Header    from '../components/Header.jsx'
+import IssueTabs from '../components/IssueTabs.jsx'
 
 function formatDate(d) {
   return new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', {
@@ -22,7 +20,6 @@ export default function Home() {
 
         {latest ? (
           <section>
-            {/* Date heading */}
             <div className="mb-7">
               <div className="text-[10px] uppercase tracking-widest text-primary-light mb-1">
                 Latest Issue
@@ -32,18 +29,18 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="space-y-10">
-              <MarketSnapshot  snapshot={latest.snapshot} />
-              <ImplicationChain chain={latest.chain} />
-            </div>
+            <IssueTabs
+              chains={latest.chains}
+              newsSummary={latest.newsSummary}
+              snapshot={latest.snapshot}
+              allIssues={allIssues}
+            />
           </section>
         ) : (
           <div className="text-center py-24">
             <p className="text-subtle">No issues yet — run the pipeline.</p>
           </div>
         )}
-
-        {allIssues.length > 1 && <Archive issues={allIssues} />}
 
         {/* About */}
         <section id="about" className="border-t border-border pt-10">
@@ -68,7 +65,6 @@ export default function Home() {
       <footer className="border-t border-border mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-4">
 
-          {/* Data source legend */}
           <div>
             <p className="text-[10px] uppercase tracking-widest text-subtle mb-2">Data sources</p>
             <div className="flex flex-wrap gap-x-5 gap-y-1">
@@ -91,7 +87,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Bottom line */}
           <div className="flex items-center justify-between pt-2 border-t border-border/50">
             <span className="text-xs text-subtle">Downstream</span>
             <span className="text-xs text-subtle">{latest?.date ?? ''}</span>
