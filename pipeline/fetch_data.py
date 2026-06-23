@@ -247,6 +247,18 @@ AV_COMMODITY_FUNCTIONS = {
 # ─────────────────────────────────────────────────────────────
 # yfinance ticker map  (last-resort fallback only)
 # ─────────────────────────────────────────────────────────────
+# US Treasury yield tickers available same-day on Yahoo Finance.
+# These OVERRIDE the FRED T+1 data fetched in step 1 so the yield
+# changes shown in the snapshot match the same session as equities/FX.
+# Yahoo quotes yields in percentage points (4.493 = 4.493%).
+# No Yahoo ticker exists for 2Y, 1Y, 6M, 1M — those stay on FRED.
+YF_TREASURY_OVERRIDES = {
+    "us_t_10y": "^TNX",
+    "us_t_30y": "^TYX",
+    "us_t_5y":  "^FVX",
+    "us_t_1m":  "^IRX",   # 13-week T-bill; closest free proxy for short end
+}
+
 YFINANCE_TICKERS = {
     # German Bunds: =RR tickers no longer served by Yahoo Finance — omitted
     # JGBs: =RR tickers no longer served by Yahoo Finance — omitted
@@ -1064,6 +1076,14 @@ def build_snapshot() -> dict[str, dict]:
             _warn(f"FRED init: {exc}")
     else:
         _warn("FRED_API_KEY not set — US yield curve skipped")
+
+    # 1b. yfinance — override FRED T+1 US Treasury yields with same-day data
+    #     ^TNX/^TYX/^FVX/^IRX are live during the session; this makes US
+    #     yields consistent in time with equities/FX in the same snapshot.
+    print("  [yfinance] US Treasury yield overrides …")
+    yf_tsy = fetch_yfinance(YF_TREASURY_OVERRIDES)
+    data.update(yf_tsy)   # intentional overwrite of FRED data
+    print(f"             {len(yf_tsy)}/{len(YF_TREASURY_OVERRIDES)} overrides")
 
     # 2. ECB — Eurozone yield curve + €STR
     print("  [ECB]      fetching Eurozone curve + €STR …")

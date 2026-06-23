@@ -195,7 +195,16 @@ def build_user_prompt(snapshot: dict) -> str:
         )
 
     prompt += (
-        f"Market snapshot — previous session closes, all changes vs prior session:\n\n"
+        "Data timing — read this before interpreting the snapshot:\n"
+        "- FX, equities, commodities: TODAY's session (changes vs prior session).\n"
+        "- US Treasuries 5Y/10Y/30Y/short-end: TODAY's live data from Yahoo Finance.\n"
+        "- US Treasuries 2Y/1Y/6M and SOFR: PRIOR session (FRED publishes T+1). "
+        "These changes reflect two sessions ago vs prior session — do NOT describe them as today's moves.\n"
+        "- All other sovereign yield curves (ECB, UK Gilts, Sweden, Japan) "
+        "and overnight reference rates (€STR, SWESTR, SONIA): PRIOR session. "
+        "Central banks publish these with a one-day lag. Treat them as prior-session context, "
+        "not today's direction.\n\n"
+        f"Market snapshot:\n\n"
         f"{summary}\n\n"
     )
 
