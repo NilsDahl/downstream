@@ -50,14 +50,6 @@
       "bucket": "central_banks"
     },
     {
-      "headline": "Nvidia's stock struggles as Kalshi traders bet chip prices are coming down",
-      "source": "CNBC",
-      "description": "Shares of Nvidia have been faltering recently \u00a0\u2013 and Kalshi traders predict that what the company can charge for chips is also declining.",
-      "url": "https://www.cnbc.com/2026/06/22/nvidias-stock-struggles-as-kalshi-traders-bet-chip-prices-are-coming-down.html",
-      "publishedAt": "2026-06-22T19:08:17Z",
-      "bucket": "commodities_agri"
-    },
-    {
       "headline": "Three key AI stocks to watch this week with traders expecting giant moves",
       "source": "CNBC",
       "description": "Micron and Cerebras report this week. Also there's heavy options activity in Super Micro.",
@@ -98,12 +90,20 @@
       "bucket": "central_banks"
     },
     {
-      "headline": "A longtime strategist says 6 warning signs point to a 20% drop in stocks on the horizon",
-      "source": "Business Insider",
-      "description": "Wall Street veteran Jim Paulsen said there are six warning signs he's watching that signal the market may be headed for a major consolidation.",
-      "url": "https://www.businessinsider.com/stock-market-correction-warning-signs-sp500-jim-paulsen-oil-consumers-2026-6",
-      "publishedAt": "2026-06-22T15:29:30Z",
-      "bucket": "central_banks"
+      "headline": "Oil falls below $75 for the first time since March as Hormuz traffic begins to recover",
+      "source": "NBC News",
+      "description": "U.S. crude prices fell 2.7% to about $74 a gallon, after Treasury Secretary Scott Bessent announced a 60-day sanctions waiver on Iranian oil sales.",
+      "url": "https://www.nbcnews.com/business/energy/oil-prices-hormuz-sanctions-waiver-rcna351144",
+      "publishedAt": "2026-06-22T15:58:55Z",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "US partially lifts Iran oil sanctions amid \u2018encouraging\u2019 talks",
+      "source": "Al Jazeera English",
+      "description": "The move, expected under the MoU, comes as Vice President JD Vance says there's a 'good foundation' for a final deal.",
+      "url": "https://www.aljazeera.com/news/2026/6/22/us-partially-lifts-iran-oil-sanctions-amid-encouraging-talks",
+      "publishedAt": "2026-06-22T15:38:23Z",
+      "bucket": "rates_credit"
     },
     {
       "headline": "At least 13 killed and dozens injured after Qatar gas explosion",
@@ -127,7 +127,7 @@
       "description": null,
       "url": "https://www.cnbc.com/2026/06/22/treasury-iran-oil-sales.html",
       "publishedAt": "2026-06-22T14:07:18Z",
-      "bucket": "central_banks"
+      "bucket": "rates_credit"
     },
     {
       "headline": "Lagarde Sees No Need for More Forceful ECB Response to Iran War",
@@ -162,12 +162,20 @@
       "bucket": "central_banks"
     },
     {
-      "headline": "\u2018Albania is not for sale\u2019: Protests grow over Kushner-linked luxury development project",
-      "source": "CNBC",
-      "description": "The primary focus of the unrest is a proposed multi-billion-euro tourism project on Albania's Adriatic coast.",
-      "url": "https://www.cnbc.com/2026/06/22/albania-protests-kushner-development.html",
-      "publishedAt": "2026-06-22T11:14:23Z",
-      "bucket": "fx_macro"
+      "headline": "Legendary Fed chair Alan Greenspan dies at 100",
+      "source": "Business Insider",
+      "description": "Greenspan helped make the Federal Reserve chair a more publicly recognizable figure during his 19 years as the US' top central banker.",
+      "url": "https://www.businessinsider.com/alan-greenspan-dead-100-former-federal-reserve-chair-2026-6#article",
+      "publishedAt": "2026-06-22T11:43:21Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "South Korean chipmakers are being paid such massive bonuses it\u2019s becoming an inflation problem for the central bank",
+      "source": "Fortune",
+      "description": "Samsung Electronics and SK Hynix are reportedly making plans to share pthe profits from the massive AI boom with chip making staff.",
+      "url": "https://fortune.com/2026/06/22/south-korea-chip-maker-bonus-central-bank-inflation-concern/",
+      "publishedAt": "2026-06-22T10:58:27Z",
+      "bucket": "central_banks"
     },
     {
       "headline": "A major test is coming for the stock market, and Morgan Stanley warns that the Fed won\u2019t rescue investors",
@@ -176,14 +184,6 @@
       "url": "https://www.marketwatch.com/story/a-major-test-is-coming-for-the-stock-market-and-morgan-stanley-warns-the-fed-wont-rescue-investors-2ae93faa",
       "publishedAt": "2026-06-22T10:54:00Z",
       "bucket": "rates_credit"
-    },
-    {
-      "headline": "Defense giant KNDS moves closer to IPO after France-Germany stake deal",
-      "source": "CNBC",
-      "description": "France and Germany agreed on a KNDS framework as Germany seeks a 40% stake ahead of a potential multibillion-euro IPO.",
-      "url": "https://www.cnbc.com/2026/06/22/knds-ipo-france-germany-defense-stake.html",
-      "publishedAt": "2026-06-22T10:28:41Z",
-      "bucket": "fx_macro"
     },
     {
       "headline": "Treasury yields rise ahead of key inflation data; markets resume trading after public holiday",

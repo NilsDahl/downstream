@@ -195,15 +195,17 @@ def build_user_prompt(snapshot: dict) -> str:
         )
 
     prompt += (
-        "Data timing — read this before interpreting the snapshot:\n"
-        "- FX, equities, commodities: TODAY's session (changes vs prior session).\n"
-        "- US Treasuries 5Y/10Y/30Y/short-end: TODAY's live data from Yahoo Finance.\n"
-        "- US Treasuries 2Y/1Y/6M and SOFR: PRIOR session (FRED publishes T+1). "
-        "These changes reflect two sessions ago vs prior session — do NOT describe them as today's moves.\n"
-        "- All other sovereign yield curves (ECB, UK Gilts, Sweden, Japan) "
-        "and overnight reference rates (€STR, SWESTR, SONIA): PRIOR session. "
-        "Central banks publish these with a one-day lag. Treat them as prior-session context, "
-        "not today's direction.\n\n"
+        "Data timing — critical for correct analysis:\n"
+        "- FX, equities, commodities: T (today's session closes and changes).\n"
+        "- ALL yield curves and reference rates (SOFR, €STR, SWESTR, SONIA, "
+        "US Treasuries, Bunds, Gilts, JGBs, etc.): T−1 (prior session). "
+        "Central banks publish rates with a one-day lag; overnight reference rates "
+        "are backward-looking by design and cannot be real-time. "
+        "The bps changes shown for rates are T−2 → T−1, not today's moves.\n\n"
+        "Use rates as the prior-session backdrop that sets the context. "
+        "Do not say rates 'moved today' or describe rate changes as today's events. "
+        "Instead frame them as: 'going into today, yields were at X' or "
+        "'the prior session saw yields rise/fall, against which today's equity/FX moves...'\n\n"
         f"Market snapshot:\n\n"
         f"{summary}\n\n"
     )

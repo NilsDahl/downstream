@@ -29,9 +29,12 @@ export default function RatesPanel({ rates }) {
   return (
     <Card className="bg-card border-border overflow-hidden">
       <CardHeader className="px-4 py-3 border-b border-border flex flex-row items-center justify-between space-y-0">
-        <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-          Yield Curves
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+            Yield Curves
+          </span>
+          <span className="text-[9px] font-mono text-muted-foreground/50 border border-border rounded px-1 py-px">T−1</span>
+        </div>
         <div className="flex gap-3 text-[10px] text-subtle uppercase tracking-wider">
           <span className="w-14 text-right">Level</span>
           <span className="w-14 text-right">Δ bp</span>

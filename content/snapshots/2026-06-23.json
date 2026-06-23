@@ -17,13 +17,13 @@
       "label": "US 1M",
       "category": "rates",
       "sub_category": "us",
-      "source": "yfinance",
+      "source": "FRED",
       "is_fresh": true,
-      "ticker": "^IRX",
-      "as_of": "2026-06-23",
-      "level": 3.69,
-      "prev_level": 3.658,
-      "change_bps": 3.2
+      "series_id": "DGS1MO",
+      "as_of": "2026-06-22",
+      "level": 3.66,
+      "prev_level": 3.69,
+      "change_bps": -3.0
     },
     "us_t_6m": {
       "label": "US 6M",
@@ -65,37 +65,37 @@
       "label": "US 5Y",
       "category": "rates",
       "sub_category": "us",
-      "source": "yfinance",
+      "source": "FRED",
       "is_fresh": true,
-      "ticker": "^FVX",
-      "as_of": "2026-06-23",
-      "level": 4.261,
-      "prev_level": 4.225,
-      "change_bps": 3.6
+      "series_id": "DGS5",
+      "as_of": "2026-06-22",
+      "level": 4.29,
+      "prev_level": 4.23,
+      "change_bps": 6.0
     },
     "us_t_10y": {
       "label": "US 10Y",
       "category": "rates",
       "sub_category": "us",
-      "source": "yfinance",
+      "source": "FRED",
       "is_fresh": true,
-      "ticker": "^TNX",
-      "as_of": "2026-06-23",
-      "level": 4.493,
-      "prev_level": 4.451,
-      "change_bps": 4.2
+      "series_id": "DGS10",
+      "as_of": "2026-06-22",
+      "level": 4.51,
+      "prev_level": 4.46,
+      "change_bps": 5.0
     },
     "us_t_30y": {
       "label": "US 30Y",
       "category": "rates",
       "sub_category": "us",
-      "source": "yfinance",
+      "source": "FRED",
       "is_fresh": true,
-      "ticker": "^TYX",
-      "as_of": "2026-06-23",
-      "level": 4.94,
-      "prev_level": 4.901,
-      "change_bps": 3.9
+      "series_id": "DGS30",
+      "as_of": "2026-06-22",
+      "level": 4.95,
+      "prev_level": 4.9,
+      "change_bps": 5.0
     },
     "ez_estr": {
       "label": "\u20acSTR",
@@ -396,9 +396,9 @@
       "is_fresh": true,
       "ticker": "EURUSD=X",
       "as_of": "2026-06-23",
-      "close": 1.138433,
+      "close": 1.138563,
       "prev_close": 1.146276,
-      "change_pct": -0.6842
+      "change_pct": -0.6729
     },
     "gbpusd": {
       "label": "GBP/USD",
@@ -408,9 +408,9 @@
       "is_fresh": true,
       "ticker": "GBPUSD=X",
       "as_of": "2026-06-23",
-      "close": 1.320202,
+      "close": 1.320411,
       "prev_close": 1.320795,
-      "change_pct": -0.0449
+      "change_pct": -0.0291
     },
     "usdjpy": {
       "label": "USD/JPY",
@@ -419,10 +419,10 @@
       "source": "yfinance",
       "is_fresh": true,
       "ticker": "JPY=X",
-      "as_of": "2026-06-23",
-      "close": 161.576996,
-      "prev_close": 161.432999,
-      "change_pct": 0.0892
+      "as_of": "2026-06-24",
+      "close": 161.481003,
+      "prev_close": 161.570007,
+      "change_pct": -0.0551
     },
     "usdchf": {
       "label": "USD/CHF",
@@ -432,9 +432,9 @@
       "is_fresh": true,
       "ticker": "CHF=X",
       "as_of": "2026-06-23",
-      "close": 0.80965,
+      "close": 0.80935,
       "prev_close": 0.80797,
-      "change_pct": 0.2079
+      "change_pct": 0.1708
     },
     "usdsek": {
       "label": "USD/SEK",
@@ -444,9 +444,9 @@
       "is_fresh": true,
       "ticker": "SEK=X",
       "as_of": "2026-06-23",
-      "close": 9.73805,
+      "close": 9.73271,
       "prev_close": 9.58876,
-      "change_pct": 1.5569
+      "change_pct": 1.5012
     },
     "usdnok": {
       "label": "USD/NOK",
@@ -455,10 +455,10 @@
       "source": "yfinance",
       "is_fresh": true,
       "ticker": "NOK=X",
-      "as_of": "2026-06-23",
-      "close": 9.79158,
-      "prev_close": 9.69788,
-      "change_pct": 0.9662
+      "as_of": "2026-06-24",
+      "close": 9.77217,
+      "prev_close": 9.69118,
+      "change_pct": 0.8357
     },
     "usddkk": {
       "label": "USD/DKK",
@@ -468,9 +468,9 @@
       "is_fresh": true,
       "ticker": "DKK=X",
       "as_of": "2026-06-23",
-      "close": 6.56713,
+      "close": 6.5657,
       "prev_close": 6.52052,
-      "change_pct": 0.7148
+      "change_pct": 0.6929
     },
     "audusd": {
       "label": "AUD/USD",
@@ -479,10 +479,10 @@
       "source": "yfinance",
       "is_fresh": true,
       "ticker": "AUDUSD=X",
-      "as_of": "2026-06-23",
-      "close": 0.691802,
-      "prev_close": 0.70029,
-      "change_pct": -1.212
+      "as_of": "2026-06-24",
+      "close": 0.691898,
+      "prev_close": 0.699462,
+      "change_pct": -1.0814
     },
     "nzdusd": {
       "label": "NZD/USD",
@@ -491,10 +491,10 @@
       "source": "yfinance",
       "is_fresh": true,
       "ticker": "NZDUSD=X",
-      "as_of": "2026-06-23",
-      "close": 0.566861,
-      "prev_close": 0.57346,
-      "change_pct": -1.1507
+      "as_of": "2026-06-24",
+      "close": 0.567183,
+      "prev_close": 0.571171,
+      "change_pct": -0.6982
     },
     "usdcad": {
       "label": "USD/CAD",
@@ -504,9 +504,9 @@
       "is_fresh": true,
       "ticker": "CAD=X",
       "as_of": "2026-06-23",
-      "close": 1.421,
+      "close": 1.4202,
       "prev_close": 1.41743,
-      "change_pct": 0.2519
+      "change_pct": 0.1954
     },
     "usdcny": {
       "label": "USD/CNY",
@@ -528,9 +528,9 @@
       "is_fresh": true,
       "ticker": "BRL=X",
       "as_of": "2026-06-23",
-      "close": 5.1783,
+      "close": 5.1904,
       "prev_close": 5.1514,
-      "change_pct": 0.5222
+      "change_pct": 0.7571
     },
     "usdmxn": {
       "label": "USD/MXN",
@@ -540,9 +540,9 @@
       "is_fresh": true,
       "ticker": "MXN=X",
       "as_of": "2026-06-23",
-      "close": 17.551001,
+      "close": 17.535999,
       "prev_close": 17.3472,
-      "change_pct": 1.1748
+      "change_pct": 1.0884
     },
     "usdzar": {
       "label": "USD/ZAR",
@@ -552,9 +552,9 @@
       "is_fresh": true,
       "ticker": "ZAR=X",
       "as_of": "2026-06-23",
-      "close": 16.5298,
+      "close": 16.496401,
       "prev_close": 16.450121,
-      "change_pct": 0.4844
+      "change_pct": 0.2813
     },
     "usdinr": {
       "label": "USD/INR",
@@ -576,9 +576,9 @@
       "is_fresh": true,
       "ticker": "TRY=X",
       "as_of": "2026-06-23",
-      "close": 46.456902,
+      "close": 46.468201,
       "prev_close": 46.452099,
-      "change_pct": 0.0103
+      "change_pct": 0.0347
     },
     "usdkrw": {
       "label": "USD/KRW",
@@ -588,9 +588,9 @@
       "is_fresh": true,
       "ticker": "KRW=X",
       "as_of": "2026-06-23",
-      "close": 1532.569946,
+      "close": 1532.439941,
       "prev_close": 1531.329956,
-      "change_pct": 0.081
+      "change_pct": 0.0725
     },
     "usdsgd": {
       "label": "USD/SGD",
@@ -600,9 +600,9 @@
       "is_fresh": true,
       "ticker": "SGD=X",
       "as_of": "2026-06-23",
-      "close": 1.29667,
+      "close": 1.2958,
       "prev_close": 1.29242,
-      "change_pct": 0.3288
+      "change_pct": 0.2615
     },
     "eurgbp": {
       "label": "EUR/GBP",
@@ -612,9 +612,9 @@
       "is_fresh": true,
       "ticker": "EURGBP=X",
       "as_of": "2026-06-23",
-      "close": 0.86198,
+      "close": 0.86175,
       "prev_close": 0.86786,
-      "change_pct": -0.6775
+      "change_pct": -0.704
     },
     "eurjpy": {
       "label": "EUR/JPY",
@@ -624,9 +624,9 @@
       "is_fresh": true,
       "ticker": "EURJPY=X",
       "as_of": "2026-06-23",
-      "close": 183.886002,
+      "close": 183.776993,
       "prev_close": 185.042999,
-      "change_pct": -0.6253
+      "change_pct": -0.6842
     },
     "eursek": {
       "label": "EUR/SEK",
@@ -636,9 +636,9 @@
       "is_fresh": true,
       "ticker": "EURSEK=X",
       "as_of": "2026-06-23",
-      "close": 11.0819,
+      "close": 11.0824,
       "prev_close": 10.99121,
-      "change_pct": 0.8251
+      "change_pct": 0.8297
     },
     "dxy": {
       "label": "DXY",
@@ -648,9 +648,9 @@
       "is_fresh": true,
       "ticker": "DX-Y.NYB",
       "as_of": "2026-06-23",
-      "close": 101.392998,
+      "close": 101.379997,
       "prev_close": 101.019997,
-      "change_pct": 0.3692
+      "change_pct": 0.3564
     },
     "sp500": {
       "label": "S&P 500",
@@ -864,9 +864,9 @@
       "is_fresh": true,
       "ticker": "BZ=F",
       "as_of": "2026-06-23",
-      "close": 77.080002,
+      "close": 76.879997,
       "prev_close": 77.900002,
-      "change_pct": -1.0526
+      "change_pct": -1.3094
     },
     "wti": {
       "label": "WTI Crude",
@@ -876,9 +876,9 @@
       "is_fresh": true,
       "ticker": "CL=F",
       "as_of": "2026-06-23",
-      "close": 73.239998,
+      "close": 73.029999,
       "prev_close": 74.82,
-      "change_pct": -2.1117
+      "change_pct": -2.3924
     },
     "natgas": {
       "label": "Natural Gas",
@@ -888,9 +888,9 @@
       "is_fresh": true,
       "ticker": "NG=F",
       "as_of": "2026-06-23",
-      "close": 3.194,
+      "close": 3.196,
       "prev_close": 3.253,
-      "change_pct": -1.8137
+      "change_pct": -1.7522
     },
     "rbob": {
       "label": "Gasoline (RBOB)",
@@ -900,9 +900,9 @@
       "is_fresh": true,
       "ticker": "RB=F",
       "as_of": "2026-06-23",
-      "close": 2.8543,
+      "close": 2.8472,
       "prev_close": 2.987,
-      "change_pct": -4.4426
+      "change_pct": -4.6803
     },
     "heat_oil": {
       "label": "Heating Oil",
@@ -912,9 +912,9 @@
       "is_fresh": true,
       "ticker": "HO=F",
       "as_of": "2026-06-23",
-      "close": 3.1273,
+      "close": 3.1168,
       "prev_close": 3.0931,
-      "change_pct": 1.1057
+      "change_pct": 0.7662
     },
     "gold": {
       "label": "Gold",
@@ -924,9 +924,9 @@
       "is_fresh": true,
       "ticker": "GC=F",
       "as_of": "2026-06-23",
-      "close": 4128.0,
+      "close": 4128.5,
       "prev_close": 4181.899902,
-      "change_pct": -1.2889
+      "change_pct": -1.2769
     },
     "silver": {
       "label": "Silver",
@@ -936,9 +936,9 @@
       "is_fresh": true,
       "ticker": "SI=F",
       "as_of": "2026-06-23",
-      "close": 61.57,
+      "close": 61.564999,
       "prev_close": 70.695999,
-      "change_pct": -12.9088
+      "change_pct": -12.9159
     },
     "platinum": {
       "label": "Platinum",
@@ -948,9 +948,9 @@
       "is_fresh": true,
       "ticker": "PL=F",
       "as_of": "2026-06-23",
-      "close": 1652.599976,
+      "close": 1653.400024,
       "prev_close": 1670.300049,
-      "change_pct": -1.0597
+      "change_pct": -1.0118
     },
     "palladium": {
       "label": "Palladium",
@@ -960,9 +960,9 @@
       "is_fresh": true,
       "ticker": "PA=F",
       "as_of": "2026-06-23",
-      "close": 1238.5,
+      "close": 1237.0,
       "prev_close": 1257.099976,
-      "change_pct": -1.4796
+      "change_pct": -1.5989
     },
     "copper": {
       "label": "Copper",
@@ -972,9 +972,9 @@
       "is_fresh": true,
       "ticker": "HG=F",
       "as_of": "2026-06-23",
-      "close": 6.1305,
+      "close": 6.127,
       "prev_close": 6.3565,
-      "change_pct": -3.5554
+      "change_pct": -3.6105
     },
     "aluminium": {
       "label": "Aluminium",
