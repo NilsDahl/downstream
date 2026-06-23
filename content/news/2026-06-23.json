@@ -1,0 +1,325 @@
+{
+  "date": "2026-06-23",
+  "headlines": [
+    {
+      "headline": "Asian refiners see little room for Iranian oil, leaving China as key buyer after US waiver",
+      "source": "Reuters",
+      "description": "The return of Iranian crude is pressuring \u200bglobal oil prices, with Brent crude declining by about 16% so far in June. Sources expect supply of\u00a0...",
+      "url": "https://www.reuters.com/business/energy/asian-refiners-see-little-room-iranian-oil-leaving-china-key-buyer-after-us-2026-06-23/",
+      "publishedAt": "2026-06-23T17:09:40+00:00",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Exxon's natural gas M&A push is pipe dream - Reuters",
+      "source": "Reuters",
+      "description": "The $574 \u200cbln oil major may have eyed Australia's Woodside and other producers in Asia. A \u200bpurchase might work if the \u200bregion really needed LNG as\u00a0...",
+      "url": "https://www.reuters.com/commentary/breakingviews/exxons-natural-gas-ma-push-is-pipe-dream-2026-06-23/",
+      "publishedAt": "2026-06-23T14:24:16+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "US Natural Gas Falls on Cooler Outlooks, Smaller LNG Flows",
+      "source": "Bloomberg",
+      "description": "US natural gas futures declined as forecasts shifted to show cooler weather in the coming weeks, suggesting a slight decline in demand for gas-fired electricity as consumers pull back on using air-conditioners. US gas flows to liquefied natural gas export facilities also fell, increasing supply in t...",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-23/us-natural-gas-falls-on-cooler-outlooks-smaller-lng-flows",
+      "publishedAt": "2026-06-23T14:23:02+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Gold futures slip as Fed rate hike fears drive precious metals' retreat - MarketWatch",
+      "source": "MarketWatch",
+      "description": "Gold futures were lower early Tuesday, with Deutsche Bank arguing that the recent retreat in precious metal prices is because of concerns about\u00a0...",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-tech-sell-off-oil-prices-us-waiving-oil-sanctions-iran/card/gold-futures-slip-as-fed-rate-hike-fears-drive-precious-metals-retreat-jjUc87vtrJXw1cJd9aUj",
+      "publishedAt": "2026-06-23T13:57:31+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Current price of oil as of June 23, 2026 | Fortune",
+      "source": "Fortune",
+      "description": "When oil prices change, it affects your energy costs\u2014and even the price of everyday items. Here\u2019s why.",
+      "url": "https://fortune.com/article/price-of-oil-06-23-2026/",
+      "publishedAt": "2026-06-23T12:48:41+00:00",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Deutsche Bank Cuts Gold Forecasts up to 22% as Bulls Temper View",
+      "source": "Bloomberg",
+      "description": "Deutsche Bank AG reduced its gold-price forecasts by as much as 22%, as investors become more wary about the outlook for US monetary policy and investment demand for the precious metal dries up.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-23/deutsche-bank-cuts-gold-forecasts-up-to-22-as-bulls-temper-view",
+      "publishedAt": "2026-06-23T04:06:09+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Nvidia's stock struggles as Kalshi traders bet chip prices are coming down",
+      "source": "CNBC",
+      "description": "Shares of Nvidia have been faltering recently \u00a0\u2013 and Kalshi traders predict that what the company can charge for chips is also declining.",
+      "url": "https://www.cnbc.com/2026/06/22/nvidias-stock-struggles-as-kalshi-traders-bet-chip-prices-are-coming-down.html",
+      "publishedAt": "2026-06-22T19:08:17Z",
+      "bucket": "commodities_agri"
+    },
+    {
+      "headline": "Three key AI stocks to watch this week with traders expecting giant moves",
+      "source": "CNBC",
+      "description": "Micron and Cerebras report this week. Also there's heavy options activity in Super Micro.",
+      "url": "https://www.cnbc.com/2026/06/22/three-key-ai-stocks-to-watch-this-week-with-traders-expecting-giant-moves.html",
+      "publishedAt": "2026-06-22T17:54:14Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Gold rises as US-Iran peace optimism pulls oil prices lower | Reuters",
+      "source": "Reuters",
+      "description": "... precious metal space,\" Saxo Bank analyst Ole Hansen said. ... Ashitha covers the commodity landscape, with increased focus on precious metals, minor\u00a0...",
+      "url": "https://www.reuters.com/world/india/gold-rebounds-one-week-low-iran-cites-progress-peace-talks-2026-06-22/",
+      "publishedAt": "2026-06-22T17:13:49+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "The Fed is fed up with inflation and will bring down the hammer with a series of rate hikes this year, reversing earlier cuts, BofA says",
+      "source": "Fortune",
+      "description": "\"The Fed was willing to look through the tariffs, but it is losing patience after the latest round of supply shocks.\"",
+      "url": "https://fortune.com/2026/06/22/fed-rate-hikes-outlook-sticky-inflation-kevin-warsh-job-growth-oil-prices/",
+      "publishedAt": "2026-06-22T16:16:56Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Oil falls below $75 for the first time since March as Hormuz traffic begins to recover",
+      "source": "NBC News",
+      "description": "U.S. crude prices fell 2.7% to about $74 a gallon, after Treasury Secretary Scott Bessent announced a 60-day sanctions waiver on Iranian oil sales.",
+      "url": "https://www.nbcnews.com/business/energy/oil-prices-hormuz-sanctions-waiver-rcna351144",
+      "publishedAt": "2026-06-22T15:58:55Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "US partially lifts Iran oil sanctions amid \u2018encouraging\u2019 talks",
+      "source": "Al Jazeera English",
+      "description": "The move, expected under the MoU, comes as Vice President JD Vance says there's a 'good foundation' for a final deal.",
+      "url": "https://www.aljazeera.com/news/2026/6/22/us-partially-lifts-iran-oil-sanctions-amid-encouraging-talks",
+      "publishedAt": "2026-06-22T15:38:23Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "A longtime strategist says 6 warning signs point to a 20% drop in stocks on the horizon",
+      "source": "Business Insider",
+      "description": "Wall Street veteran Jim Paulsen said there are six warning signs he's watching that signal the market may be headed for a major consolidation.",
+      "url": "https://www.businessinsider.com/stock-market-correction-warning-signs-sp500-jim-paulsen-oil-consumers-2026-6",
+      "publishedAt": "2026-06-22T15:29:30Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Gold Falls As Traders Weigh U.S.-Iran Progress, Hawkish Fed Signals - WSJ",
+      "source": "The Wall Street Journal",
+      "description": "... Precious Metals. Comex Gold Settles 0.07% Higher at $4330.90. June 16 ... Find insight on Canadian precious metals miners, palm oil prices\u00a0...",
+      "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-direction-seen-led-by-geopolitics-monetary-policy-41733cb8",
+      "publishedAt": "2026-06-22T14:49:37+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Vance Hails \u2018Good Day\u2019 of Iran Talks as US Waives Oil Sanctions",
+      "source": "Financial Post",
+      "description": "US Vice President JD Vance said talks with Iran over the weekend were \u201cvery, very good,\u201d as the sides attempt to reach a peace deal within two months and formally end a war that\u2019s reverberated through the global economy.",
+      "url": "https://financialpost.com/pmn/business-pmn/vance-hails-good-day-of-iran-talks-as-us-waives-oil-sanctions",
+      "publishedAt": "2026-06-22T14:47:19Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Treasury Department authorizes Iranian oil sales under 60-day license",
+      "source": "CNBC",
+      "description": null,
+      "url": "https://www.cnbc.com/2026/06/22/treasury-iran-oil-sales.html",
+      "publishedAt": "2026-06-22T14:07:18Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Lagarde Sees No Need for More Forceful ECB Response to Iran War",
+      "source": "Bloomberg",
+      "description": "The European Central Bank doesn\u2019t need to react more forcefully to the fallout from the Middle East conflict because inflation is set to return to target over the medium term, President Christine Lagarde said.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-22/lagarde-sees-no-need-for-more-forceful-ecb-response-to-iran-war",
+      "publishedAt": "2026-06-22T13:00:00+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Copper Rallies as Peace-Talk Progress Eases Inflation Fears",
+      "source": "Bloomberg",
+      "description": "Copper prices rose after Iran said there had been \u201cmajor progress\u201d in peace talks with the US, boosting expectations that traffic through the Strait of Hormuz may recover and ease inflation pressures.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-22/copper-rallies-as-peace-talk-progress-eases-inflation-fears",
+      "publishedAt": "2026-06-22T12:08:54+00:00",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Former Federal Reserve Chairman Alan Greenspan dies at 100",
+      "source": "Associated Press",
+      "description": "U.S. Federal Reserve Chair Alan Greenspan has died at the age of 100. He died on Monday from complications of Parkinson\u2019s Disease, said his wife of 29 years, NBC News correspondent Andrea Mitchell. In his 18\u00bd years at the helm of the Fed, Greenspan presided o\u2026",
+      "url": "https://apnews.com/article/greenspan-federal-reserve-death-25f435cc747df7b76d0ff40844f8933f",
+      "publishedAt": "2026-06-22T11:49:05Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "\u2018Albania is not for sale\u2019: Protests grow over Kushner-linked luxury development project",
+      "source": "CNBC",
+      "description": "The primary focus of the unrest is a proposed multi-billion-euro tourism project on Albania's Adriatic coast.",
+      "url": "https://www.cnbc.com/2026/06/22/albania-protests-kushner-development.html",
+      "publishedAt": "2026-06-22T11:14:23Z",
+      "bucket": "fx_macro"
+    },
+    {
+      "headline": "JPMorgan\u2019s Lipikhina Sees Europe Stocks Lagging Despite Oil Drop",
+      "source": "Financial Post",
+      "description": "European equities may struggle to keep pace with US and emerging market peers in the second half of the year as falling oil prices threaten a key source of earnings growth, according to Nataliia Lipikhina at JPMorgan Chase & Co.",
+      "url": "https://financialpost.com/pmn/business-pmn/jpmorgans-lipikhina-sees-europe-stocks-lagging-despite-oil-drop",
+      "publishedAt": "2026-06-22T10:29:20Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Defense giant KNDS moves closer to IPO after France-Germany stake deal",
+      "source": "CNBC",
+      "description": "France and Germany agreed on a KNDS framework as Germany seeks a 40% stake ahead of a potential multibillion-euro IPO.",
+      "url": "https://www.cnbc.com/2026/06/22/knds-ipo-france-germany-defense-stake.html",
+      "publishedAt": "2026-06-22T10:28:41Z",
+      "bucket": "fx_macro"
+    },
+    {
+      "headline": "Treasury yields rise ahead of key inflation data; markets resume trading after public holiday",
+      "source": "CNBC",
+      "description": "The yield on the 10-year U.S. Treasury note \u2014 the key benchmark for U.S. government borrowing \u2014 rose over 3 basis points to 4.483%.",
+      "url": "https://www.cnbc.com/2026/06/22/treasury-yields-investors-look-ahead-to-key-inflation-data.html",
+      "publishedAt": "2026-06-22T09:39:31Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "War Gaming The Price Of Oil",
+      "source": "Forbes",
+      "description": "Iran's blockade of the Strait of Hormuz has also shown other nations how they can also move the global crude oil market and affect the U.S. midterm elections",
+      "url": "https://www.forbes.com/sites/edhirs/2026/06/21/war-gaming-the-price-of-oil/",
+      "publishedAt": "2026-06-22T02:30:42Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Treasuries Decline as Trump\u2019s Iran Threats Stoke Inflation Fears",
+      "source": "Financial Post",
+      "description": "Treasuries fell after President Donald Trump again threatened military action against Iran over Hezbollah\u2019s attacks on Israel, sending oil prices higher and prompting investors to reassess inflation risks.",
+      "url": "https://financialpost.com/pmn/business-pmn/treasuries-decline-as-trumps-iran-threats-stoke-inflation-fears",
+      "publishedAt": "2026-06-22T01:47:43Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Oil rises after Trump threatens fresh strikes on Iran, overshadowing peace talks",
+      "source": "CNBC",
+      "description": "Oil prices climbed on Monday after U.S. President Donald Trump threatened renewed military action against Iran.",
+      "url": "https://www.cnbc.com/2026/06/22/oil-prices-wti-brent-crude-trump-iran-threat-strait-hormuz-closure.html",
+      "publishedAt": "2026-06-22T00:05:08Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Bond Traders Burned by Fed\u2019s Pivot Look to Prices Gauge, Oil",
+      "source": "Bloomberg",
+      "description": "Bond traders, recently forced to reposition for the possibility of higher interest rates ahead, are looking to this week\u2019s personal spending data for an early read on whether the market\u2019s newly hawkish stance is warranted.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-21/bond-traders-burned-by-fed-s-pivot-look-to-prices-gauge-oil",
+      "publishedAt": "2026-06-21T19:00:00+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Ivanhoe Mines: A Recovery Year That Could Become A Platform Year (OTCMKTS:IVPAF)",
+      "source": "Seeking Alpha",
+      "description": "Ivanhoe Mines (IVPAF) is transitioning from a high-grade copper growth stock to a vertically integrated, multi-critical metal platform with smelting, zinc,...",
+      "url": "https://seekingalpha.com/article/4916365-ivanhoe-mines-a-recovery-year-that-could-become-a-platform-year?utm_source=flipboard&utm_medium=referral&feed_item_type=article",
+      "publishedAt": "2026-06-19T18:43:19+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "BOJ Governor Ueda To Resume Work Next Week After Early Discharge",
+      "source": "Bloomberg",
+      "description": "Bank of Japan Governor Kazuo Ueda was discharged from the hospital Friday and plans to return to work on Tuesday, according to the BOJ.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-19/governor-ueda-has-been-discharged-from-hospital-boj-says",
+      "publishedAt": "2026-06-19T07:42:37+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Oil drifts lower as Strait of Hormuz reopens, focus shifts to demand outlook",
+      "source": "CNBC",
+      "description": "With immediate supply fears fading and tanker traffic returning to the Strait of Hormuz, traders are turning their attention back to oil demand and OPEC's outlook for the market.",
+      "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+      "publishedAt": "2026-06-19T03:26:20+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Jensen Huang\u2019s Nvidia Is About to Break a Global Earnings Record. That\u2019s No Accident.",
+      "source": "Barron's",
+      "description": "Saudi Arabia\u2019s oil monopoly recorded the largest annual corporate profit ever\u2014$161 billion in 2022. Nvidia will almost certainly shatter that record \u2026",
+      "url": "https://www.barrons.com/articles/nvidia-jensen-huang-top-ceos-2026-4bb1f02d",
+      "publishedAt": "2026-06-19T01:00:00+00:00",
+      "bucket": "risk_geopolitics"
+    },
+    {
+      "headline": "BOE\u2019s Bailey Appeals for Help on X Posts Showing Fake Farage Fight",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor Andrew Bailey appealed for help in identifying who is behind a barrage of bizarre social media posts using fake images of him fighting Reform UK leader Nigel Farage.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-18/bank-of-england-s-bailey-appeals-for-help-on-x-posts-of-fake-nigel-farage-fight",
+      "publishedAt": "2026-06-18T13:36:29+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "BOE's Bailey Says Holding Rates Is a 'Sensible Decision'",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor\u00a0Andrew Bailey\u00a0tells broadcasters energy prices remain above pre-war levels and that the the central bank needs to assess \"how much damage has been done to the infrastructure for supplying energy\" in the Middle East. \"I think holding is the right position to be in at the mome...",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-18/boe-s-bailey-says-holding-rates-is-a-sensible-decision-video",
+      "publishedAt": "2026-06-18T12:36:48+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "PBOC\u2019s New Rate Regime to Aid Liquidity and Bonds, Analysts Say",
+      "source": "Bloomberg",
+      "description": "The People\u2019s Bank of China\u2019s latest refinement of its monetary policy toolkit is expected to damp money-market volatility and support bonds, according to analysts.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-18/pboc-s-new-rate-regime-to-aid-liquidity-and-bonds-analysts-say",
+      "publishedAt": "2026-06-18T03:38:07+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "ECB\u2019s Lagarde Warns AI Is Huge Risk for Financial Stability",
+      "source": "Bloomberg",
+      "description": "Artificial intelligence can potentially lead to dangerous financial crises, and the European Central Bank is determined to ensure that doesn\u2019t happen, President Christine Lagarde said.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-17/ecb-s-lagarde-warns-ai-is-huge-risk-for-financial-stability",
+      "publishedAt": "2026-06-17T12:30:21+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Bank of Japan hikes rates to highest since 1995 as yen languishes at historic lows",
+      "source": "CNBC",
+      "description": "This is the BOJ's first hike since December, when it raised rates to its current level of 0.75%, also its highest level in over 30 years.",
+      "url": "https://www.cnbc.com/2026/06/16/boj-rate-hike-historic-inflation.html",
+      "publishedAt": "2026-06-16T03:29:53+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Bailey Defends BOE Gilt Sales After Criticism From Farage",
+      "source": "Bloomberg",
+      "description": "Governor Andrew Bailey defended the Bank of England\u2019s buying and selling of UK government bonds following criticism of the policy, including from Nigel Farage\u2019s populist Reform UK party.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-14/bailey-defends-boe-gilt-sales-after-criticism-from-farage?utm_source=flipboard&utm_content=bloomberg%2Fmagazine%2FMarkets",
+      "publishedAt": "2026-06-14T22:48:42+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Considering An Intraday Trading Strategy With The UVXY ETF (BATS:UVXY)",
+      "source": "Seeking Alpha",
+      "description": "Trade UVXY tactically, not long-term: learn why this leveraged VIX ETF decays, lags spikes, and needs strict stop-loss risk management\u2014read now.",
+      "url": "https://seekingalpha.com/article/4913368-considering-an-intraday-trading-strategy-with-the-uvxy-etf?source=feed_tag_etf_portfolio_strategy",
+      "publishedAt": "2026-06-09T16:53:48+00:00",
+      "bucket": "risk_geopolitics"
+    },
+    {
+      "headline": "Invesco Corporate Bond Fund Q1 2026 Commentary",
+      "source": "Seeking Alpha",
+      "description": "Bond yields, though down from their highs, are still at attractive levels compared to the last 10 years, in our view. Read more here.",
+      "url": "https://seekingalpha.com/article/4913301-invesco-corporate-bond-fund-q1-2026-commentary",
+      "publishedAt": "2026-06-09T14:10:00+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "May CPI Preview: Lower Oil, Stickier Inflation (NYSEARCA:SPY)",
+      "source": "Seeking Alpha",
+      "description": "Track rising inflation forecasts, the CPI vs. PPI gap, and what it means for Fed rate hikes and markets. Click here to read what investors need to know.",
+      "url": "https://seekingalpha.com/article/4913257-may-cpi-preview-lower-oil-stickier-inflation",
+      "publishedAt": "2026-06-09T13:54:31+00:00",
+      "bucket": "rates_credit"
+    }
+  ]
+}

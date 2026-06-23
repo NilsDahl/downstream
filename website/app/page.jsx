@@ -66,9 +66,37 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-border mt-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
-          <span className="text-xs text-subtle">Downstream</span>
-          <span className="text-xs text-subtle">{latest?.date ?? ''}</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-4">
+
+          {/* Data source legend */}
+          <div>
+            <p className="text-[10px] uppercase tracking-widest text-subtle mb-2">Data sources</p>
+            <div className="flex flex-wrap gap-x-5 gap-y-1">
+              {[
+                ['FRED', 'Federal Reserve (St. Louis)'],
+                ['ECB',  'European Central Bank'],
+                ['RIX',  'Riksbank (Sweden)'],
+                ['BoE',  'Bank of England'],
+                ['BBK',  'Deutsche Bundesbank'],
+                ['MoF',  'Ministry of Finance (Japan)'],
+                ['YF',   'Yahoo Finance / yfinance'],
+                ['TD',   'Twelve Data'],
+                ['AV',   'Alpha Vantage'],
+              ].map(([abbr, full]) => (
+                <span key={abbr} className="text-[11px] text-subtle">
+                  <span className="font-mono text-muted-foreground">{abbr}</span>
+                  <span className="text-subtle/60"> · {full}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Bottom line */}
+          <div className="flex items-center justify-between pt-2 border-t border-border/50">
+            <span className="text-xs text-subtle">Downstream</span>
+            <span className="text-xs text-subtle">{latest?.date ?? ''}</span>
+          </div>
+
         </div>
       </footer>
     </div>
