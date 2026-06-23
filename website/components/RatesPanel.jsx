@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Card, CardHeader, CardContent } from '@/components/ui/card'
+import SourceTag from './SourceTag.jsx'
 
 const ECONOMY_LABELS = {
   us:       'United States',
@@ -53,9 +54,12 @@ export default function RatesPanel({ rates }) {
               {!collapsed[econ] && rows.map((a, i) => (
                 <div
                   key={a.key}
-                  className={`flex items-center px-4 py-1.5 border-b border-border last:border-0 ${i % 2 === 1 ? 'bg-muted/20' : ''}`}
+                  className={`flex items-center px-4 py-1.5 border-b border-border last:border-0 ${i % 2 === 1 ? 'bg-muted/20' : ''} ${a.missing ? 'opacity-40' : ''}`}
                 >
-                  <span className="flex-1 text-xs text-dimmed">{a.label}</span>
+                  <span className="flex-1 text-xs text-dimmed flex items-center">
+                    {a.label}
+                    <SourceTag source={a.source} missing={a.missing} />
+                  </span>
                   <span className="text-xs text-foreground w-14 text-right">{fmtLevel(a.level)}</span>
                   <span className={`text-xs w-14 text-right ${bpsColor(a.change_bps)}`}>{fmtBps(a.change_bps)}</span>
                 </div>

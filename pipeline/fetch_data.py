@@ -29,6 +29,7 @@ most recent business day) so the website can flag stale data visually.
 import json
 import math
 import os
+import random
 import sys
 import time
 from datetime import date, timedelta
@@ -506,10 +507,11 @@ def fetch_yfinance(keys_tickers: dict[str, str]) -> dict[str, dict]:
         _warn(f"yfinance batch download failed: {exc}")
         failed_tickers = set(tickers)
 
-    # Individual retry for anything that failed in the batch
+    # Individual retry for anything that failed in the batch — pace to avoid rate limits
     if failed_tickers:
         _warn(f"yfinance: retrying {len(failed_tickers)} tickers individually")
         for ticker in failed_tickers:
+            time.sleep(random.uniform(1.5, 3.0))
             key = key_map[ticker]
             try:
                 hist = yf.Ticker(ticker).history(period="7d", auto_adjust=True)
@@ -1093,27 +1095,28 @@ def build_snapshot() -> dict[str, dict]:
     data.update(fetched)
     print(f"               {len(fetched)}/{len(JGB_COL_MAP)} series")
 
-    # 7. Alpha Vantage — commodities (primary; 12 s delay between calls)
-    av_needed = {k for k in AV_COMMODITY_FUNCTIONS if k not in data}
-    print(f"  [Alpha Vantage] fetching {len(av_needed)} commodities …")
-    fetched = fetch_alphavantage(av_needed)
-    data.update(fetched)
-    print(f"                  {len(fetched)}/{len(av_needed)} commodities")
-
-    # 8. Twelve Data — FX, equities, remaining commodities, bond fallbacks
-    td_needed = {k: v for k, v in TD_TICKERS.items() if k not in data}
-    print(f"  [Twelve Data] fetching {len(td_needed)} assets …")
-    fetched = fetch_twelvedata(td_needed)
-    data.update(fetched)
-    print(f"                {len(fetched)}/{len(td_needed)} assets")
-
-    # 9. yfinance — last-resort fallback for anything still missing
+    # 7. yfinance — primary for FX, equities, commodities
     yf_needed = {k: v for k, v in YFINANCE_TICKERS.items() if k not in data}
-    if yf_needed:
-        print(f"  [yfinance] fallback for {len(yf_needed)} assets …")
-        fetched = fetch_yfinance(yf_needed)
+    print(f"  [yfinance] fetching {len(yf_needed)} assets …")
+    fetched = fetch_yfinance(yf_needed)
+    data.update(fetched)
+    print(f"             {len(fetched)}/{len(yf_needed)} assets")
+
+    # 8. Alpha Vantage — commodity fallback for anything yfinance missed
+    av_needed = {k for k in AV_COMMODITY_FUNCTIONS if k not in data}
+    if av_needed:
+        print(f"  [Alpha Vantage] fallback for {len(av_needed)} commodities …")
+        fetched = fetch_alphavantage(av_needed)
         data.update(fetched)
-        print(f"             {len(fetched)}/{len(yf_needed)} assets")
+        print(f"                  {len(fetched)}/{len(av_needed)} commodities")
+
+    # 9. Twelve Data — fallback for FX + remaining assets yfinance/AV missed
+    td_needed = {k: v for k, v in TD_TICKERS.items() if k not in data}
+    if td_needed:
+        print(f"  [Twelve Data] fallback for {len(td_needed)} assets …")
+        fetched = fetch_twelvedata(td_needed)
+        data.update(fetched)
+        print(f"                {len(fetched)}/{len(td_needed)} assets")
 
     return data
 

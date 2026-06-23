@@ -63,22 +63,23 @@ const USD_BASE_PAIRS = new Set([
 function transformSnapshot(raw) {
   const assets = raw.assets || {}
 
-  function pickGroup(orderMap, category) {
+  function pickGroup(orderMap) {
     const result = {}
     for (const [group, keys] of Object.entries(orderMap)) {
-      result[group] = keys
-        .filter(k => assets[k] && assets[k].category === category)
-        .map(k => ({ key: k, ...assets[k] }))
-        .filter(a => a.level != null || a.close != null)
+      result[group] = keys.map(k => {
+        const asset = assets[k]
+        if (!asset) return { key: k, label: k, missing: true }
+        return { key: k, ...asset }
+      })
     }
     return result
   }
 
   return {
     date: raw.date,
-    rates:       pickGroup(RATES_ORDER,      'rates'),
-    fx:          pickGroup(FX_ORDER,         'fx'),
-    equities:    pickGroup(EQUITIES_ORDER,   'equities'),
+    rates:       pickGroup(RATES_ORDER),
+    fx:          pickGroup(FX_ORDER),
+    equities:    pickGroup(EQUITIES_ORDER),
     commodities: enrichCommodities(assets),
   }
 }
@@ -86,14 +87,11 @@ function transformSnapshot(raw) {
 function enrichCommodities(assets) {
   const result = {}
   for (const [group, keys] of Object.entries(COMMODITIES_ORDER)) {
-    result[group] = keys
-      .filter(k => assets[k])
-      .map(k => ({
-        key: k,
-        unit: COMMODITY_UNITS[k] ?? '',
-        ...assets[k],
-      }))
-      .filter(a => a.close != null)
+    result[group] = keys.map(k => {
+      const asset = assets[k]
+      if (!asset) return { key: k, label: k, unit: COMMODITY_UNITS[k] ?? '', missing: true }
+      return { key: k, unit: COMMODITY_UNITS[k] ?? '', ...asset }
+    })
   }
   return result
 }
