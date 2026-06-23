@@ -427,36 +427,43 @@ def _yf_parse_df(key: str, ticker: str, df) -> dict | None:
     if len(df) < 2:
         return None
 
-    # Futures-specific quality filters
     if ticker.endswith("=F") and "Volume" in df.columns:
-        # Drop zero-volume bars (stale carry-forward / dead contracts)
+        # Futures volume handling:
+        # Yahoo sometimes reports zero volume for valid settlement prices (e.g.
+        # CME Globex carry-forwards). If we naively filter those out and then
+        # take iloc[-2] as prev, we can span multiple sessions and report a
+        # multi-day move as a single-day change (the original silver -12% bug).
+        #
+        # Correct approach:
+        #   last = most recent bar WITH volume (actual traded close)
+        #   prev = the bar immediately before last in the FULL df, volume or not
+        #          (the genuine prior-session settlement price)
         traded = df[df["Volume"] > 0]
-        if len(traded) >= 2:
-            df = traded
-        elif len(traded) == 1:
-            last_idx = df.index.get_loc(traded.index[-1])
-            if last_idx >= 1:
-                df = df.iloc[last_idx - 1 : last_idx + 1]
-
-        if len(df) < 2:
+        if traded.empty:
             return None
 
-        # Detect likely contract rolls: very large move + volume on the last bar
-        # is less than 20% of the prior 3-bar average → probable roll, not real move
-        if len(df) >= 3 and "Volume" in df.columns:
-            last_vol = float(df["Volume"].iloc[-1])
-            avg_prev = float(df["Volume"].iloc[-4:-1].mean()) if len(df) >= 4 else float(df["Volume"].iloc[:-1].mean())
-            last_close = float(df["Close"].iloc[-1])
-            prev_close = float(df["Close"].iloc[-2])
-            pct_move   = abs(last_close - prev_close) / abs(prev_close) * 100 if prev_close else 0
-            if pct_move > 4 and avg_prev > 0 and last_vol < 0.25 * avg_prev:
-                _warn(f"yfinance: {key} ({ticker}) flagged as likely roll "
-                      f"({pct_move:.1f}% move, vol={last_vol:.0f} vs avg={avg_prev:.0f}) — skipping")
-                return None
+        last_pos = df.index.get_loc(traded.index[-1])
+        if last_pos < 1:
+            return None
 
-    prev  = float(df["Close"].iloc[-2])
-    last  = float(df["Close"].iloc[-1])
-    as_of = df.index[-1].strftime("%Y-%m-%d")
+        last  = float(traded.iloc[-1]["Close"])
+        as_of = traded.index[-1].strftime("%Y-%m-%d")
+        prev  = float(df.iloc[last_pos - 1]["Close"])   # prior bar, no volume gate
+
+        # Roll detection: big move on low volume relative to recent traded bars.
+        pct_move = abs(last - prev) / abs(prev) * 100 if prev else 0
+        if pct_move > 4:
+            last_vol   = float(traded.iloc[-1]["Volume"])
+            prior_vols = traded.iloc[:-1]["Volume"].tail(3)
+            avg_vol    = float(prior_vols.mean()) if len(prior_vols) else 0
+            if avg_vol > 0 and last_vol < 0.25 * avg_vol:
+                _warn(f"yfinance: {key} ({ticker}) flagged as likely roll "
+                      f"({pct_move:.1f}% move, vol={last_vol:.0f} vs avg={avg_vol:.0f}) — skipping")
+                return None
+    else:
+        last  = float(df["Close"].iloc[-1])
+        prev  = float(df["Close"].iloc[-2])
+        as_of = df.index[-1].strftime("%Y-%m-%d")
 
     if _clean(last) is None or _clean(prev) is None:
         return None

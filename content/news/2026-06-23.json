@@ -42,30 +42,6 @@
       "bucket": "commodities_metals"
     },
     {
-      "headline": "Chubb CEO flags threat disrupting global oil supply",
-      "source": "TheStreet",
-      "description": "When the CEO of the world's largest publicly traded property and casualty insurer describes a waterway as a \"war-zone environment\" and says conditions change...",
-      "url": "https://www.thestreet.com/investing/stocks/chubb-cb-ceo-evan-greenberg-warns-shipping-risks-persist-in-strait-of-hormuz",
-      "publishedAt": "2026-06-22T20:07:00Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Three key AI stocks to watch this week with traders expecting giant moves",
-      "source": "CNBC",
-      "description": "Micron and Cerebras report this week. Also there's heavy options activity in Super Micro.",
-      "url": "https://www.cnbc.com/2026/06/22/three-key-ai-stocks-to-watch-this-week-with-traders-expecting-giant-moves.html",
-      "publishedAt": "2026-06-22T17:54:14Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Jim Cramer delivers strong buy call on fast-growing digital bank",
-      "source": "TheStreet",
-      "description": "When a CEO is buying his own company's shares on the open market several times in a single year, and Jim Cramer is simultaneously telling viewers to buy at t...",
-      "url": "https://www.thestreet.com/investing/stocks/sofi-sofi-technologies-jim-cramer-reiterates-buy-sofi-stock-ceo-anthony-noto-buys-2-25-million-of-sofi",
-      "publishedAt": "2026-06-22T17:32:00Z",
-      "bucket": "central_banks"
-    },
-    {
       "headline": "Gold rises as US-Iran peace optimism pulls oil prices lower | Reuters",
       "source": "Reuters",
       "description": "... precious metal space,\" Saxo Bank analyst Ole Hansen said. ... Ashitha covers the commodity landscape, with increased focus on precious metals, minor\u00a0...",
@@ -74,44 +50,12 @@
       "bucket": "commodities_metals"
     },
     {
-      "headline": "Canada\u2019s inflation hits 29-month high amid heightened oil prices",
-      "source": "Al Jazeera English",
-      "description": "Petrol prices lead the surge with a 33.2 percent price increase on an annual basis.",
-      "url": "https://www.aljazeera.com/economy/2026/6/22/canadas-inflation-hits-29-month-high-amid-heightened-oil-prices",
-      "publishedAt": "2026-06-22T16:24:55Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "The Fed is fed up with inflation and will bring down the hammer with a series of rate hikes this year, reversing earlier cuts, BofA says",
+      "headline": "Current price of silver as of Monday, June 22, 2026 | Fortune",
       "source": "Fortune",
-      "description": "\"The Fed was willing to look through the tariffs, but it is losing patience after the latest round of supply shocks.\"",
-      "url": "https://fortune.com/2026/06/22/fed-rate-hikes-outlook-sticky-inflation-kevin-warsh-job-growth-oil-prices/",
-      "publishedAt": "2026-06-22T16:16:56Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Oil falls below $75 for the first time since March as Hormuz traffic begins to recover",
-      "source": "NBC News",
-      "description": "U.S. crude prices fell 2.7% to about $74 a gallon, after Treasury Secretary Scott Bessent announced a 60-day sanctions waiver on Iranian oil sales.",
-      "url": "https://www.nbcnews.com/business/energy/oil-prices-hormuz-sanctions-waiver-rcna351144",
-      "publishedAt": "2026-06-22T15:58:55Z",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "US partially lifts Iran oil sanctions amid \u2018encouraging\u2019 talks",
-      "source": "Al Jazeera English",
-      "description": "The move, expected under the MoU, comes as Vice President JD Vance says there's a 'good foundation' for a final deal.",
-      "url": "https://www.aljazeera.com/news/2026/6/22/us-partially-lifts-iran-oil-sanctions-amid-encouraging-talks",
-      "publishedAt": "2026-06-22T15:38:23Z",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "At least 13 killed and dozens injured after Qatar gas explosion",
-      "source": "BBC News",
-      "description": "The city's main liquified natural gas (LNG) processing site suffered a \"technical accident\" in the Ras Laffan industrial zone.",
-      "url": "https://www.bbc.co.uk/news/articles/cwy05llpjpno",
-      "publishedAt": "2026-06-22T15:15:42Z",
-      "bucket": "central_banks"
+      "description": "Current precious metals prices as of 8:40 a.m. ET today. Precious metal, Price per ounce. Gold, $4,204.53. Silver, $66.38. Platinum\u00a0...",
+      "url": "https://fortune.com/article/current-price-of-silver-6-22-2026/",
+      "publishedAt": "2026-06-22T15:47:14+00:00",
+      "bucket": "commodities_metals"
     },
     {
       "headline": "Gold Falls As Traders Weigh U.S.-Iran Progress, Hawkish Fed Signals - WSJ",
@@ -122,12 +66,20 @@
       "bucket": "commodities_metals"
     },
     {
-      "headline": "Treasury Department authorizes Iranian oil sales under 60-day license",
-      "source": "CNBC",
-      "description": null,
-      "url": "https://www.cnbc.com/2026/06/22/treasury-iran-oil-sales.html",
-      "publishedAt": "2026-06-22T14:07:18Z",
-      "bucket": "rates_credit"
+      "headline": "Is silver a better investment than gold this summer? Experts weigh in",
+      "source": "CBS News",
+      "description": "Prices on both gold and silver have been volatile in recent months, but one option stands out over the other.",
+      "url": "https://www.cbsnews.com/news/silver-better-than-gold-summer-2026-experts-weigh-in/",
+      "publishedAt": "2026-06-22T14:20:07+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Guinea President Mamadi Doumbouya bans raw gold exports",
+      "source": "BBC News",
+      "description": "The prohibition is intended to boost the country's economy by refining gold domestically.",
+      "url": "https://www.bbc.com/news/articles/cjegydvzpzqo",
+      "publishedAt": "2026-06-22T13:41:22+00:00",
+      "bucket": "commodities_metals"
     },
     {
       "headline": "Lagarde Sees No Need for More Forceful ECB Response to Iran War",
@@ -143,63 +95,7 @@
       "description": "Copper prices rose after Iran said there had been \u201cmajor progress\u201d in peace talks with the US, boosting expectations that traffic through the Strait of Hormuz may recover and ease inflation pressures.",
       "url": "https://www.bloomberg.com/news/articles/2026-06-22/copper-rallies-as-peace-talk-progress-eases-inflation-fears",
       "publishedAt": "2026-06-22T12:08:54+00:00",
-      "bucket": "dynamic"
-    },
-    {
-      "headline": "Alan Greenspan, architect of the modern American economy, dies aged 100",
-      "source": "BBC News",
-      "description": "As chairman of the Federal Reserve, Alan Greenspan became the world's most high-profile banker.",
-      "url": "https://www.bbc.co.uk/news/articles/cjer7x7yl12o",
-      "publishedAt": "2026-06-22T11:55:36Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Former Federal Reserve Chairman Alan Greenspan dies at 100",
-      "source": "Associated Press",
-      "description": "U.S. Federal Reserve Chair Alan Greenspan has died at the age of 100. He died on Monday from complications of Parkinson\u2019s Disease, said his wife of 29 years, NBC News correspondent Andrea Mitchell. In his 18\u00bd years at the helm of the Fed, Greenspan presided o\u2026",
-      "url": "https://apnews.com/article/greenspan-federal-reserve-death-25f435cc747df7b76d0ff40844f8933f",
-      "publishedAt": "2026-06-22T11:49:05Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Legendary Fed chair Alan Greenspan dies at 100",
-      "source": "Business Insider",
-      "description": "Greenspan helped make the Federal Reserve chair a more publicly recognizable figure during his 19 years as the US' top central banker.",
-      "url": "https://www.businessinsider.com/alan-greenspan-dead-100-former-federal-reserve-chair-2026-6#article",
-      "publishedAt": "2026-06-22T11:43:21Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "South Korean chipmakers are being paid such massive bonuses it\u2019s becoming an inflation problem for the central bank",
-      "source": "Fortune",
-      "description": "Samsung Electronics and SK Hynix are reportedly making plans to share pthe profits from the massive AI boom with chip making staff.",
-      "url": "https://fortune.com/2026/06/22/south-korea-chip-maker-bonus-central-bank-inflation-concern/",
-      "publishedAt": "2026-06-22T10:58:27Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "A major test is coming for the stock market, and Morgan Stanley warns that the Fed won\u2019t rescue investors",
-      "source": "MarketWatch",
-      "description": "The stock market faces two key headwinds after the new Fed chief said he won\u2019t come riding to the rescue.",
-      "url": "https://www.marketwatch.com/story/a-major-test-is-coming-for-the-stock-market-and-morgan-stanley-warns-the-fed-wont-rescue-investors-2ae93faa",
-      "publishedAt": "2026-06-22T10:54:00Z",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "Treasury yields rise ahead of key inflation data; markets resume trading after public holiday",
-      "source": "CNBC",
-      "description": "The yield on the 10-year U.S. Treasury note \u2014 the key benchmark for U.S. government borrowing \u2014 rose over 3 basis points to 4.483%.",
-      "url": "https://www.cnbc.com/2026/06/22/treasury-yields-investors-look-ahead-to-key-inflation-data.html",
-      "publishedAt": "2026-06-22T09:39:31Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Gold Holds Decline After Trump Warns Iran During Peace Talks",
-      "source": "Financial Post",
-      "description": "Gold held a decline after US President Donald Trump issued a fresh threat to strike Iran, raising tensions during high-level talks to find a permanent resolution to the war that\u2019s roiled global markets.",
-      "url": "https://financialpost.com/pmn/business-pmn/gold-holds-decline-after-trump-warns-iran-during-peace-talks",
-      "publishedAt": "2026-06-22T00:05:29Z",
-      "bucket": "dynamic"
+      "bucket": "commodities_metals"
     },
     {
       "headline": "Bond Traders Burned by Fed\u2019s Pivot Look to Prices Gauge, Oil",
@@ -210,12 +106,28 @@
       "bucket": "rates_credit"
     },
     {
+      "headline": "Forget Interest Rates. The Fed Just Turned Everything Upside Down",
+      "source": "Forbes",
+      "description": "Keeping the current fed funds interest rate pales in comparison to no knowing where things will be going and how anyone is going to keep score.",
+      "url": "https://www.forbes.com/sites/eriksherman/2026/06/19/forget-interest-rates-the-fed-just-turned-everything-upside-down/",
+      "publishedAt": "2026-06-19T22:50:42+00:00",
+      "bucket": "central_banks"
+    },
+    {
       "headline": "Ivanhoe Mines: A Recovery Year That Could Become A Platform Year (OTCMKTS:IVPAF)",
       "source": "Seeking Alpha",
       "description": "Ivanhoe Mines (IVPAF) is transitioning from a high-grade copper growth stock to a vertically integrated, multi-critical metal platform with smelting, zinc,...",
       "url": "https://seekingalpha.com/article/4916365-ivanhoe-mines-a-recovery-year-that-could-become-a-platform-year?utm_source=flipboard&utm_medium=referral&feed_item_type=article",
       "publishedAt": "2026-06-19T18:43:19+00:00",
       "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Japan Is Partying Like It\u2019s 1999, And Not In A Good Way",
+      "source": "Forbes",
+      "description": "Central bankers are supposed to yank away the punchbowl just as the party gets going. In 1999, the Bank of Japan rewrote that maxim entirely \u2014 putting out the biggest punchbowl any major economy had ever seen and leaving it out indefinitely.",
+      "url": "https://www.forbes.com/sites/williampesek/2026/06/19/japan-is-partying-like-its-1999-and-not-in-a-good-way/",
+      "publishedAt": "2026-06-19T12:58:00+00:00",
+      "bucket": "central_banks"
     },
     {
       "headline": "BOJ Governor Ueda To Resume Work Next Week After Early Discharge",
@@ -240,6 +152,14 @@
       "url": "https://www.barrons.com/articles/nvidia-jensen-huang-top-ceos-2026-4bb1f02d",
       "publishedAt": "2026-06-19T01:00:00+00:00",
       "bucket": "risk_geopolitics"
+    },
+    {
+      "headline": "The Fed just paused interest rates again. Here are 3 affordable ways you can still borrow money.",
+      "source": "CBS News",
+      "description": "The Fed held rates steady again this week, but a few borrowing options are still cheaper than you may expect.",
+      "url": "https://www.cbsnews.com/news/fed-paused-rates-affordable-borrowing-options-june-2026/",
+      "publishedAt": "2026-06-18T18:55:04+00:00",
+      "bucket": "rates_credit"
     },
     {
       "headline": "BOE\u2019s Bailey Appeals for Help on X Posts Showing Fake Farage Fight",
