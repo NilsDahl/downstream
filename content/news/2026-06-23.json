@@ -2,11 +2,11 @@
   "date": "2026-06-23",
   "headlines": [
     {
-      "headline": "Asian refiners see little room for Iranian oil, leaving China as key buyer after US waiver",
-      "source": "Reuters",
-      "description": "The return of Iranian crude is pressuring \u200bglobal oil prices, with Brent crude declining by about 16% so far in June. Sources expect supply of\u00a0...",
-      "url": "https://www.reuters.com/business/energy/asian-refiners-see-little-room-iranian-oil-leaving-china-key-buyer-after-us-2026-06-23/",
-      "publishedAt": "2026-06-23T17:09:40+00:00",
+      "headline": "This tech \u2018fear gauge\u2019 is nearing a two-decade high. Investors should worry.",
+      "source": "MarketWatch",
+      "description": "Wall Street\u2019s main \u2018fear gauge,\u2019 the \u2018VIX\u2019 might not be the best way to track this volatility in stocks",
+      "url": "https://www.marketwatch.com/story/this-tech-fear-gauge-is-nearing-a-two-decade-high-investors-should-worry-691ed639",
+      "publishedAt": "2026-06-23T18:15:00+00:00",
       "bucket": "dynamic"
     },
     {
@@ -26,19 +26,11 @@
       "bucket": "commodities_energy"
     },
     {
-      "headline": "Gold futures slip as Fed rate hike fears drive precious metals' retreat - MarketWatch",
-      "source": "MarketWatch",
-      "description": "Gold futures were lower early Tuesday, with Deutsche Bank arguing that the recent retreat in precious metal prices is because of concerns about\u00a0...",
-      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-tech-sell-off-oil-prices-us-waiving-oil-sanctions-iran/card/gold-futures-slip-as-fed-rate-hike-fears-drive-precious-metals-retreat-jjUc87vtrJXw1cJd9aUj",
-      "publishedAt": "2026-06-23T13:57:31+00:00",
-      "bucket": "commodities_metals"
-    },
-    {
-      "headline": "Current price of oil as of June 23, 2026 | Fortune",
-      "source": "Fortune",
-      "description": "When oil prices change, it affects your energy costs\u2014and even the price of everyday items. Here\u2019s why.",
-      "url": "https://fortune.com/article/price-of-oil-06-23-2026/",
-      "publishedAt": "2026-06-23T12:48:41+00:00",
+      "headline": "Gold and silver tumble as rate-hike fears hit precious metals",
+      "source": "CNBC",
+      "description": "Gold and silver fell Tuesday as rate-hike fears pressured precious metals and Wall Street banks reassessed their gold forecasts.",
+      "url": "https://www.cnbc.com/2026/06/23/gold-silver-rate-hike-fears.html",
+      "publishedAt": "2026-06-23T13:55:04+00:00",
       "bucket": "dynamic"
     },
     {
@@ -48,6 +40,14 @@
       "url": "https://www.bloomberg.com/news/articles/2026-06-23/deutsche-bank-cuts-gold-forecasts-up-to-22-as-bulls-temper-view",
       "publishedAt": "2026-06-23T04:06:09+00:00",
       "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Chubb CEO flags threat disrupting global oil supply",
+      "source": "TheStreet",
+      "description": "When the CEO of the world's largest publicly traded property and casualty insurer describes a waterway as a \"war-zone environment\" and says conditions change...",
+      "url": "https://www.thestreet.com/investing/stocks/chubb-cb-ceo-evan-greenberg-warns-shipping-risks-persist-in-strait-of-hormuz",
+      "publishedAt": "2026-06-22T20:07:00Z",
+      "bucket": "central_banks"
     },
     {
       "headline": "Nvidia's stock struggles as Kalshi traders bet chip prices are coming down",
@@ -66,6 +66,14 @@
       "bucket": "central_banks"
     },
     {
+      "headline": "Jim Cramer delivers strong buy call on fast-growing digital bank",
+      "source": "TheStreet",
+      "description": "When a CEO is buying his own company's shares on the open market several times in a single year, and Jim Cramer is simultaneously telling viewers to buy at t...",
+      "url": "https://www.thestreet.com/investing/stocks/sofi-sofi-technologies-jim-cramer-reiterates-buy-sofi-stock-ceo-anthony-noto-buys-2-25-million-of-sofi",
+      "publishedAt": "2026-06-22T17:32:00Z",
+      "bucket": "central_banks"
+    },
+    {
       "headline": "Gold rises as US-Iran peace optimism pulls oil prices lower | Reuters",
       "source": "Reuters",
       "description": "... precious metal space,\" Saxo Bank analyst Ole Hansen said. ... Ashitha covers the commodity landscape, with increased focus on precious metals, minor\u00a0...",
@@ -74,28 +82,20 @@
       "bucket": "commodities_metals"
     },
     {
+      "headline": "Canada\u2019s inflation hits 29-month high amid heightened oil prices",
+      "source": "Al Jazeera English",
+      "description": "Petrol prices lead the surge with a 33.2 percent price increase on an annual basis.",
+      "url": "https://www.aljazeera.com/economy/2026/6/22/canadas-inflation-hits-29-month-high-amid-heightened-oil-prices",
+      "publishedAt": "2026-06-22T16:24:55Z",
+      "bucket": "central_banks"
+    },
+    {
       "headline": "The Fed is fed up with inflation and will bring down the hammer with a series of rate hikes this year, reversing earlier cuts, BofA says",
       "source": "Fortune",
       "description": "\"The Fed was willing to look through the tariffs, but it is losing patience after the latest round of supply shocks.\"",
       "url": "https://fortune.com/2026/06/22/fed-rate-hikes-outlook-sticky-inflation-kevin-warsh-job-growth-oil-prices/",
       "publishedAt": "2026-06-22T16:16:56Z",
-      "bucket": "dynamic"
-    },
-    {
-      "headline": "Oil falls below $75 for the first time since March as Hormuz traffic begins to recover",
-      "source": "NBC News",
-      "description": "U.S. crude prices fell 2.7% to about $74 a gallon, after Treasury Secretary Scott Bessent announced a 60-day sanctions waiver on Iranian oil sales.",
-      "url": "https://www.nbcnews.com/business/energy/oil-prices-hormuz-sanctions-waiver-rcna351144",
-      "publishedAt": "2026-06-22T15:58:55Z",
-      "bucket": "dynamic"
-    },
-    {
-      "headline": "US partially lifts Iran oil sanctions amid \u2018encouraging\u2019 talks",
-      "source": "Al Jazeera English",
-      "description": "The move, expected under the MoU, comes as Vice President JD Vance says there's a 'good foundation' for a final deal.",
-      "url": "https://www.aljazeera.com/news/2026/6/22/us-partially-lifts-iran-oil-sanctions-amid-encouraging-talks",
-      "publishedAt": "2026-06-22T15:38:23Z",
-      "bucket": "dynamic"
+      "bucket": "central_banks"
     },
     {
       "headline": "A longtime strategist says 6 warning signs point to a 20% drop in stocks on the horizon",
@@ -106,20 +106,20 @@
       "bucket": "central_banks"
     },
     {
+      "headline": "At least 13 killed and dozens injured after Qatar gas explosion",
+      "source": "BBC News",
+      "description": "The city's main liquified natural gas (LNG) processing site suffered a \"technical accident\" in the Ras Laffan industrial zone.",
+      "url": "https://www.bbc.co.uk/news/articles/cwy05llpjpno",
+      "publishedAt": "2026-06-22T15:15:42Z",
+      "bucket": "central_banks"
+    },
+    {
       "headline": "Gold Falls As Traders Weigh U.S.-Iran Progress, Hawkish Fed Signals - WSJ",
       "source": "The Wall Street Journal",
       "description": "... Precious Metals. Comex Gold Settles 0.07% Higher at $4330.90. June 16 ... Find insight on Canadian precious metals miners, palm oil prices\u00a0...",
       "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-direction-seen-led-by-geopolitics-monetary-policy-41733cb8",
       "publishedAt": "2026-06-22T14:49:37+00:00",
       "bucket": "commodities_metals"
-    },
-    {
-      "headline": "Vance Hails \u2018Good Day\u2019 of Iran Talks as US Waives Oil Sanctions",
-      "source": "Financial Post",
-      "description": "US Vice President JD Vance said talks with Iran over the weekend were \u201cvery, very good,\u201d as the sides attempt to reach a peace deal within two months and formally end a war that\u2019s reverberated through the global economy.",
-      "url": "https://financialpost.com/pmn/business-pmn/vance-hails-good-day-of-iran-talks-as-us-waives-oil-sanctions",
-      "publishedAt": "2026-06-22T14:47:19Z",
-      "bucket": "dynamic"
     },
     {
       "headline": "Treasury Department authorizes Iranian oil sales under 60-day license",
@@ -146,6 +146,14 @@
       "bucket": "dynamic"
     },
     {
+      "headline": "Alan Greenspan, architect of the modern American economy, dies aged 100",
+      "source": "BBC News",
+      "description": "As chairman of the Federal Reserve, Alan Greenspan became the world's most high-profile banker.",
+      "url": "https://www.bbc.co.uk/news/articles/cjer7x7yl12o",
+      "publishedAt": "2026-06-22T11:55:36Z",
+      "bucket": "central_banks"
+    },
+    {
       "headline": "Former Federal Reserve Chairman Alan Greenspan dies at 100",
       "source": "Associated Press",
       "description": "U.S. Federal Reserve Chair Alan Greenspan has died at the age of 100. He died on Monday from complications of Parkinson\u2019s Disease, said his wife of 29 years, NBC News correspondent Andrea Mitchell. In his 18\u00bd years at the helm of the Fed, Greenspan presided o\u2026",
@@ -162,12 +170,12 @@
       "bucket": "fx_macro"
     },
     {
-      "headline": "JPMorgan\u2019s Lipikhina Sees Europe Stocks Lagging Despite Oil Drop",
-      "source": "Financial Post",
-      "description": "European equities may struggle to keep pace with US and emerging market peers in the second half of the year as falling oil prices threaten a key source of earnings growth, according to Nataliia Lipikhina at JPMorgan Chase & Co.",
-      "url": "https://financialpost.com/pmn/business-pmn/jpmorgans-lipikhina-sees-europe-stocks-lagging-despite-oil-drop",
-      "publishedAt": "2026-06-22T10:29:20Z",
-      "bucket": "dynamic"
+      "headline": "A major test is coming for the stock market, and Morgan Stanley warns that the Fed won\u2019t rescue investors",
+      "source": "MarketWatch",
+      "description": "The stock market faces two key headwinds after the new Fed chief said he won\u2019t come riding to the rescue.",
+      "url": "https://www.marketwatch.com/story/a-major-test-is-coming-for-the-stock-market-and-morgan-stanley-warns-the-fed-wont-rescue-investors-2ae93faa",
+      "publishedAt": "2026-06-22T10:54:00Z",
+      "bucket": "rates_credit"
     },
     {
       "headline": "Defense giant KNDS moves closer to IPO after France-Germany stake deal",
@@ -186,27 +194,11 @@
       "bucket": "central_banks"
     },
     {
-      "headline": "War Gaming The Price Of Oil",
-      "source": "Forbes",
-      "description": "Iran's blockade of the Strait of Hormuz has also shown other nations how they can also move the global crude oil market and affect the U.S. midterm elections",
-      "url": "https://www.forbes.com/sites/edhirs/2026/06/21/war-gaming-the-price-of-oil/",
-      "publishedAt": "2026-06-22T02:30:42Z",
-      "bucket": "dynamic"
-    },
-    {
-      "headline": "Treasuries Decline as Trump\u2019s Iran Threats Stoke Inflation Fears",
+      "headline": "Gold Holds Decline After Trump Warns Iran During Peace Talks",
       "source": "Financial Post",
-      "description": "Treasuries fell after President Donald Trump again threatened military action against Iran over Hezbollah\u2019s attacks on Israel, sending oil prices higher and prompting investors to reassess inflation risks.",
-      "url": "https://financialpost.com/pmn/business-pmn/treasuries-decline-as-trumps-iran-threats-stoke-inflation-fears",
-      "publishedAt": "2026-06-22T01:47:43Z",
-      "bucket": "dynamic"
-    },
-    {
-      "headline": "Oil rises after Trump threatens fresh strikes on Iran, overshadowing peace talks",
-      "source": "CNBC",
-      "description": "Oil prices climbed on Monday after U.S. President Donald Trump threatened renewed military action against Iran.",
-      "url": "https://www.cnbc.com/2026/06/22/oil-prices-wti-brent-crude-trump-iran-threat-strait-hormuz-closure.html",
-      "publishedAt": "2026-06-22T00:05:08Z",
+      "description": "Gold held a decline after US President Donald Trump issued a fresh threat to strike Iran, raising tensions during high-level talks to find a permanent resolution to the war that\u2019s roiled global markets.",
+      "url": "https://financialpost.com/pmn/business-pmn/gold-holds-decline-after-trump-warns-iran-during-peace-talks",
+      "publishedAt": "2026-06-22T00:05:29Z",
       "bucket": "dynamic"
     },
     {
@@ -298,12 +290,20 @@
       "bucket": "central_banks"
     },
     {
+      "headline": "Why investors should buckle up for more stock market volatility",
+      "source": "Business Insider",
+      "description": "Volatility has reemerged on Wall Street, and investing pros says there's signs that wild market swings are set to continue.",
+      "url": "https://www.businessinsider.com/stock-market-outlook-stocks-volatility-investing-trading-invest-rates-tech-2026-6",
+      "publishedAt": "2026-06-12T09:20:01+00:00",
+      "bucket": "dynamic"
+    },
+    {
       "headline": "Considering An Intraday Trading Strategy With The UVXY ETF (BATS:UVXY)",
       "source": "Seeking Alpha",
       "description": "Trade UVXY tactically, not long-term: learn why this leveraged VIX ETF decays, lags spikes, and needs strict stop-loss risk management\u2014read now.",
       "url": "https://seekingalpha.com/article/4913368-considering-an-intraday-trading-strategy-with-the-uvxy-etf?source=feed_tag_etf_portfolio_strategy",
       "publishedAt": "2026-06-09T16:53:48+00:00",
-      "bucket": "risk_geopolitics"
+      "bucket": "dynamic"
     },
     {
       "headline": "Invesco Corporate Bond Fund Q1 2026 Commentary",
