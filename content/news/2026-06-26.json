@@ -1,0 +1,325 @@
+{
+  "date": "2026-06-26",
+  "headlines": [
+    {
+      "headline": "Asian LNG Buyers Expect Qatar to Let Force Majeure Lapse in July",
+      "source": "Bloomberg",
+      "description": "Asian liquefied natural gas customers of Qatar expect the supplier to let its force majeure expire in the middle of next month, as tensions in the region ease and the Persian Gulf producer ramps up exports.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/asian-lng-buyers-expect-qatar-to-let-force-majeure-lapse-in-july",
+      "publishedAt": "2026-06-26T09:16:01+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Empty LNG Tankers Mass Outside Qatar as Exports Tick Higher",
+      "source": "Bloomberg",
+      "description": "Empty liquefied natural gas tankers are lining up outside of Qatar\u2019s massive export plant in the Persian Gulf as the supplier seeks to quickly \u2026",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/empty-lng-tankers-mass-outside-qatar-as-exports-tick-higher?utm_source=flipboard&utm_content=topic%2Fqatar",
+      "publishedAt": "2026-06-26T03:42:20+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Gold Declines; Prices Could Have Further to Fall",
+      "source": "The Wall Street Journal",
+      "description": "Gold fell in the early Asian session. While the market expects gold prices to rebound after falling to $4,000 a troy ounce, Capital Economics reckoned the precious metal still has further to fall over the next 18 months.",
+      "url": "https://www.wsj.com/finance/commodities-futures/gold-declines-prices-could-have-further-to-fall-d07b83da?mod=rss_markets_main",
+      "publishedAt": "2026-06-26T00:30:00+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Mapping the Market: Silver's losing streak could surrender more ground to gold | Reuters",
+      "source": "Reuters",
+      "description": "Silver has lost roughly half its value since peaking at an all-time high in January amid a broad shakeout in precious metals prices.",
+      "url": "https://www.reuters.com/markets/global-markets-technicals-graphic-2026-06-25/",
+      "publishedAt": "2026-06-25T21:54:27+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "The bond market knows something about the $39 trillion national debt that Washington doesn't | Fortune",
+      "source": "Fortune",
+      "description": "A more hawkish Fed could be bad news for the record debt. The bond market decided to ignore it.",
+      "url": "https://fortune.com/2026/06/25/national-debt-inflation-bond-market/",
+      "publishedAt": "2026-06-25T21:26:18+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Oil prices back to pre-war levels on rising Middle East supply",
+      "source": "Al Jazeera English",
+      "description": "The price of Brent crude has reached its lowest since February 27, before the war started.",
+      "url": "https://www.aljazeera.com/news/2026/6/25/oil-prices-back-to-pre-war-levels-on-rising-middle-east-supply",
+      "publishedAt": "2026-06-25T10:04:43Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "The CEO of the Livestrong Foundation shares 4 daily habits to reduce her risk of cancer",
+      "source": "Business Insider",
+      "description": "Suzanne Stone, the CEO of Livestrong, prioritizes diet, exercise, sleep, and dental health to help lower her risk of developing cancer.",
+      "url": "https://www.businessinsider.com/ceo-president-livestrong-daily-habits-to-reduce-cancer-risk-2026-6#article",
+      "publishedAt": "2026-06-25T10:00:01Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "All hail Wendy's, the internet's newest meme stock",
+      "source": "Business Insider",
+      "description": "Conditions were ripe for a stock market short squeeze reminiscent of the great GameStop saga of 2021.",
+      "url": "https://www.businessinsider.com/wendys-meme-stock-price-short-sellers-squeeze-interest-reddit-wallstreetbets-2026-6#article",
+      "publishedAt": "2026-06-25T09:50:01Z",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Chevron CFO says gas prices will normalize after Trump presses Big Oil",
+      "source": "CNBC",
+      "description": "Her comments come shortly after President Donald Trump ordered an investigation into Big Oil, accusing them of \"gouging\" consumers.",
+      "url": "https://www.cnbc.com/2026/06/25/chevron-gas-prices-trump-big-oil.html",
+      "publishedAt": "2026-06-25T09:38:42Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "SNB Must Stay Nimble for Hike or Cut to Negative Rate, IMF Says",
+      "source": "Bloomberg",
+      "description": "The Swiss National Bank must stay ready to either raise or cut interest rates if economic circumstances require it, the International Monetary Fund said.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/snb-must-stay-nimble-for-hike-or-cut-to-negative-rate-imf-says",
+      "publishedAt": "2026-06-25T09:33:36+00:00",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Inflation report could fuel concerns about higher interest rates, even as oil prices fall",
+      "source": "NBC News",
+      "description": "A closely watched inflation report is set to reveal how much price growth picked up in May \u2014 as many Americans remain mired in an affordability crunch.",
+      "url": "https://www.nbcnews.com/business/economy/may-inflation-report-interest-rates-oil-rcna351636",
+      "publishedAt": "2026-06-25T09:00:00Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Air con and building efficiency stocks rally as Europe bakes in extreme heat",
+      "source": "CNBC",
+      "description": "The latest heat wave has underscored the need for efficient technologies and adequate power supply to keep Europe cool.",
+      "url": "https://www.cnbc.com/2026/06/25/europe-heat-wave-cooling-energy-stocks.html",
+      "publishedAt": "2026-06-25T08:55:51Z",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Gold holds below $4,000, silver below $60 \u2014 has the shimmer worn off the precious metal rally?",
+      "source": "CNBC",
+      "description": "Gold is down almost 8% so far this year, while silver has shed more than 20%.",
+      "url": "https://www.cnbc.com/2026/06/25/gold-silver-price-rally-invest-interest-rates.html",
+      "publishedAt": "2026-06-25T08:46:28Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Could high inflation be the new normal?",
+      "source": "NPR",
+      "description": "Inflation is at a three-year high. That's a problem for the Fed. Yet, under the leadership of new chair Kevin Warsh, it opted not to hike interest rates. So, who are inflation's winners and losers?",
+      "url": "https://www.npr.org/2026/06/25/nx-s1-5867374/could-high-inflation-be-the-new-normal",
+      "publishedAt": "2026-06-25T08:45:51Z",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "China\u2019s Self-Reliance Drive Powers 1,200% IPO Surge, Minting A New Billionaire",
+      "source": "Forbes",
+      "description": "Wang Bing, chairman and CEO of semiconductor component maker Chongqing Genori Technology, has amassed a fortune of $4.7 billion as shares soared almost 1,200% after its Shanghai listing.",
+      "url": "https://www.forbes.com/sites/ywang/2026/06/25/chinas-self-reliance-drive-powers-1200-ipo-surge-minting-a-new-billionaire/",
+      "publishedAt": "2026-06-25T08:35:47Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "ICC judges sue Trump over sanctions, call measures unlawful",
+      "source": "Al Jazeera English",
+      "description": "Judges argue sanctions aimed to punish and coerce ICC decisions on US and Israeli war crimes cases.",
+      "url": "https://www.aljazeera.com/news/2026/6/25/icc-judges-sue-trump-over-sanctions-call-measures-unlawful",
+      "publishedAt": "2026-06-25T07:47:39Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Bill Ackman, David Tepper, and other billionaire fund managers are quietly piling into Amazon",
+      "source": "Fortune",
+      "description": "Even as Warren Buffett\u2019s Berkshire Hathaway exited the stock, big institutions bought 253 million more shares of Amazon during the past 12 months.",
+      "url": "https://fortune.com/2026/06/25/amazon-bill-ackman-david-tepper-sanders/",
+      "publishedAt": "2026-06-25T07:05:00Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Maybank Singapore CEO Alvin Lee looks to tap the silver economy and cross-border flows to grow his business",
+      "source": "Fortune",
+      "description": "Singapore now contributes 20% of Maybank\u2019s annual revenue, but its country CEO Alvin Lee hopes to lift that number to 30% by 2030.",
+      "url": "https://fortune.com/2026/06/25/maybank-singapore-ceo-alvin-lee-silver-economy-cross-border/",
+      "publishedAt": "2026-06-25T07:00:00Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "BOJ Sees AI Export Boom Cushioning Economy From Oil Price Shock",
+      "source": "Financial Post",
+      "description": "The Bank of Japan is increasingly highlighting the economic benefits of the global artificial intelligence boom, viewing strong demand for AI-related products as a buffer against the drag from higher energy prices linked to the Middle East conflict.",
+      "url": "https://financialpost.com/pmn/business-pmn/boj-sees-ai-export-boom-cushioning-economy-from-oil-price-shock",
+      "publishedAt": "2026-06-25T06:00:19Z",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "RBI may revise growth to top 7% this year: MPC member",
+      "source": "Bloomberg",
+      "description": "The easing of geopolitical tensions in West Asia are poised to reduce risk to both inflation and growth, according to Nagesh Kumar, an external member of the RBI\u2019s monetary policy panel",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/rbi-may-revise-india-growth-to-top-7-this-year-mpc-member-says",
+      "publishedAt": "2026-06-25T05:58:02Z",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Adnoc LNG Tanker Appears in Persian Gulf as Transparency Returns",
+      "source": "Bloomberg",
+      "description": "A liquefied natural gas tanker owned by Abu Dhabi National Oil Co. began sending a signal from within the Persian Gulf, as more vessels broadcast their journeys and intentions in recent days following an interim peace deal between the US and Iran.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/adnoc-lng-tanker-appears-in-persian-gulf-as-transparency-returns",
+      "publishedAt": "2026-06-25T03:34:07+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Goldco Tops Best Gold IRA Companies List By Gold IRA USA",
+      "source": "Associated Press",
+      "description": "Goldco Earns \"Best Overall Gold IRA Company\" Recognition While Birch Gold Group and Noble Gold Investments Round Out Top Three Rankings",
+      "url": "https://apnews.com/press-release/access-newswire/press-release-84f2d60e4c0dceec7f63033aafc692a2",
+      "publishedAt": "2026-06-25T02:24:13Z",
+      "bucket": "rates_credit"
+    },
+    {
+      "headline": "Japan\u2019s LNG Stocks Seen to Benefit from Middle East Supply Risk",
+      "source": "Bloomberg",
+      "description": "Japanese liquefied natural gas-related stocks stand to benefit from rebuilding war-damaged energy infrastructure in the Persian Gulf and the construction of new facilities elsewhere to diversify away from the Middle East.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/japan-s-lng-stocks-seen-to-benefit-from-middle-east-supply-risk",
+      "publishedAt": "2026-06-24T22:45:48+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "Stonepeak Raises $2.5 Billion in Private Bonds Tied to LNG Plant",
+      "source": "Bloomberg",
+      "description": "Stonepeak has sold roughly $2.5 billion of private bonds to refinance a loan related to its investment in a liquefied natural gas export terminal in Louisiana.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/stonepeak-raises-2-5-billion-in-private-bonds-tied-to-lng-plant",
+      "publishedAt": "2026-06-24T17:13:06+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "BOJ\u2019s Ueda Reiterates Risk of Inflation Exceeding 2% Target",
+      "source": "Bloomberg",
+      "description": "The Bank of Japan sees the risk of inflation exceeding its 2% target and will conduct additional interest-rate hikes appropriately, Governor Kazuo Ueda said in speech Wednesday that reiterated policymakers\u2019 recent messaging.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/boj-s-ueda-reiterates-risk-of-inflation-exceeding-2-target",
+      "publishedAt": "2026-06-24T07:02:54+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "PBOC Adviser Sees Potential Rate Cut",
+      "source": "Bloomberg",
+      "description": "Huang Yiping, a member of the monetary policy committee at the People\u2019s Bank of China, says he sees a potential rate cut this year. He joined Bloomberg's Minmin Low on the sidelines of the World Economic Forum in Dalian and appeared on Insight with Haslinda Amin. (Source: Bloomberg)",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-24/pboc-adviser-sees-potential-rate-cut-video",
+      "publishedAt": "2026-06-24T06:38:36+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Copper Holds Losses as Dollar and Hawkish Fed Pressure Metals",
+      "source": "Bloomberg",
+      "description": "Copper and industrial metals largely held Tuesday\u2019s slump as a stronger dollar and the Federal Reserve\u2019s hawkish stance weighed on the demand outlook.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/copper-holds-losses-as-dollar-and-hawkish-fed-pressure-metals",
+      "publishedAt": "2026-06-24T03:30:36+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "This tech \u2018fear gauge\u2019 is nearing a two-decade high. Investors should worry.",
+      "source": "MarketWatch",
+      "description": "Wall Street\u2019s main \u2018fear gauge,\u2019 the \u2018VIX\u2019 might not be the best way to track this volatility in stocks",
+      "url": "https://www.marketwatch.com/story/this-tech-fear-gauge-is-nearing-a-two-decade-high-investors-should-worry-691ed639",
+      "publishedAt": "2026-06-23T18:15:00+00:00",
+      "bucket": "dynamic"
+    },
+    {
+      "headline": "Lagarde Sees No Need for More Forceful ECB Response to Iran War",
+      "source": "Bloomberg",
+      "description": "The European Central Bank doesn\u2019t need to react more forcefully to the fallout from the Middle East conflict because inflation is set to return to target over the medium term, President Christine Lagarde said.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-22/lagarde-sees-no-need-for-more-forceful-ecb-response-to-iran-war",
+      "publishedAt": "2026-06-22T13:00:00+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Copper Rallies as Peace-Talk Progress Eases Inflation Fears",
+      "source": "Bloomberg",
+      "description": "Copper prices rose after Iran said there had been \u201cmajor progress\u201d in peace talks with the US, boosting expectations that traffic through the Strait of Hormuz may recover and ease inflation pressures.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-22/copper-rallies-as-peace-talk-progress-eases-inflation-fears",
+      "publishedAt": "2026-06-22T12:08:54+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "Ivanhoe Mines: A Recovery Year That Could Become A Platform Year (OTCMKTS:IVPAF)",
+      "source": "Seeking Alpha",
+      "description": "Ivanhoe Mines (IVPAF) is transitioning from a high-grade copper growth stock to a vertically integrated, multi-critical metal platform with smelting, zinc,...",
+      "url": "https://seekingalpha.com/article/4916365-ivanhoe-mines-a-recovery-year-that-could-become-a-platform-year?utm_source=flipboard&utm_medium=referral&feed_item_type=article",
+      "publishedAt": "2026-06-19T18:43:19+00:00",
+      "bucket": "commodities_metals"
+    },
+    {
+      "headline": "BOJ Governor Ueda To Resume Work Next Week After Early Discharge",
+      "source": "Bloomberg",
+      "description": "Bank of Japan Governor Kazuo Ueda was discharged from the hospital Friday and plans to return to work on Tuesday, according to the BOJ.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-19/governor-ueda-has-been-discharged-from-hospital-boj-says",
+      "publishedAt": "2026-06-19T07:42:37+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Oil drifts lower as Strait of Hormuz reopens, focus shifts to demand outlook",
+      "source": "CNBC",
+      "description": "With immediate supply fears fading and tanker traffic returning to the Strait of Hormuz, traders are turning their attention back to oil demand and OPEC's outlook for the market.",
+      "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+      "publishedAt": "2026-06-19T03:26:20+00:00",
+      "bucket": "commodities_energy"
+    },
+    {
+      "headline": "BOE\u2019s Bailey Appeals for Help on X Posts Showing Fake Farage Fight",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor Andrew Bailey appealed for help in identifying who is behind a barrage of bizarre social media posts using fake images of him fighting Reform UK leader Nigel Farage.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-18/bank-of-england-s-bailey-appeals-for-help-on-x-posts-of-fake-nigel-farage-fight",
+      "publishedAt": "2026-06-18T13:36:29+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "BOE's Bailey Says Holding Rates Is a 'Sensible Decision'",
+      "source": "Bloomberg",
+      "description": "Bank of England Governor\u00a0Andrew Bailey\u00a0tells broadcasters energy prices remain above pre-war levels and that the the central bank needs to assess \"how much damage has been done to the infrastructure for supplying energy\" in the Middle East. \"I think holding is the right position to be in at the mome...",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-18/boe-s-bailey-says-holding-rates-is-a-sensible-decision-video",
+      "publishedAt": "2026-06-18T12:36:48+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "PBOC\u2019s New Rate Regime to Aid Liquidity and Bonds, Analysts Say",
+      "source": "Bloomberg",
+      "description": "The People\u2019s Bank of China\u2019s latest refinement of its monetary policy toolkit is expected to damp money-market volatility and support bonds, according to analysts.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-18/pboc-s-new-rate-regime-to-aid-liquidity-and-bonds-analysts-say",
+      "publishedAt": "2026-06-18T03:38:07+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "ECB\u2019s Lagarde Warns AI Is Huge Risk for Financial Stability",
+      "source": "Bloomberg",
+      "description": "Artificial intelligence can potentially lead to dangerous financial crises, and the European Central Bank is determined to ensure that doesn\u2019t happen, President Christine Lagarde said.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-17/ecb-s-lagarde-warns-ai-is-huge-risk-for-financial-stability",
+      "publishedAt": "2026-06-17T12:30:21+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Bank of Japan hikes rates to highest since 1995 as yen languishes at historic lows",
+      "source": "CNBC",
+      "description": "This is the BOJ's first hike since December, when it raised rates to its current level of 0.75%, also its highest level in over 30 years.",
+      "url": "https://www.cnbc.com/2026/06/16/boj-rate-hike-historic-inflation.html",
+      "publishedAt": "2026-06-16T03:29:53+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Bailey Defends BOE Gilt Sales After Criticism From Farage",
+      "source": "Bloomberg",
+      "description": "Governor Andrew Bailey defended the Bank of England\u2019s buying and selling of UK government bonds following criticism of the policy, including from Nigel Farage\u2019s populist Reform UK party.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-14/bailey-defends-boe-gilt-sales-after-criticism-from-farage?utm_source=flipboard&utm_content=bloomberg%2Fmagazine%2FMarkets",
+      "publishedAt": "2026-06-14T22:48:42+00:00",
+      "bucket": "central_banks"
+    },
+    {
+      "headline": "Why investors should buckle up for more stock market volatility",
+      "source": "Business Insider",
+      "description": "Volatility has reemerged on Wall Street, and investing pros says there's signs that wild market swings are set to continue.",
+      "url": "https://www.businessinsider.com/stock-market-outlook-stocks-volatility-investing-trading-invest-rates-tech-2026-6",
+      "publishedAt": "2026-06-12T09:20:01+00:00",
+      "bucket": "dynamic"
+    }
+  ]
+}
