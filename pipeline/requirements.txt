@@ -3,3 +3,5 @@ yfinance>=1.4.1
 curl_cffi>=0.15.0
 fredapi>=0.5.1
 pandas>=2.0.0
+feedparser>=6.0.0
+trafilatura>=1.12.0

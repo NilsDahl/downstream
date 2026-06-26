@@ -2,12 +2,229 @@
   "date": "2026-06-26",
   "headlines": [
     {
+      "headline": "Oil Prices Might Keep Falling Into 2027, Strategist Amoroso Says",
+      "source": "Bloomberg",
+      "description": "Anastasia Amoroso, chief investment strategist at Partners Group, says the concerns about higher oil prices did not play out. Speaking with Dani Burger on \"Bloomberg Open Interest,\" Amoroso also says she expects energy prices to keep falling going into 2027. (Source: Bloomberg)",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-26/oil-may-keep-falling-into-2027-strategist-amoroso-says-video",
+      "publishedAt": "2026-06-26T13:41:23+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Aevex stock jumps on Russell 2000 Index inclusion",
+      "source": "Investing.com",
+      "description": "",
+      "url": "https://www.investing.com/news/stock-market-news/aevex-stock-jumps-on-russell-2000-index-inclusion-93CH-4762947",
+      "publishedAt": "2026-06-26T13:41:02+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Gold prices steady but set for 3% weekly slide on resilient dollar, Fed hike bets",
+      "source": "Investing.com",
+      "description": "",
+      "url": "https://www.investing.com/news/commodities-news/gold-set-for-4th-straight-weekly-slide-on-resilient-dollar-fed-hike-bets-4761985",
+      "publishedAt": "2026-06-26T13:39:23+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Warsh reaches within the Fed for latest advisory appointments",
+      "source": "CNBC",
+      "description": "Warsh has added two more key advisors as he seeks to remake how the central bank approaches the economy and monetary policy.",
+      "url": "https://www.cnbc.com/2026/06/26/warsh-reaches-within-the-fed-for-latest-advisory-appointments.html",
+      "publishedAt": "2026-06-26T13:35:59+00:00",
+      "bucket": "rss",
+      "body": "Federal Reserve Chairman Kevin Warsh has added two more key advisors as he seeks to remake how the central bank approaches its views on the economy and monetary policy, people familiar with the moves confirmed to CNBC.\nThough Warsh has talked about broad changes that need to be made at the Fed, he instead reached inside for these appointments, naming economists Daniel Covitz and Eric Engstrom to the posts. Covitz is one of three deputy directors in the research and statistics division while Engstrom is an associate director in monetary affairs.\nThe appointments come a little more than a week after Warsh announced five task forces aimed at addressing broad aspects of the Fed's operational structure. Among the focuses will be communication, data, inflation, technology and the Fed's balance sheet.\nWarsh has touted the importance of re-examining how the Fed views each of the key metrics and said he will deploy resources both inside and outside the institution to tackle the projects.\nHowever, the latest announcements indicate that he will rely heavily on the Fed's own experts as he charts the course ahead. Both Engstrom and Covitz bring decades of Fed experience to their new positions. A Fed official noted that the two will serve in these positions on a rotating basis while maintaining their positions in their respective divisions.\nWarsh earlier selected Paul Winfree, an architect of the controversial Project 2025 document that sought to decrease the Fed's influence on the economy, and Daniel Heil of Stanford, who had previously worked with Warsh.\nThe two latest appointments were first reported in the Wall Street Journal."
+    },
+    {
+      "headline": "These mega-cap stocks are showing the weakest momentum",
+      "source": "Seeking Alpha",
+      "description": "",
+      "url": "https://seekingalpha.com/news/4607655-these-mega-cap-stocks-are-showing-the-weakest-momentum?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+      "publishedAt": "2026-06-26T13:35:11+00:00",
+      "bucket": "rss",
+      "body": "Several of the largest U.S. companies are showing weak price momentum despite their dominant market positions, according to Seeking Alpha's momentum grades.\nIf you have an ad-blocker enabled you may be blocked from proceeding. Please disable your ad-blocker and refresh.\nEntering text into the input field will update the search result below\nEntering text into the input field will update the search result below\nQuick Insights\nSeveral mega-cap U.S. stocks, despite market dominance, have underperformed sector peers based on Seeking Alpha\u00e2s momentum grades due to weaker short-, medium-, and long-term price trends.\nYear-to-date, Palantir had the largest drop (-39.7%), followed by Microsoft (-27.0%), Netflix (-24.4%), Oracle (-21.8%), Meta (-17.8%), Tesla (-16.6%), Mastercard (-14.4%), Visa (-5.8%), and Berkshire Hathaway (-3%), while JPMorgan returned +4.0%.\nSeeking Alpha\u00e2s Momentum Grade measures a stock's price strength using various momentum indicators relative to sector peers, with lower grades (C, D, F) reflecting underperformance."
+    },
+    {
+      "headline": "US tech stocks fall for fifth day in a row",
+      "source": "Financial Times",
+      "description": "Nasdaq Composite on track for longest losing streak of 2026 amid worries about an overstretched rally in AI-related shares",
+      "url": "https://www.ft.com/content/bb70e272-5b09-4806-8b19-7c03c350f580",
+      "publishedAt": "2026-06-26T13:33:51+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "US Goods Trade Deficit Widens to Biggest in More Than a Year",
+      "source": "Bloomberg",
+      "description": "The US merchandise-trade deficit widened in May to the biggest in more than a year as exports pulled back from record levels and imports continued a steady march higher.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/us-goods-trade-deficit-widens-to-biggest-in-more-than-a-year",
+      "publishedAt": "2026-06-26T12:33:24+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Bed Bath &amp; Beyond Nabs Bull On \u2018Everything Home\u2019 Transformation",
+      "source": "Bloomberg",
+      "description": "Bed Bath &amp; Beyond, Inc. gained a new bull this week who sees upside for shares on the premise that it will soon be known as a one-stop shop for home improvement and financing services as well as its pillows and pots.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/bed-bath-beyond-nabs-bull-on-everything-home-transformation",
+      "publishedAt": "2026-06-26T12:30:03+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Bond Traders Stunned as Losses on SpaceX\u2019s New Debt Keep Growing",
+      "source": "Bloomberg",
+      "description": "SpaceX\u2019s blockbuster bond sale is weakening so quickly in the secondary market that traders say they can\u2019t recall another recent deal that widened this sharply.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/bond-traders-stunned-as-losses-on-spacex-s-new-debt-keep-growing",
+      "publishedAt": "2026-06-26T12:00:20+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Hungary to Meet Euro Entry Criteria by 2030, Premier Magyar Says",
+      "source": "Bloomberg",
+      "description": "Hungarian Prime Minister Peter Magyar said his country could meet the European Union\u2019s economic criteria for adopting the euro by 2030, setting out the clearest timetable yet for a path toward the common currency.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/hungary-to-meet-euro-entry-criteria-by-2030-premier-magyar-says",
+      "publishedAt": "2026-06-26T11:58:46+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "US Premarket Movers for June 26, 2026",
+      "source": "Bloomberg",
+      "description": "S&amp;P 500 Index futures fall 0.5% as of 7:47 a.m. in New York as weakness in chip stocks resumes.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/us-stock-futures-today-microsoft-on-semi-synaptics-tango",
+      "publishedAt": "2026-06-26T11:51:14+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Goldman Strategist Sees Bets in Big Tech During Chip Volatility",
+      "source": "Bloomberg",
+      "description": "Big tech stocks could turn more attractive in the artificial intelligence trade as chipmakers show continued volatility, according to Goldman Sachs Group Inc. strategist Christian Mueller-Glissmann.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/goldman-strategist-sees-bets-in-big-tech-during-chip-volatility",
+      "publishedAt": "2026-06-26T11:49:53+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Lebanon\u2019s 400% Bond Rally Fades as War Wrecks Debt Recovery Math",
+      "source": "Bloomberg",
+      "description": "A 400% rally in Lebanon\u2019s defaulted bonds is fading as investors confront the prospect of debt restructuring delays and far lower recovery rates than they had expected.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/lebanon-s-400-bond-rally-fades-as-war-wrecks-debt-recovery-math",
+      "publishedAt": "2026-06-26T11:38:28+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Global Stocks Fall as Tech Volatility Weighs | Bloomberg Brief 6/26/2026",
+      "source": "Bloomberg",
+      "description": "US equity futures drag following a selloff in memory giants including Samsung and SK Hynix as Apple's price increase announcement stoke AI cost concerns. Oil extends decline as traffic flows without major disruption in the Strait of Hormuz following a ship attack. Priya Misra of JPMorgan Asset Management discusses the market adjustment on bets for the Fed's rate hikes. (Source: Bloomberg)",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-26/bloomberg-brief-6-26-2026-video",
+      "publishedAt": "2026-06-26T11:11:50+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Exuberance over earnings is becoming a problem for the stock market, according to this Wall Street veteran",
+      "source": "MarketWatch",
+      "description": "Optimism about corporate profits often comes before a fall, says Jim Paulsen",
+      "url": "https://www.marketwatch.com/story/why-this-earnings-exuberance-may-be-a-problem-for-the-stock-market-according-to-this-wall-street-veteran-20431488",
+      "publishedAt": "2026-06-26T10:47:00+00:00",
+      "bucket": "risk_geopolitics",
+      "body": null
+    },
+    {
+      "headline": "AI Is Splitting Tech Stocks Into Winners and Losers",
+      "source": "Bloomberg",
+      "description": "This week\u2019s stock moves show that the AI rally has stopped being a single trade.",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-06-26/ai-is-splitting-tech-stocks-into-winners-and-losers",
+      "publishedAt": "2026-06-26T10:28:29+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Egypt Asset Sales Ease Path Toward $1.6 Billion in IMF Funding",
+      "source": "Bloomberg",
+      "description": "Egypt\u2019s recent state-asset sales have satisfied the targets of an International Monetary Fund review, according to people familiar with the matter, easing the path to unlock about $1.6 billion in financing for an economy buffeted by the Iran war.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/egypt-asset-sales-ease-path-toward-1-6-billion-in-imf-funding",
+      "publishedAt": "2026-06-26T10:04:51+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Atlanta Fed struggles to find new chief after Raphael Bostic\u2019s departure",
+      "source": "Financial Times",
+      "description": "Search committee has not identified a candidate to pitch to central bank\u2019s Washington board of governors",
+      "url": "https://www.ft.com/content/f82925c2-a5d4-44f1-95dc-ebdaec322acf",
+      "publishedAt": "2026-06-26T10:00:00+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
       "headline": "Asian LNG Buyers Expect Qatar to Let Force Majeure Lapse in July",
       "source": "Bloomberg",
       "description": "Asian liquefied natural gas customers of Qatar expect the supplier to let its force majeure expire in the middle of next month, as tensions in the region ease and the Persian Gulf producer ramps up exports.",
       "url": "https://www.bloomberg.com/news/articles/2026-06-26/asian-lng-buyers-expect-qatar-to-let-force-majeure-lapse-in-july",
       "publishedAt": "2026-06-26T09:16:01+00:00",
-      "bucket": "commodities_energy"
+      "bucket": "commodities_energy",
+      "body": null
+    },
+    {
+      "headline": "Traders Curb Bets for ECB Hikes to Less Than a Quarter Point",
+      "source": "Bloomberg",
+      "description": "Traders are reappraising the scope for the European Central Bank to lift interest rates as sliding oil prices reduce the risks of sticky inflation.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/traders-pare-ecb-rate-bets-to-below-quarter-point-hike-in-2026",
+      "publishedAt": "2026-06-26T08:53:43+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Global Tech Stocks, Chipmakers Sell Off, Weighing on US Indexes",
+      "source": "Bloomberg",
+      "description": "A global chips selloff is once again hitting the tech-heavy Nasdaq 100 as investors grow increasingly skeptical about lofty artificial-intelligence valuations.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/us-stock-futures-resume-declines-as-ai-concerns-stall-tech-rally",
+      "publishedAt": "2026-06-26T08:27:33+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Japan stocks lower at close of trade; Nikkei 225 down 4.09% By Investing.com",
+      "source": "Investing.com",
+      "description": "Japan stocks lower at close of trade; Nikkei 225 down 4.09%",
+      "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-409-4762083",
+      "publishedAt": "2026-06-26T07:00:05+00:00",
+      "bucket": "dynamic",
+      "body": null
+    },
+    {
+      "headline": "Emerging Market Stocks Set for Weekly Loss as AI Trade Wobbles",
+      "source": "Bloomberg",
+      "description": "Emerging-market stocks headed for their biggest weekly decline since early March, weighed down by a renewed technology selloff that hammered South Korean shares.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/emerging-market-stocks-slide-most-in-three-weeks-on-tech-selloff",
+      "publishedAt": "2026-06-26T06:40:29+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "The leadership change in US stocks",
+      "source": "Financial Times",
+      "description": "A market seeking direction",
+      "url": "https://www.ft.com/content/42420d57-f466-4b01-bc4a-4d68f9e0b6c0",
+      "publishedAt": "2026-06-26T05:30:09+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Kevin Warsh\u2019s tough talk on inflation reassures investors",
+      "source": "Financial Times",
+      "description": "New Fed chair\u2019s hawkish words and the fall in oil drive down long-term expectations for price rises",
+      "url": "https://www.ft.com/content/a825975a-df76-4f9c-9eb9-774329ebc29d",
+      "publishedAt": "2026-06-26T04:00:33+00:00",
+      "bucket": "rss",
+      "body": null
     },
     {
       "headline": "Empty LNG Tankers Mass Outside Qatar as Exports Tick Higher",
@@ -15,7 +232,17 @@
       "description": "Empty liquefied natural gas tankers are lining up outside of Qatar\u2019s massive export plant in the Persian Gulf as the supplier seeks to quickly \u2026",
       "url": "https://www.bloomberg.com/news/articles/2026-06-26/empty-lng-tankers-mass-outside-qatar-as-exports-tick-higher?utm_source=flipboard&utm_content=topic%2Fqatar",
       "publishedAt": "2026-06-26T03:42:20+00:00",
-      "bucket": "commodities_energy"
+      "bucket": "commodities_energy",
+      "body": null
+    },
+    {
+      "headline": "Asian stocks slide as Apple-led tech selloff sinks KOSPI, Nikkei after AI rally By Investing.com",
+      "source": "Investing.com",
+      "description": "Asian stocks slide as Apple-led tech selloff sinks KOSPI, Nikkei after AI rally",
+      "url": "https://www.investing.com/news/stock-market-news/asian-stocks-slide-as-appleled-tech-selloff-sinks-kospi-nikkei-after-ai-rally-4761977",
+      "publishedAt": "2026-06-26T03:04:01+00:00",
+      "bucket": "dynamic",
+      "body": null
     },
     {
       "headline": "Gold Declines; Prices Could Have Further to Fall",
@@ -23,7 +250,35 @@
       "description": "Gold fell in the early Asian session. While the market expects gold prices to rebound after falling to $4,000 a troy ounce, Capital Economics reckoned the precious metal still has further to fall over the next 18 months.",
       "url": "https://www.wsj.com/finance/commodities-futures/gold-declines-prices-could-have-further-to-fall-d07b83da?mod=rss_markets_main",
       "publishedAt": "2026-06-26T00:30:00+00:00",
-      "bucket": "commodities_metals"
+      "bucket": "commodities_metals",
+      "body": null
+    },
+    {
+      "headline": "Gold Climbs Above $4,000 After Inflation Print Slows Decline",
+      "source": "Bloomberg",
+      "description": "Gold climbed above $4,000 an ounce on Friday after the latest US inflation print tempered expectations for an interest-rate hike, capping a tumultuous week that saw bullion slump to the lowest since November.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/gold-steadies-near-4-000-as-inflation-data-eases-rate-hike-bets",
+      "publishedAt": "2026-06-25T23:58:21+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Oil Resumes Drop as Ships Keep Crossing Hormuz Despite Attack",
+      "source": "Bloomberg",
+      "description": "Oil headed for the biggest weekly drop in a month after transits through the Strait of Hormuz accelerated, although an attack on a cargo ship renewed concerns about safe passage through the vital waterway.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/latest-oil-market-news-and-analysis-for-june-26",
+      "publishedAt": "2026-06-25T22:05:21+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Stocks Fall at End of Bruising Week for AI Winners: Markets Wrap",
+      "source": "Bloomberg",
+      "description": "Another burst of heavy selling pummeled chipmakers, deepening this week\u2019s losses in stocks on concerns over whether vast investments in artificial intelligence will justify the industry\u2019s hefty valuations.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/asia-stocks-set-for-choppy-open-on-tech-volatility-markets-wrap",
+      "publishedAt": "2026-06-25T22:05:08+00:00",
+      "bucket": "rss",
+      "body": null
     },
     {
       "headline": "Mapping the Market: Silver's losing streak could surrender more ground to gold | Reuters",
@@ -31,47 +286,44 @@
       "description": "Silver has lost roughly half its value since peaking at an all-time high in January amid a broad shakeout in precious metals prices.",
       "url": "https://www.reuters.com/markets/global-markets-technicals-graphic-2026-06-25/",
       "publishedAt": "2026-06-25T21:54:27+00:00",
-      "bucket": "commodities_metals"
+      "bucket": "commodities_metals",
+      "body": null
     },
     {
-      "headline": "The bond market knows something about the $39 trillion national debt that Washington doesn't | Fortune",
-      "source": "Fortune",
-      "description": "A more hawkish Fed could be bad news for the record debt. The bond market decided to ignore it.",
-      "url": "https://fortune.com/2026/06/25/national-debt-inflation-bond-market/",
-      "publishedAt": "2026-06-25T21:26:18+00:00",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "Oil prices back to pre-war levels on rising Middle East supply",
-      "source": "Al Jazeera English",
-      "description": "The price of Brent crude has reached its lowest since February 27, before the war started.",
-      "url": "https://www.aljazeera.com/news/2026/6/25/oil-prices-back-to-pre-war-levels-on-rising-middle-east-supply",
-      "publishedAt": "2026-06-25T10:04:43Z",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "The CEO of the Livestrong Foundation shares 4 daily habits to reduce her risk of cancer",
-      "source": "Business Insider",
-      "description": "Suzanne Stone, the CEO of Livestrong, prioritizes diet, exercise, sleep, and dental health to help lower her risk of developing cancer.",
-      "url": "https://www.businessinsider.com/ceo-president-livestrong-daily-habits-to-reduce-cancer-risk-2026-6#article",
-      "publishedAt": "2026-06-25T10:00:01Z",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "All hail Wendy's, the internet's newest meme stock",
-      "source": "Business Insider",
-      "description": "Conditions were ripe for a stock market short squeeze reminiscent of the great GameStop saga of 2021.",
-      "url": "https://www.businessinsider.com/wendys-meme-stock-price-short-sellers-squeeze-interest-reddit-wallstreetbets-2026-6#article",
-      "publishedAt": "2026-06-25T09:50:01Z",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "Chevron CFO says gas prices will normalize after Trump presses Big Oil",
+      "headline": "Chicago Fed President Goolsbee says inflation is too high; Williams sees price pressures easing",
       "source": "CNBC",
-      "description": "Her comments come shortly after President Donald Trump ordered an investigation into Big Oil, accusing them of \"gouging\" consumers.",
-      "url": "https://www.cnbc.com/2026/06/25/chevron-gas-prices-trump-big-oil.html",
-      "publishedAt": "2026-06-25T09:38:42Z",
-      "bucket": "commodities_energy"
+      "description": "In a live CNBC interview from his home district, Goolsbee declined to speculate on where he thinks interest rates are headed.",
+      "url": "https://www.cnbc.com/2026/06/25/chicago-fed-president-goolsbee-says-inflation-is-too-high-calls-warsh-a-serious-guy.html",
+      "publishedAt": "2026-06-25T21:03:16+00:00",
+      "bucket": "rss",
+      "body": "Two Federal Reserve officials on Thursday indicated some optimism on inflation, though neither indicated a likelihood that interest rates will change anytime soon.\nChicago Federal Reserve President Austan Goolsbee said Thursday that inflation is still trending the wrong way though there have been a few bright spots. A little later in the afternoon, New York Fed President John Williams said he expects inflation readings to start trending lower.\nIn a live CNBC interview from his home district, Goolsbee declined to speculate on where he thinks interest rates are headed. However, he said he remains squarely focused on inflation, in remarks that reflected sentiment new Fed Chairman Kevin Warsh expressed a week ago.\n\"You have seen now little bit of improvement on this services inflation, and I've been identifying that as something that we would want to see,\" Goolsbee said from the trading floor of the Cboe. \"But right now, as between the two sides of the Fed's mandate, the inflation side and the job market side, clearly the problem's on the inflation side.\"\nThe comments came hours after the Commerce Department reported that core inflation as gauged by the Fed's preferred benchmark, the personal consumption expenditures price index, stood at 3.4% in May, its highest since October 2023.\nPrice increases were fairly evenly distributed, with goods rising 0.4% and services up 0.5%, the most since January. On the goods side, much of the gain was driven by energy, which jumped 6.5%, while services was pushed higher by transportation services, a sector sensitive to gas prices and which accelerated 0.8%.\nMarkets expect the Fed could raise its benchmark rate in September, but Goolsbee wouldn't commit to where he would stand. He said he \"applauded\" Warsh's move to discourage such \"forward guidance\" from the Fed's communication. The Federal Open Market Committee's post-meeting statement was dramatically shorter than the norm, and the forward guidance language was removed.\n\"Let's strea"
+    },
+    {
+      "headline": "Bond ETF flows surge in hunt for yield: 'Market sniffing out something here,' says BlackRock exec",
+      "source": "CNBC",
+      "description": "Bond investors are abandoning aggregate benchmarks in favor of a broad mix of fixed-income investments to maximize yield with the stock market on edge.",
+      "url": "https://www.cnbc.com/2026/06/25/inflation-fed-bond-etf-flows-surge-blackrock.html",
+      "publishedAt": "2026-06-25T17:29:00+00:00",
+      "bucket": "rss",
+      "body": "Amid recent bouts of stock volatility and a new Fed chair coming into a complex inflation environment, the action in bond ETFs is sending an important signal to the market.\n\"Flows tell the story,\" Steve Laipply, global co-head of iShares fixed-income ETFs at BlackRock, told CNBC's Dominic Chu this week. And that is a story of rising investor interest in yield across the fixed-income market. \"In the U.S., bond ETF flows are up a shocking 60% relative to last year,\" Laipply said.\nLaipply said a significant share of the flows are going into U.S. treasuries, but there also has been a significant move by investors into multi-sector income ETFs.\n\"The income story is very robust and enduring, because rates will continue to move around and 'real yields' are definitely an opportunity,\" he said, a reference to bond yields net the rate of inflation. \"Real yields reflect a growth story,\" he said, led by the AI boom and the anticipated increase in productivity that is tied to it.\nInvestor interest in multi-sector income funds, according to Laipply, is also an indication of greater emphasis on \"income per unit of duration.\"\n\"The idea of getting a little more duration, but really still focusing on income ... that's sort of the sweet spot,\" he said.\n\"As a bond investor, real yield is your very good friend,\" George Bory, chief investment strategist of fixed income at Allspring Global Investments, told Chu.\nHow the Fed fits into the fixed-income investment picture\nNew Federal Reserve chairman Kevin Warsh has put the market on watch for signs of greater volatility in bonds as he shapes a new approach at the Fed. \"The most significant one, at least right now, is about the lack of forward guidance,\" Bory said. When the Fed telegraphed its every move, managing duration risk was a less active process for investors. Now there will be more of an \"uncertainty premium\" built into the market, he said.\nAt his first FOMC meeting last week, Warsh was clear about maintaining the Fed's inflation-fi"
+    },
+    {
+      "headline": "Key inflation gauge jumps to 3-year high in latest sign of affordability challenges...",
+      "source": "Associated Press",
+      "description": "The Federal Reserve\u2019s preferred inflation gauge rose to a new three-year high in May as gas prices peaked, a sign rising costs could pose political problems for President Trump as midterm elections near. The increase was largely driven by more expensive gas, \u2026",
+      "url": "https://apnews.com/article/inflation-federal-reserve-spending-d9348cc01b41c8de31051acf1b39268f",
+      "publishedAt": "2026-06-25T13:00:12Z",
+      "bucket": "central_banks",
+      "body": "Key inflation gauge jumps to 3-year high in latest sign of affordability challenges\nKey inflation gauge jumps to 3-year high in latest sign of affordability challenges\nWASHINGTON (AP) \u2014 The Federal Reserve\u2019s preferred inflation gauge rose to a new three-year high in May as gas prices peaked, a sign rising costs could pose political problems for President Donald Trump and his political party as midterm elections near.\nConsumer prices rose 4.1% in May from a year earlier, the Commerce Department said Thursday, the largest annual increase since April 2023. On a monthly basis, inflation was 0.4% last month, matching April\u2019s increase and down from 0.7% in March.\nThe increase was largely driven by more expensive gas, as well as pricier semiconductors and other computer equipment that are in high demand for the AI buildout. Rising prices have caused the inflation-fighters at the Federal Reserve to keep their key rate unchanged this year, a reversal from January when they had penciled in two cuts. Some economists forecast the central bank could lift rates this year instead.\nAP Washington correspondent Sagar Meghani reports the Federal Reserve\u2019s preferred inflation gauge hit a three-year high last month.\n\u201cUnderyling inflation is closer to 3% rather than 2%,\u201d said Mark Vitner, chief economist at Piedmont Crescent Capital. \u201cIt does suggest to me that the next Fed move, whenever it comes, is more likely to be a hike than a cut.\u201d The Fed probably won\u2019t raise rates until next year, he added.\nOil and gas prices have fallen substantially since Trump agreed to a peace deal with Iran earlier this month, but the conflict lifted gas prices to nearly $4.50 a gallon on average nationwide in May. They have since fallen back to $3.92 as of Thursday, according to AAA, but that\u2019s more than 20% above prices at this time last year as the driving season gets underway.\nDeclining gas prices will likely pull down headline inflation next month, yet measures of underlying inflation remain stubbornly"
+    },
+    {
+      "headline": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed\u2019s preferred gauge shows",
+      "source": "CNBC",
+      "description": "The personal consumption expenditures price index was expected to show a 4.1% annual increase.",
+      "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html",
+      "publishedAt": "2026-06-25T12:37:24Z",
+      "bucket": "central_banks",
+      "body": "The Federal Reserve's primary price gauge rose at its highest level since 2023, reinforcing the central bank's recent tough talk on inflation.\nExcluding food and energy, the personal consumption expenditures price index showed a 3.4% annual rate after rising 0.3% for the month, both in line with the Dow Jones consensus. The annual core reading was the highest since October 2023.\nFor the all-items reading, the PCE index showed inflation running at a seasonally adjusted 4.1% annual rate, the highest since April 2023, according to a Commerce Department report Thursday. On a monthly basis, the PCE accelerated 0.4%. The annual level was in line with the Dow Jones consensus estimate while the monthly reading was 0.1 percentage point below.\nWhile Fed officials look at both headline and core rates, they generally consider the latter a better measure of long-run trends, particularly in light of this year's inflation surge that was driven largely by an acceleration in energy prices tied to the Iran war that have slowly been seeping into other parts of the economy.\nStock market futures held in positive territory following the release while Treasury yields slipped. Traders continued to expect the Fed to approve a rate hike in September, though they lowered odds slightly.\nEnergy again provided the largest source of price gains, with related goods and services prices up 4% for the month. Housing cost rose 0.3%, while financial services and insurance jumped 1.2%.\n\"Inflation is at a 3-year high due to the war in Iran and it's painful for middle-class and moderate-income Americans,\" said Heather Long, chief economist at Navy Federal Credit Union. \"People are spending more on gas, along with healthcare and utilities. New Fed Chair Kevin Warsh has made his commitment clear to bring inflation down. The key will be how much relief happens by September.\"\nEven with the elevated inflation levels, consumer spending for the month came in stronger than expected.\nPersonal consumption expenditu"
     },
     {
       "headline": "SNB Must Stay Nimble for Hike or Cut to Negative Rate, IMF Says",
@@ -79,71 +331,8 @@
       "description": "The Swiss National Bank must stay ready to either raise or cut interest rates if economic circumstances require it, the International Monetary Fund said.",
       "url": "https://www.bloomberg.com/news/articles/2026-06-25/snb-must-stay-nimble-for-hike-or-cut-to-negative-rate-imf-says",
       "publishedAt": "2026-06-25T09:33:36+00:00",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "Inflation report could fuel concerns about higher interest rates, even as oil prices fall",
-      "source": "NBC News",
-      "description": "A closely watched inflation report is set to reveal how much price growth picked up in May \u2014 as many Americans remain mired in an affordability crunch.",
-      "url": "https://www.nbcnews.com/business/economy/may-inflation-report-interest-rates-oil-rcna351636",
-      "publishedAt": "2026-06-25T09:00:00Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Air con and building efficiency stocks rally as Europe bakes in extreme heat",
-      "source": "CNBC",
-      "description": "The latest heat wave has underscored the need for efficient technologies and adequate power supply to keep Europe cool.",
-      "url": "https://www.cnbc.com/2026/06/25/europe-heat-wave-cooling-energy-stocks.html",
-      "publishedAt": "2026-06-25T08:55:51Z",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "Gold holds below $4,000, silver below $60 \u2014 has the shimmer worn off the precious metal rally?",
-      "source": "CNBC",
-      "description": "Gold is down almost 8% so far this year, while silver has shed more than 20%.",
-      "url": "https://www.cnbc.com/2026/06/25/gold-silver-price-rally-invest-interest-rates.html",
-      "publishedAt": "2026-06-25T08:46:28Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Could high inflation be the new normal?",
-      "source": "NPR",
-      "description": "Inflation is at a three-year high. That's a problem for the Fed. Yet, under the leadership of new chair Kevin Warsh, it opted not to hike interest rates. So, who are inflation's winners and losers?",
-      "url": "https://www.npr.org/2026/06/25/nx-s1-5867374/could-high-inflation-be-the-new-normal",
-      "publishedAt": "2026-06-25T08:45:51Z",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "China\u2019s Self-Reliance Drive Powers 1,200% IPO Surge, Minting A New Billionaire",
-      "source": "Forbes",
-      "description": "Wang Bing, chairman and CEO of semiconductor component maker Chongqing Genori Technology, has amassed a fortune of $4.7 billion as shares soared almost 1,200% after its Shanghai listing.",
-      "url": "https://www.forbes.com/sites/ywang/2026/06/25/chinas-self-reliance-drive-powers-1200-ipo-surge-minting-a-new-billionaire/",
-      "publishedAt": "2026-06-25T08:35:47Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "ICC judges sue Trump over sanctions, call measures unlawful",
-      "source": "Al Jazeera English",
-      "description": "Judges argue sanctions aimed to punish and coerce ICC decisions on US and Israeli war crimes cases.",
-      "url": "https://www.aljazeera.com/news/2026/6/25/icc-judges-sue-trump-over-sanctions-call-measures-unlawful",
-      "publishedAt": "2026-06-25T07:47:39Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Bill Ackman, David Tepper, and other billionaire fund managers are quietly piling into Amazon",
-      "source": "Fortune",
-      "description": "Even as Warren Buffett\u2019s Berkshire Hathaway exited the stock, big institutions bought 253 million more shares of Amazon during the past 12 months.",
-      "url": "https://fortune.com/2026/06/25/amazon-bill-ackman-david-tepper-sanders/",
-      "publishedAt": "2026-06-25T07:05:00Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Maybank Singapore CEO Alvin Lee looks to tap the silver economy and cross-border flows to grow his business",
-      "source": "Fortune",
-      "description": "Singapore now contributes 20% of Maybank\u2019s annual revenue, but its country CEO Alvin Lee hopes to lift that number to 30% by 2030.",
-      "url": "https://fortune.com/2026/06/25/maybank-singapore-ceo-alvin-lee-silver-economy-cross-border/",
-      "publishedAt": "2026-06-25T07:00:00Z",
-      "bucket": "central_banks"
+      "bucket": "rates_credit",
+      "body": null
     },
     {
       "headline": "BOJ Sees AI Export Boom Cushioning Economy From Oil Price Shock",
@@ -151,71 +340,8 @@
       "description": "The Bank of Japan is increasingly highlighting the economic benefits of the global artificial intelligence boom, viewing strong demand for AI-related products as a buffer against the drag from higher energy prices linked to the Middle East conflict.",
       "url": "https://financialpost.com/pmn/business-pmn/boj-sees-ai-export-boom-cushioning-economy-from-oil-price-shock",
       "publishedAt": "2026-06-25T06:00:19Z",
-      "bucket": "dynamic"
-    },
-    {
-      "headline": "RBI may revise growth to top 7% this year: MPC member",
-      "source": "Bloomberg",
-      "description": "The easing of geopolitical tensions in West Asia are poised to reduce risk to both inflation and growth, according to Nagesh Kumar, an external member of the RBI\u2019s monetary policy panel",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-25/rbi-may-revise-india-growth-to-top-7-this-year-mpc-member-says",
-      "publishedAt": "2026-06-25T05:58:02Z",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Adnoc LNG Tanker Appears in Persian Gulf as Transparency Returns",
-      "source": "Bloomberg",
-      "description": "A liquefied natural gas tanker owned by Abu Dhabi National Oil Co. began sending a signal from within the Persian Gulf, as more vessels broadcast their journeys and intentions in recent days following an interim peace deal between the US and Iran.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-25/adnoc-lng-tanker-appears-in-persian-gulf-as-transparency-returns",
-      "publishedAt": "2026-06-25T03:34:07+00:00",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "Goldco Tops Best Gold IRA Companies List By Gold IRA USA",
-      "source": "Associated Press",
-      "description": "Goldco Earns \"Best Overall Gold IRA Company\" Recognition While Birch Gold Group and Noble Gold Investments Round Out Top Three Rankings",
-      "url": "https://apnews.com/press-release/access-newswire/press-release-84f2d60e4c0dceec7f63033aafc692a2",
-      "publishedAt": "2026-06-25T02:24:13Z",
-      "bucket": "rates_credit"
-    },
-    {
-      "headline": "Japan\u2019s LNG Stocks Seen to Benefit from Middle East Supply Risk",
-      "source": "Bloomberg",
-      "description": "Japanese liquefied natural gas-related stocks stand to benefit from rebuilding war-damaged energy infrastructure in the Persian Gulf and the construction of new facilities elsewhere to diversify away from the Middle East.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-24/japan-s-lng-stocks-seen-to-benefit-from-middle-east-supply-risk",
-      "publishedAt": "2026-06-24T22:45:48+00:00",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "Stonepeak Raises $2.5 Billion in Private Bonds Tied to LNG Plant",
-      "source": "Bloomberg",
-      "description": "Stonepeak has sold roughly $2.5 billion of private bonds to refinance a loan related to its investment in a liquefied natural gas export terminal in Louisiana.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-24/stonepeak-raises-2-5-billion-in-private-bonds-tied-to-lng-plant",
-      "publishedAt": "2026-06-24T17:13:06+00:00",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "BOJ\u2019s Ueda Reiterates Risk of Inflation Exceeding 2% Target",
-      "source": "Bloomberg",
-      "description": "The Bank of Japan sees the risk of inflation exceeding its 2% target and will conduct additional interest-rate hikes appropriately, Governor Kazuo Ueda said in speech Wednesday that reiterated policymakers\u2019 recent messaging.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-24/boj-s-ueda-reiterates-risk-of-inflation-exceeding-2-target",
-      "publishedAt": "2026-06-24T07:02:54+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "PBOC Adviser Sees Potential Rate Cut",
-      "source": "Bloomberg",
-      "description": "Huang Yiping, a member of the monetary policy committee at the People\u2019s Bank of China, says he sees a potential rate cut this year. He joined Bloomberg's Minmin Low on the sidelines of the World Economic Forum in Dalian and appeared on Insight with Haslinda Amin. (Source: Bloomberg)",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-24/pboc-adviser-sees-potential-rate-cut-video",
-      "publishedAt": "2026-06-24T06:38:36+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Copper Holds Losses as Dollar and Hawkish Fed Pressure Metals",
-      "source": "Bloomberg",
-      "description": "Copper and industrial metals largely held Tuesday\u2019s slump as a stronger dollar and the Federal Reserve\u2019s hawkish stance weighed on the demand outlook.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-24/copper-holds-losses-as-dollar-and-hawkish-fed-pressure-metals",
-      "publishedAt": "2026-06-24T03:30:36+00:00",
-      "bucket": "commodities_metals"
+      "bucket": "dynamic",
+      "body": "BOJ Sees AI Export Boom Cushioning Economy From Oil Price Shock\nThe Bank of Japan is increasingly highlighting the economic benefits of the global artificial intelligence boom, viewing strong demand for AI-related products as a buffer against the drag from higher energy prices linked to the Middle East conflict.\n(Bloomberg) \u2014 The Bank of Japan is increasingly highlighting the economic benefits of the global artificial intelligence boom, viewing strong demand for AI-related products as a buffer against the drag from higher energy prices linked to the Middle East conflict.\nOfficials signaled the shift in thinking at last week\u2019s policy meeting, with one member touting the AI effect, according to a summary of opinions released Wednesday.\n\u201cWith overseas economies experiencing an upswing driven by the demand shock from the global expansion of AI-related demand, the deterioration in the terms of trade reflecting higher crude oil prices has been mitigated, and concerns over an economic slowdown have subsided,\u201d the board member said.\nJapan, like many developed nations, is getting an unexpected boost that puts pressure on policymakers to tighten policy. The same is true in the US, where surging AI investment \u2014 on data centers, chips, power infrastructure and software \u2014 has opened the door to a potential pivot. South Korea, after months of surging exports and upward revisions to growth, is also nudging toward rate increases.\nJapan isn\u2019t a leading producer of advanced AI chips, but its companies play a key role in global semiconductor supply chains, particularly in manufacturing equipment and materials.\nThe impact is increasingly visible in trade figures. Japan\u2019s export price index rose 11.7% in May from a year earlier, the largest increase since April 1979, according to BOJ data. Export prices for electrical and electronic products jumped 23.9%, the biggest gain since comparable records began in 1976.\nDeputy Governor Ryozo Himino made remarks last week underscoring the shift i"
     },
     {
       "headline": "This tech \u2018fear gauge\u2019 is nearing a two-decade high. Investors should worry.",
@@ -223,95 +349,8 @@
       "description": "Wall Street\u2019s main \u2018fear gauge,\u2019 the \u2018VIX\u2019 might not be the best way to track this volatility in stocks",
       "url": "https://www.marketwatch.com/story/this-tech-fear-gauge-is-nearing-a-two-decade-high-investors-should-worry-691ed639",
       "publishedAt": "2026-06-23T18:15:00+00:00",
-      "bucket": "dynamic"
-    },
-    {
-      "headline": "Lagarde Sees No Need for More Forceful ECB Response to Iran War",
-      "source": "Bloomberg",
-      "description": "The European Central Bank doesn\u2019t need to react more forcefully to the fallout from the Middle East conflict because inflation is set to return to target over the medium term, President Christine Lagarde said.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-22/lagarde-sees-no-need-for-more-forceful-ecb-response-to-iran-war",
-      "publishedAt": "2026-06-22T13:00:00+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Copper Rallies as Peace-Talk Progress Eases Inflation Fears",
-      "source": "Bloomberg",
-      "description": "Copper prices rose after Iran said there had been \u201cmajor progress\u201d in peace talks with the US, boosting expectations that traffic through the Strait of Hormuz may recover and ease inflation pressures.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-22/copper-rallies-as-peace-talk-progress-eases-inflation-fears",
-      "publishedAt": "2026-06-22T12:08:54+00:00",
-      "bucket": "commodities_metals"
-    },
-    {
-      "headline": "Ivanhoe Mines: A Recovery Year That Could Become A Platform Year (OTCMKTS:IVPAF)",
-      "source": "Seeking Alpha",
-      "description": "Ivanhoe Mines (IVPAF) is transitioning from a high-grade copper growth stock to a vertically integrated, multi-critical metal platform with smelting, zinc,...",
-      "url": "https://seekingalpha.com/article/4916365-ivanhoe-mines-a-recovery-year-that-could-become-a-platform-year?utm_source=flipboard&utm_medium=referral&feed_item_type=article",
-      "publishedAt": "2026-06-19T18:43:19+00:00",
-      "bucket": "commodities_metals"
-    },
-    {
-      "headline": "BOJ Governor Ueda To Resume Work Next Week After Early Discharge",
-      "source": "Bloomberg",
-      "description": "Bank of Japan Governor Kazuo Ueda was discharged from the hospital Friday and plans to return to work on Tuesday, according to the BOJ.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-19/governor-ueda-has-been-discharged-from-hospital-boj-says",
-      "publishedAt": "2026-06-19T07:42:37+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Oil drifts lower as Strait of Hormuz reopens, focus shifts to demand outlook",
-      "source": "CNBC",
-      "description": "With immediate supply fears fading and tanker traffic returning to the Strait of Hormuz, traders are turning their attention back to oil demand and OPEC's outlook for the market.",
-      "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
-      "publishedAt": "2026-06-19T03:26:20+00:00",
-      "bucket": "commodities_energy"
-    },
-    {
-      "headline": "BOE\u2019s Bailey Appeals for Help on X Posts Showing Fake Farage Fight",
-      "source": "Bloomberg",
-      "description": "Bank of England Governor Andrew Bailey appealed for help in identifying who is behind a barrage of bizarre social media posts using fake images of him fighting Reform UK leader Nigel Farage.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-18/bank-of-england-s-bailey-appeals-for-help-on-x-posts-of-fake-nigel-farage-fight",
-      "publishedAt": "2026-06-18T13:36:29+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "BOE's Bailey Says Holding Rates Is a 'Sensible Decision'",
-      "source": "Bloomberg",
-      "description": "Bank of England Governor\u00a0Andrew Bailey\u00a0tells broadcasters energy prices remain above pre-war levels and that the the central bank needs to assess \"how much damage has been done to the infrastructure for supplying energy\" in the Middle East. \"I think holding is the right position to be in at the mome...",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-18/boe-s-bailey-says-holding-rates-is-a-sensible-decision-video",
-      "publishedAt": "2026-06-18T12:36:48+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "PBOC\u2019s New Rate Regime to Aid Liquidity and Bonds, Analysts Say",
-      "source": "Bloomberg",
-      "description": "The People\u2019s Bank of China\u2019s latest refinement of its monetary policy toolkit is expected to damp money-market volatility and support bonds, according to analysts.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-18/pboc-s-new-rate-regime-to-aid-liquidity-and-bonds-analysts-say",
-      "publishedAt": "2026-06-18T03:38:07+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "ECB\u2019s Lagarde Warns AI Is Huge Risk for Financial Stability",
-      "source": "Bloomberg",
-      "description": "Artificial intelligence can potentially lead to dangerous financial crises, and the European Central Bank is determined to ensure that doesn\u2019t happen, President Christine Lagarde said.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-17/ecb-s-lagarde-warns-ai-is-huge-risk-for-financial-stability",
-      "publishedAt": "2026-06-17T12:30:21+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Bank of Japan hikes rates to highest since 1995 as yen languishes at historic lows",
-      "source": "CNBC",
-      "description": "This is the BOJ's first hike since December, when it raised rates to its current level of 0.75%, also its highest level in over 30 years.",
-      "url": "https://www.cnbc.com/2026/06/16/boj-rate-hike-historic-inflation.html",
-      "publishedAt": "2026-06-16T03:29:53+00:00",
-      "bucket": "central_banks"
-    },
-    {
-      "headline": "Bailey Defends BOE Gilt Sales After Criticism From Farage",
-      "source": "Bloomberg",
-      "description": "Governor Andrew Bailey defended the Bank of England\u2019s buying and selling of UK government bonds following criticism of the policy, including from Nigel Farage\u2019s populist Reform UK party.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-14/bailey-defends-boe-gilt-sales-after-criticism-from-farage?utm_source=flipboard&utm_content=bloomberg%2Fmagazine%2FMarkets",
-      "publishedAt": "2026-06-14T22:48:42+00:00",
-      "bucket": "central_banks"
+      "bucket": "dynamic",
+      "body": null
     },
     {
       "headline": "Why investors should buckle up for more stock market volatility",
@@ -319,7 +358,8 @@
       "description": "Volatility has reemerged on Wall Street, and investing pros says there's signs that wild market swings are set to continue.",
       "url": "https://www.businessinsider.com/stock-market-outlook-stocks-volatility-investing-trading-invest-rates-tech-2026-6",
       "publishedAt": "2026-06-12T09:20:01+00:00",
-      "bucket": "dynamic"
+      "bucket": "dynamic",
+      "body": "It's been a wild week of a trading for US stocks, but market pros say investors should get used to it.\nWall Street is seeing volatility resurface, with stocks rocked by a re-escalation in the Iran war and squashed hopes of any interest rate cuts from the Federal Reserve in 2026.\nThe equity market has been surprisingly resilient in the first half of the year, but it's been far from a straight line up.\nThe S&P 500 has recovered from its Iran-war lows at the end of March and then some, climbing to fresh record highs nearly 100 days into the war.\nThe mega-IPOs from SpaceX, Anthropic, and OpenAI are expected to add to mounting volatility risks as liquidity shifts and investors flock to the colossal offerings, but beyond the historic IPOs, here are four reasons stock market volatility could continue.\nVIX technicals show signs more swings are coming\nThe Cboe Volatility Index, otherwise known as the VIX, is often considered the stock market's fear gauge.\nIn recent trading sessions the VIX has surged, seeing its largest year-to-date single day jump of nearly 40%, topping the volatility spikes during the onset of the war in Iran.\nPiper Sandler's chief market technician Craig Johnson flagged that the VIX is above key levels, signaling investors are risk-off.\n\"The VIX rose by 11.8% after recapturing the 50-/200-day MAs, remaining above a critical resistance level of 20. Historically, a sustained level above 20 indicates an increase in equity volatility,\" he wrote.\nTech-led gains bump up against higher rates\nTech has been one of the top-performing sectors in 2026, second only to energy, which has been driven higher by the historic Iran-war oil disruption.\nThe outsize influence of tech makes the market all the more sensitive to higher rates.\nThe market has repriced its expectations for the Federal Reserve to lower rates, pricing in a hold or even a rate hike through the rest of this year, compared to two to three cuts expected at the start of the year.\nThe 10-year Treasury yield "
     }
   ]
 }

@@ -98,9 +98,10 @@ def build_market_summary(snapshot: dict) -> str:
 # ─────────────────────────────────────────────────────────────
 
 SYSTEM_PROMPT = """\
-You are the author of Downstream, a daily macro-finance brief for finance \
-students and young professionals. Your job: identify the primary driver(s) of \
-today's macro narrative and trace implication chain(s) through related assets.
+You are the author of Downstream, a daily macro-finance brief for curious, \
+intelligent readers — people who follow the news but don't trade markets for \
+a living. Your job: identify the primary driver(s) of today's macro narrative \
+and trace implication chain(s) through related assets.
 
 The primary driver is whatever best explains the day — it may be a news \
 catalyst, a market move, or both together. A significant news event that \
@@ -148,7 +149,22 @@ Writing rules:
 - 4–6 nodes per chain. 2–4 sentences per node. No padding.
 - Close each chain with "What to watch": 2–3 specific, falsifiable signals. \
   Name the instrument, the level, or the event — not vague market commentary.
-- Tone: analytical, precise, no filler.
+- Define jargon on first use with a brief parenthetical — e.g., \
+  "basis points (bps, hundredths of a percentage point)", \
+  "the yield curve (the line connecting short- to long-term interest rates)", \
+  "the carry trade (borrowing cheaply in one currency to invest in a \
+  higher-yielding one)". Do not define the same term twice.
+- For each mechanism in the chain, lead with what it means in plain terms \
+  before stating the technical label. "When oil prices fall, everyday goods \
+  get cheaper to produce and ship — this reduces inflation expectations, which \
+  means bond investors demand less compensation for future price rises, so \
+  yields fall" is better than "oil down → breakevens compress → yields fall."
+- Analogies are encouraged when they are accurate. A rate-relief rally in \
+  bonds is like a traffic jam clearing — once pressure lifts, everyone \
+  accelerates at once.
+- Tone: clear, precise, curious. Write as if explaining to a smart friend \
+  who reads the Economist but doesn't trade markets. Keep all numbers exact. \
+  Cut filler, not clarity.
 - Forbidden phrases: "it remains to be seen", "investors will be watching", \
   "in this environment", "navigating uncertainty", "amid", "backdrop".
 
@@ -193,7 +209,7 @@ Output format — for MULTIPLE chains (repeat the block):
 
 NEWS_SUMMARY_SYSTEM = """\
 You are summarizing financial market news for a daily macro brief. \
-Write 5–8 bullet points covering the most important stories from today's \
+Write 8–12 bullet points covering the most important stories from today's \
 headlines. Each bullet: lead with **bold key fact** (asset name, move \
 magnitude, institution, or event), then one sentence of context explaining \
 why it matters macroeconomically. Prioritize systemic significance over \
@@ -218,11 +234,13 @@ def load_news_context(snapshot_date: str) -> str | None:
     for h in headlines:
         source = h.get("source", "Unknown")
         headline = h.get("headline", "").strip()
+        body = (h.get("body") or "").strip()
         description = (h.get("description") or "").strip()
         bucket = h.get("bucket", "")
         tag = f"[{bucket}] " if bucket else ""
-        if description:
-            lines.append(f"- {tag}[{source}] {headline} — {description}")
+        content = body if body else description
+        if content:
+            lines.append(f"- {tag}[{source}] {headline} — {content}")
         else:
             lines.append(f"- {tag}[{source}] {headline}")
     return "\n".join(lines)
@@ -283,7 +301,7 @@ def generate_news_summary(snapshot_date: str, client: anthropic.Anthropic) -> st
     print(f"Generating news summary …")
     msg = client.messages.create(
         model=MODEL,
-        max_tokens=600,
+        max_tokens=900,
         system=NEWS_SUMMARY_SYSTEM,
         messages=[{"role": "user", "content": f"Date: {snapshot_date}\n\nHeadlines:\n{news_context}"}],
     )

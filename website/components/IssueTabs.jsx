@@ -23,7 +23,7 @@ function TabButton({ label, active, onClick }) {
   )
 }
 
-export default function IssueTabs({ chains, newsSummary, snapshot, allIssues }) {
+export default function IssueTabs({ chains, newsSummary, snapshot, allIssues, newsItems }) {
   const [active, setActive] = useState('Implication Chains')
 
   return (
@@ -36,7 +36,7 @@ export default function IssueTabs({ chains, newsSummary, snapshot, allIssues }) 
 
       {active === 'Implication Chains' && <ImplicationChain chains={chains} />}
       {active === 'Data'               && <MarketSnapshot snapshot={snapshot} />}
-      {active === 'News'               && <NewsTab newsSummary={newsSummary} />}
+      {active === 'News'               && <NewsTab newsSummary={newsSummary} newsItems={newsItems} />}
       {active === 'Archive'            && <Archive issues={allIssues} />}
     </div>
   )

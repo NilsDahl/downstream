@@ -1,5 +1,6 @@
 """
-fetch_news.py — fetches relevant news headlines from NewsAPI.
+fetch_news.py — fetches relevant news headlines from NewsAPI, Currents API,
+and RSS feeds from major financial outlets.
 
 Runs after fetch_data.py as part of the daily pipeline.
 Requires NEWSAPI_KEY in the environment.
@@ -11,14 +12,33 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import date, datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse
 
 import certifi
+import feedparser
 import requests
 
 NEWSAPI_URL   = "https://newsapi.org/v2/everything"
 CURRENTS_URL  = "https://api.currentsapi.services/v1/search"
+
+# RSS feeds from major financial/macro outlets.
+# These are fetched directly — no topic pre-selection — so the collection
+# naturally reflects what outlets are actually publishing today.
+RSS_FEEDS: dict[str, str] = {
+    "Reuters":      "https://feeds.reuters.com/reuters/businessNews",
+    "AP":           "https://feeds.apnews.com/rss/apf-business",
+    "CNBC":         "https://www.cnbc.com/id/10000664/device/rss/rss.html",
+    "CNBC Economy": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
+    "MarketWatch":  "https://feeds.content.dowjones.io/public/rss/mw_marketpulse",
+    "Seeking Alpha":"https://seekingalpha.com/market_currents.xml",
+    "Investing.com":"https://www.investing.com/rss/news.rss",
+    "FT":           "https://www.ft.com/rss/home",
+    "WSJ":          "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+    "Bloomberg":    "https://feeds.bloomberg.com/markets/news.rss",
+}
 
 # Maps URL domains to human-readable source names for Currents API articles
 # (Currents doesn't return a source name field, only the article URL).
@@ -57,6 +77,7 @@ _DOMAIN_TO_SOURCE: dict[str, str] = {
     "bankofengland.co.uk":"Bank of England",
     "riksbank.se":        "Riksbank",
     "boj.or.jp":          "Bank of Japan",
+    "investing.com":      "Investing.com",
 }
 
 # Each query is assigned to a theme bucket. Bucket caps control how many
@@ -156,6 +177,7 @@ SOURCE_TIER: dict[str, int] = {
     "Foreign Policy": 2,
     "TheStreet": 2,
     "Morningstar": 2,
+    "Investing.com": 2,
 }
 
 _STOP_WORDS = {
@@ -355,6 +377,82 @@ def _fetch_currents_articles(query: str, api_key: str, from_date: str) -> list[d
         return []
 
 
+def _parse_rss_datetime(entry) -> str:
+    """Return an ISO-8601 UTC string from a feedparser entry, or empty string."""
+    # feedparser provides published_parsed as UTC struct_time when available
+    if hasattr(entry, "published_parsed") and entry.published_parsed:
+        try:
+            dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+            return dt.isoformat()
+        except Exception:
+            pass
+    # Fallback: parse the raw published string
+    raw = getattr(entry, "published", "") or getattr(entry, "updated", "")
+    if raw:
+        try:
+            dt = parsedate_to_datetime(raw).astimezone(timezone.utc)
+            return dt.isoformat()
+        except Exception:
+            pass
+    return ""
+
+
+def fetch_rss_items(cutoff: datetime) -> list[dict]:
+    """Pull articles from all RSS_FEEDS, filter to after cutoff, normalise to API format."""
+    articles = []
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; Downstream/1.0)"}
+
+    for feed_name, url in RSS_FEEDS.items():
+        try:
+            resp = requests.get(url, timeout=10, headers=headers, verify=certifi.where())
+            resp.raise_for_status()
+            feed = feedparser.parse(resp.text)
+        except Exception as exc:
+            print(f"  [warn] RSS '{feed_name}': {exc}", file=sys.stderr)
+            continue
+
+        for entry in feed.entries:
+            title = (getattr(entry, "title", "") or "").strip()
+            link  = getattr(entry, "link", "") or ""
+            # Some feeds use summary, others use content or description
+            summary = (
+                getattr(entry, "summary", "")
+                or getattr(entry, "description", "")
+                or ""
+            ).strip()
+            # Strip HTML tags from RSS summaries
+            summary = re.sub(r"<[^>]+>", " ", summary).strip()
+            summary = re.sub(r"\s+", " ", summary)[:500]
+
+            pub_iso = _parse_rss_datetime(entry)
+
+            # Drop entries older than the cutoff
+            if pub_iso:
+                try:
+                    pub_dt = datetime.fromisoformat(pub_iso.replace("Z", "+00:00"))
+                    if pub_dt < cutoff:
+                        continue
+                except Exception:
+                    pass
+
+            # Resolve source name from URL domain
+            domain = re.sub(r"^www\.", "", urlparse(link).netloc.lower())
+            source_name = _DOMAIN_TO_SOURCE.get(domain, feed_name)
+
+            if not title or not link:
+                continue
+
+            articles.append({
+                "title":       title,
+                "description": summary,
+                "url":         link,
+                "source":      {"name": source_name},
+                "publishedAt": pub_iso,
+            })
+
+    return articles
+
+
 def _score(article: dict, is_dynamic: bool, now: datetime) -> float:
     source = article.get("source", {}).get("name", "")
     tier = SOURCE_TIER.get(source, 1)
@@ -383,12 +481,93 @@ def _is_near_duplicate(h1: dict, h2: dict, threshold: float = 0.6) -> bool:
     return len(w1 & w2) / min(len(w1), len(w2)) >= threshold
 
 
+def _add_cross_source_bonus(
+    candidates: list[tuple[float, dict, str]]
+) -> list[tuple[float, dict, str]]:
+    """Boost articles covered by multiple outlets (+0.5 per additional source)."""
+    n = len(candidates)
+    titles  = [c[1].get("title", "") for c in candidates]
+    sources = [c[1].get("source", {}).get("name", "") for c in candidates]
+
+    # cluster_sources[i] = set of unique source names covering that story
+    cluster_sources: list[set[str]] = [{s} for s in sources]
+
+    for i in range(n):
+        wi = _title_words(titles[i])
+        if not wi:
+            continue
+        for j in range(i + 1, n):
+            wj = _title_words(titles[j])
+            if not wj:
+                continue
+            if len(wi & wj) / min(len(wi), len(wj)) >= 0.6:
+                combined = cluster_sources[i] | cluster_sources[j]
+                cluster_sources[i] = combined
+                cluster_sources[j] = combined
+
+    boosted = []
+    for i, (score, article, bucket) in enumerate(candidates):
+        cross_bonus = (len(cluster_sources[i]) - 1) * 0.5
+        boosted.append((score + cross_bonus, article, bucket))
+    return boosted
+
+
+_BODY_JUNK_RE = re.compile(
+    r'enable javascript|javascript and cookies|please enable js'
+    r'|security verification|verify you are human|click the box below'
+    r'|to continue, please|robot detection|access denied'
+    r'|subscribe to unlock|try unlimited access|please subscribe'
+    r'|ad blocker|disable any ad'
+    r'|cookie consent|we use cookies',
+    re.IGNORECASE,
+)
+
+
+def _is_valid_body(text: str | None) -> bool:
+    """Return True only if text is substantive article content, not a bot/paywall page."""
+    if not text or len(text) < 150:
+        return False
+    return not bool(_BODY_JUNK_RE.search(text[:600]))
+
+
+def enrich_with_body(headlines: list[dict]) -> list[dict]:
+    """Attempt to scrape full article text for each headline URL."""
+    try:
+        import trafilatura
+    except ImportError:
+        print("  [warn] trafilatura not installed — skipping body enrichment", file=sys.stderr)
+        return headlines
+
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; Downstream/1.0)"}
+    enriched = []
+    for h in headlines:
+        url = h.get("url", "")
+        body = None
+        if url:
+            try:
+                resp = requests.get(url, timeout=5, headers=headers, verify=certifi.where())
+                text = trafilatura.extract(
+                    resp.text,
+                    include_comments=False,
+                    include_tables=False,
+                    no_fallback=False,
+                )
+                if _is_valid_body(text):
+                    body = text[:2000]
+            except Exception:
+                pass
+            time.sleep(0.5)
+        enriched.append({**h, "body": body})
+    return enriched
+
+
 def fetch_news(today: str, newsapi_key: str, currents_key: str | None = None) -> list[dict]:
     now = datetime.now(timezone.utc)
     snapshot = _load_snapshot(today)
     dynamic_queries = _dynamic_queries(snapshot)
     dynamic_set = set(dynamic_queries)
     from_date = (date.fromisoformat(today) - timedelta(days=1)).isoformat()
+    cutoff = now - timedelta(hours=24)
 
     # Process dynamic queries first so their articles are tagged "dynamic"
     # before static queries can claim the same URLs.
@@ -409,6 +588,13 @@ def fetch_news(today: str, newsapi_key: str, currents_key: str | None = None) ->
         seen_urls.add(url)
         candidates.append((_score(article, is_dynamic, now), article, bucket))
 
+    # RSS feeds — topic-agnostic; coverage volume determines prominence
+    print("  Fetching RSS feeds …", file=sys.stderr)
+    rss_count_before = len(candidates)
+    for article in fetch_rss_items(cutoff):
+        _ingest(article, "rss", False)
+    print(f"    RSS: {len(candidates) - rss_count_before} articles added", file=sys.stderr)
+
     # NewsAPI — quality domains filter applied at API level (24h delay on free plan)
     for query, bucket in ordered_queries:
         for article in _fetch_articles(query, newsapi_key, from_date, sources=_QUALITY_DOMAINS):
@@ -423,6 +609,9 @@ def fetch_news(today: str, newsapi_key: str, currents_key: str | None = None) ->
                 if SOURCE_TIER.get(src, 0) < 2:
                     continue
                 _ingest(article, bucket, query in dynamic_set)
+
+    # Apply cross-source bonus: stories covered by multiple outlets rank higher.
+    candidates = _add_cross_source_bonus(candidates)
 
     # Sort by score descending, dedup near-identical titles, apply global cap.
     candidates.sort(key=lambda x: x[0], reverse=True)
@@ -446,6 +635,11 @@ def fetch_news(today: str, newsapi_key: str, currents_key: str | None = None) ->
         final.append(h)
 
     final.sort(key=lambda h: h["publishedAt"], reverse=True)
+
+    # Enrich with full article body text where possible
+    print("  Enriching with full article bodies …", file=sys.stderr)
+    final = enrich_with_body(final)
+
     return final
 
 
@@ -465,6 +659,7 @@ def main():
     print("=" * 52)
     print(f"  NewsAPI  : {'active (24h delay on free plan)' if newsapi_key else 'not configured'}")
     print(f"  Currents : {'active (real-time)' if currents_key else 'not configured'}")
+    print(f"  RSS feeds: {len(RSS_FEEDS)} outlets")
 
     snapshot = _load_snapshot(today)
     dynamic  = _dynamic_queries(snapshot)
@@ -475,10 +670,13 @@ def main():
     headlines = fetch_news(today, newsapi_key, currents_key)
 
     bucket_counts: dict[str, int] = {}
+    body_count = 0
     for h in headlines:
         b = h.get("bucket", "?")
         bucket_counts[b] = bucket_counts.get(b, 0) + 1
-    print(f"  Headlines      : {len(headlines)}")
+        if h.get("body"):
+            body_count += 1
+    print(f"  Headlines      : {len(headlines)} ({body_count} with full body text)")
     for bucket, count in sorted(bucket_counts.items()):
         print(f"    {bucket:<22} {count}")
     print("=" * 52)

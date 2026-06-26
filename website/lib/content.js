@@ -3,9 +3,10 @@ import path from 'path'
 import matter from 'gray-matter'
 
 // ─── Paths ───────────────────────────────────────────────────
-const CONTENT_DIR  = path.join(process.cwd(), '..', 'content')
-const DRAFTS_DIR   = path.join(CONTENT_DIR, 'drafts')
+const CONTENT_DIR   = path.join(process.cwd(), '..', 'content')
+const DRAFTS_DIR    = path.join(CONTENT_DIR, 'drafts')
 const SNAPSHOTS_DIR = path.join(CONTENT_DIR, 'snapshots')
+const NEWS_DIR      = path.join(CONTENT_DIR, 'news')
 
 // ─── Commodity units ─────────────────────────────────────────
 const COMMODITY_UNITS = {
@@ -193,6 +194,7 @@ export function getAllDates() {
 export function getIssue(date) {
   const draftPath    = path.join(DRAFTS_DIR, `${date}.md`)
   const snapshotPath = path.join(SNAPSHOTS_DIR, `${date}.json`)
+  const newsPath     = path.join(NEWS_DIR, `${date}.json`)
 
   if (!fs.existsSync(draftPath)) return null
 
@@ -200,11 +202,21 @@ export function getIssue(date) {
   const rawSnapshot = fs.existsSync(snapshotPath)
     ? JSON.parse(fs.readFileSync(snapshotPath, 'utf8'))
     : null
+  const rawNews = fs.existsSync(newsPath)
+    ? JSON.parse(fs.readFileSync(newsPath, 'utf8'))
+    : null
 
   const { chains, newsSummary } = parseIssue(content)
-  const snapshot = rawSnapshot ? transformSnapshot(rawSnapshot) : null
+  const snapshot  = rawSnapshot ? transformSnapshot(rawSnapshot) : null
+  const newsItems = rawNews?.headlines?.map(h => ({
+    headline:    h.headline,
+    source:      h.source,
+    url:         h.url,
+    publishedAt: h.publishedAt,
+    bucket:      h.bucket,
+  })) ?? []
 
-  return { date, frontmatter, content, chains, newsSummary, snapshot }
+  return { date, frontmatter, content, chains, newsSummary, snapshot, newsItems }
 }
 
 export function getLatestIssue() {

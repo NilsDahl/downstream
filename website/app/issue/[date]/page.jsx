@@ -56,6 +56,7 @@ export default async function IssuePage({ params }) {
           newsSummary={issue.newsSummary}
           snapshot={issue.snapshot}
           allIssues={allIssues}
+          newsItems={issue.newsItems}
         />
       </main>
 
