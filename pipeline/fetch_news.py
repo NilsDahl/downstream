@@ -647,8 +647,7 @@ def main():
     newsapi_key   = os.environ.get("NEWSAPI_KEY", "")
     currents_key  = os.environ.get("CURRENTAPI_KEY", "")
     if not newsapi_key and not currents_key:
-        print("Error: NEWSAPI_KEY or CURRENTAPI_KEY must be set", file=sys.stderr)
-        sys.exit(1)
+        print("  [warn] No NEWSAPI_KEY or CURRENTAPI_KEY — RSS-only mode", file=sys.stderr)
 
     today    = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else date.today().isoformat()
     news_dir = os.path.join(os.path.dirname(__file__), "..", "content", "news")

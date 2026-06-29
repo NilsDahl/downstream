@@ -1,0 +1,356 @@
+{
+  "date": "2026-06-29",
+  "headlines": [
+    {
+      "headline": "Bank lending to euro zone firms hits three-year high in May",
+      "source": "Investing.com",
+      "description": "",
+      "url": "https://www.investing.com/news/economic-indicators/bank-lending-to-euro-zone-firms-hits-threeyear-high-in-may-93CH-4764388",
+      "publishedAt": "2026-06-29T08:14:51+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "US stock futures advance on Middle East de-escalation; oil supply concerns linger",
+      "source": "Seeking Alpha",
+      "description": "",
+      "url": "https://seekingalpha.com/news/4607940-us-stock-futures-advance-on-middle-east-de-escalation-oil-supply-concerns-linger?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+      "publishedAt": "2026-06-29T08:07:22+00:00",
+      "bucket": "rss",
+      "body": "Stock index futures were higher early Monday as investors welcomed a pause in U.S.-Iran hostilities, though doubts about the agreement's longevity continued to fuel concerns over Middle East oil supplies.\nS&P 500 futures (SPX) rose 0.50%, Nasdaq 100 futures ("
+    },
+    {
+      "headline": "Moody\u2019s Says India Rating Safe Despite Potential Deficit Gap",
+      "source": "Bloomberg",
+      "description": "India can withstand a potentially wider-than-forecast fiscal deficit this year without jeopardizing its investment-grade rating, according to Moody\u2019s Ratings, as higher energy prices are expected to pose only temporary budget pressures.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/moody-s-says-india-can-handle-modest-fiscal-slippage-this-year",
+      "publishedAt": "2026-06-29T07:50:14+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Korean Stocks Rebound as Samsung, SK Hynix Unveil Spending Plan",
+      "source": "Bloomberg",
+      "description": "South Korean stocks recouped earlier losses as Samsung Electronics Co. and SK Hynix Inc. pledged massive investment during a government briefing that underscored the country\u2019s commitment to AI development.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/korean-stocks-rebound-as-samsung-sk-hynix-unveil-spending-plan",
+      "publishedAt": "2026-06-29T07:25:14+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Orion Digital receives Nasdaq minimum bid price deficiency notice",
+      "source": "Seeking Alpha",
+      "description": "",
+      "url": "https://seekingalpha.com/news/4607929-orion-digital-receives-nasdaq-minimum-bid-price-deficiency-notice?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+      "publishedAt": "2026-06-29T07:21:54+00:00",
+      "bucket": "rss",
+      "body": "Orion Digital (ORIO) announced that it received a written notification from the Listing Qualifications Department of The Nasdaq Stock Market LLC on June 25, 2026, indicating a bid price deficiency. For 30 consecutive business days, the company's common shares closed below the"
+    },
+    {
+      "headline": "Spanish Inflation Unexpectedly Holds Well Above ECB Target",
+      "source": "Bloomberg",
+      "description": "Spanish inflation unexpectedly remained far above the European Central Bank\u2019s 2% target in the first reading since the US-Iran peace deal that\u2019s brought down energy prices.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/spanish-inflation-unexpectedly-holds-well-above-ecb-target",
+      "publishedAt": "2026-06-29T07:00:00+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Lindt Heads for Worst Quarter in 17 Years on Price-Hike Fallout",
+      "source": "Bloomberg",
+      "description": "Lindt &amp; Spruengli AG\u2019s shares are on track for their biggest quarterly loss in 17 years as consumers tire of higher chocolate prices, signaling that the Swiss confectioner\u2019s strategy of passing on the cost of cocoa may be running out of room.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/lindt-heads-for-worst-quarter-in-17-years-on-price-hike-fallout",
+      "publishedAt": "2026-06-29T06:32:16+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Prosus Profit Jumps as Bets on E-Commerce Businesses Pay Off",
+      "source": "Bloomberg",
+      "description": "Prosus NV said profit more than doubled in the last fiscal year, beating analysts\u2019 estimates as growth in the tech investment company\u2019s e-commerce businesses and an increase in the value of the stake it owns in China\u2019s Tencent Holdings Ltd. boosted earnings.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/prosus-profit-doubles-as-bets-on-e-commerce-businesses-pay-off",
+      "publishedAt": "2026-06-29T05:59:26+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "FTSE 100 Futures Steady as Oil Stays Around $72",
+      "source": "Bloomberg",
+      "description": "",
+      "url": "https://www.bloomberg.com/news/live-blog/2026-06-29/ftse-100-live-pound-glits-us-iran-talks-hormuz-oil-prices-gold-what-s-moving-uk-markets-right-now-markets-today",
+      "publishedAt": "2026-06-29T05:48:25+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Pakistan Urgently Seeks LNG as Hormuz Flare-Up Chokes Supply",
+      "source": "Bloomberg",
+      "description": "Pakistan is seeking to buy liquefied natural gas for delivery this week as a string of attacks in the Strait of Hormuz disrupts flows of the super-chilled fuel.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/pakistan-urgently-seeks-lng-as-hormuz-flare-up-chokes-supply",
+      "publishedAt": "2026-06-29T05:37:23+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "China Tech ETF Sees Record Inflow Despite Global Chip Selloff",
+      "source": "Bloomberg",
+      "description": "Chinese investors poured a record amount into an exchange-traded fund focusing on communication devices on Friday despite a global semiconductor selloff, underscoring resilient demand for the country\u2019s hardware stocks.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/china-tech-etf-sees-record-inflow-despite-global-chip-selloff",
+      "publishedAt": "2026-06-29T05:35:22+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Crealights Technology on Breakeven Outlook",
+      "source": "Bloomberg",
+      "description": "Chinese optical module developer Crealights will break even as soon as this year due to strong demand. The company's CEO, Hu Zhaoyang, speaks to Minmin Low after its shares began trading in Hong Kong. (Source: Bloomberg)",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-29/crealights-technology-on-breakeven-outlook-video",
+      "publishedAt": "2026-06-29T05:22:30+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Baidu shares surge on report AI chip unit targeting $50 bln valuation in HK IPO By Investing.com",
+      "source": "Investing.com",
+      "description": "Baidu shares surge on report AI chip unit targeting $50 bln valuation in HK IPO",
+      "url": "https://www.investing.com/news/stock-market-news/baidu-shares-surge-on-report-ai-chip-unit-targeting-50-bln-valuation-in-hk-ipo-4764222",
+      "publishedAt": "2026-06-29T05:21:59+00:00",
+      "bucket": "dynamic",
+      "body": null
+    },
+    {
+      "headline": "Corn Drops After US-Iran Halt Attacks as Traders Weigh US Heat",
+      "source": "Bloomberg",
+      "description": "Corn futures slipped after hostilities between the US and Iran eased, while traders monitored hot weather in the US that could impact crops.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/corn-drops-after-us-iran-halt-attacks-as-traders-weigh-us-heat",
+      "publishedAt": "2026-06-29T04:38:21+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Freight shipping costs surge as companies race to beat new Trump tariffs",
+      "source": "Financial Times",
+      "description": "Rates reach highest since 2024 Red Sea crisis in anticipation of fresh levies from US",
+      "url": "https://www.ft.com/content/8bf7cfa4-5412-41d3-b84e-e89f84265fe8",
+      "publishedAt": "2026-06-29T04:00:28+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "The leap of faith behind SpaceX\u2019s mega bond deal",
+      "source": "Financial Times",
+      "description": "The views of equity and bond investors might one day be at odds with each other",
+      "url": "https://www.ft.com/content/93fc9630-c199-4350-85ba-9323fe04f24c",
+      "publishedAt": "2026-06-29T04:00:20+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Oil prices rise as US, Iranian strikes threaten Strait of Hormuz reopening",
+      "source": "Al Jazeera English",
+      "description": "Brent crude edges up as tit-for-tat strikes imperial return to normality in key waterway.",
+      "url": "https://www.aljazeera.com/economy/2026/6/29/oil-prices-rise-as-us-iranian-strikes-threaten-strait-of-hormuz-reopening",
+      "publishedAt": "2026-06-29T03:55:02+00:00",
+      "bucket": "dynamic",
+      "body": "Oil prices rise as US, Iranian strikes threaten Strait of Hormuz reopening\nBrent crude edges up as tit-for-tat strikes hinder return to normality in key waterway.\nOil prices have climbed following the latest flare-up in hostilities between the United States and Iran.\nBrent crude, the primary international benchmark, rose about 0.9 percent on Monday after tit-for-tat US and Iranian strikes over the weekend renewed doubts about a return to normal shipping in the Strait of Hormuz.\nRecommended Stories\nlist of 4 items- list 1 of 4Father and son pulled out alive four days after Venezuela earthquake\n- list 2 of 4Pakistan says its security forces killed 29 fighters along Afghan border\n- list 3 of 4\u2018Heroes for the future\u2019: Canada celebrates team\u2019s historic World Cup run\n- list 4 of 4Late goal gives Canada first-ever World Cup knockout stage victory\nBrent futures for August delivery stood at $73.21 a barrel as of 03:30 GMT, 127 cents higher than the day before the US and Israel launched their war on Iran on February 28.\n\u201cBrent\u2019s partial rebound this morning reflects a market that had perhaps run too quickly on ceasefire optimism,\u201d Fabien Yip, a market analyst at IG in Sydney, Australia, told Al Jazeera.\n\u201cOil had nearly unwound its entire war premium, despite an MoU with no enforcement details and ongoing strikes. Thursday\u2019s attack on a commercial vessel was a reality check, and this weekend\u2019s tit-for-tat exchanges have compounded that,\u201d Yip said.\nAsian stock markets were mixed on Monday morning, with losses in Tokyo and Seoul and gains in Hong Kong and Taipei.\nJapan\u2019s benchmark Nikkei 225 was 0.7 percent lower, while South Korea\u2019s Kospi was down 1.9 percent.\nJapanese and Korean stocks tied to the AI boom saw some of the biggest losses amid heated debate about whether tech firms\u2019 massive investments in the emerging technology will pay off.\nJapanese tech giant SoftBank Group fell about 5 percent, while Advantest Corporation, a key maker of semiconductor testing equipment, slump"
+    },
+    {
+      "headline": "Copper Declines as Fed Stance and Strong Dollar Weigh On Metals",
+      "source": "Bloomberg",
+      "description": "Copper fell as the Federal Reserve\u2019s hawkish stance and a rising US dollar continued to weigh on sentiment toward industrial metals.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/copper-declines-as-fed-stance-and-strong-dollar-weigh-on-metals",
+      "publishedAt": "2026-06-29T02:47:44+00:00",
+      "bucket": "commodities_metals",
+      "body": null
+    },
+    {
+      "headline": "PBOC\u2019s New Overnight Rate Said Below Forecasts in Hint at Easing",
+      "source": "Bloomberg",
+      "description": "China\u2019s central bank set the interest rate on its new overnight liquidity tool at a level that was below expectations, according to people familiar with the matter, in what some economists see as a de facto rate cut that could push down market borrowing costs.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/pboc-debuts-overnight-operation-surprises-with-no-rate-released",
+      "publishedAt": "2026-06-29T01:41:56+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Gold Declines as Fresh US-Iran Tension Fans Inflation Concerns",
+      "source": "Bloomberg",
+      "description": "Gold fell to near $4,000 an ounce after the US and Iran traded attacks in the Persian Gulf, straining a ceasefire that pushed energy prices to pre-war levels last week and tempered expectations for interest-rate hikes.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-29/gold-declines-as-fresh-us-iran-tension-fans-inflation-concerns",
+      "publishedAt": "2026-06-29T00:07:10+00:00",
+      "bucket": "rss",
+      "body": "Gold Declines as Fresh US-Iran Tension Fans Inflation Concerns\nGold fell to near $4,000 an ounce after the US and Iran traded attacks in the Persian Gulf, straining a ceasefire that pushed energy prices to pre-war levels last week and tempered expectations for interest-rate hikes.\nSpot gold was down as much as 1.2% after rising more than 2% in the previous two sessions. A tanker carrying Qatari crude was hit during tit-for-tat assaults over the weekend that hampered shipping through the Strait of Hormuz, sending crude oil prices higher at the start of trading on Monday. Oil has since pared gains after the US and Iran agreed to stop attacking each other before peace talks resume this week."
+    },
+    {
+      "headline": "Sovereign funds move from public markets to private to ride AI wave",
+      "source": "Financial Times",
+      "description": "High concentration in stock markets and national security concerns send SWFs to private credit and infrastructure",
+      "url": "https://www.ft.com/content/8ea5b49f-e115-4e18-8c14-c426fcac27ba",
+      "publishedAt": "2026-06-28T23:01:02+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Stocks Gain as Buyers Snap Up Bargains; Oil Wavers: Markets Wrap",
+      "source": "Bloomberg",
+      "description": "Bargain hunters are pushing stocks higher at the start of a week in which leaders of the biggest central banks and a busy data calendar will set the tone. Oil fluctuated after a weekend of tension in the Middle East.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-28/us-futures-climb-on-reports-peace-talks-to-resume-markets-wrap",
+      "publishedAt": "2026-06-28T22:15:36+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Oil Pares Early Gains as US, Iran Halt Attacks After Flare-Up",
+      "source": "Bloomberg",
+      "description": "Oil pared early gains after the US and Iran agreed to stop attacking each other, following flare-ups over the weekend that saw a supertanker hit near the Strait of Hormuz.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-28/latest-oil-market-news-and-analysis-for-june-29",
+      "publishedAt": "2026-06-28T22:01:18+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Big oil's secretive trading arms are having an extraordinary year - The Economist",
+      "source": "The Economist",
+      "description": "America's shale bonanza, Japan's pivot away from nuclear power and the Russian-gas crisis have also turned liquefied natural gas (LNG) into a booming\u00a0...",
+      "url": "https://www.economist.com/business/2026/06/28/big-oils-secretive-trading-arms-are-having-an-extraordinary-year",
+      "publishedAt": "2026-06-28T19:16:06+00:00",
+      "bucket": "commodities_energy",
+      "body": null
+    },
+    {
+      "headline": "Hawkish Fed Casts Shadow Over Emerging-Market Bond Rally",
+      "source": "Bloomberg",
+      "description": "Just when it looked like emerging-market bonds would catch a break from falling energy prices, along came Federal Reserve Chairman Kevin Warsh to spoil the party.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-28/hawkish-fed-throws-down-challenge-for-emerging-market-bond-rally",
+      "publishedAt": "2026-06-28T12:30:00+00:00",
+      "bucket": "rss",
+      "body": null
+    },
+    {
+      "headline": "Burnham\u2019s Rise Revives Talk of War Bonds to Fund the UK Military",
+      "source": "Financial Post",
+      "description": "Britain\u2019s soon-to-be prime minister wants an array of bold new policies to attract voters who have grown tired of a Labour government mired in indecision and political backbiting. One idea that could raise Andy Burnham\u2019s famously thick eyebrows is the issuing\u2026",
+      "url": "https://financialpost.com/pmn/business-pmn/burnhams-rise-revives-talk-of-war-bonds-to-fund-the-uk-military",
+      "publishedAt": "2026-06-28T06:12:39Z",
+      "bucket": "central_banks",
+      "body": "Burnham's Rise Revives Talk of War Bonds to Fund the UK Military\nAndy Burnham, Britain\u2019s soon-to-be prime minister, wants an array of bold new policies to attract voters who have grown tired of a Labour government mired in indecision and political backbiting. One idea is the issuing of war bonds.\n(Bloomberg) \u2014 Andy Burnham, Britain\u2019s soon-to-be prime minister, wants an array of bold new policies to attract voters who have grown tired of a Labour government mired in indecision and political backbiting. One idea is the issuing of war bonds.\nThe proposal was dismissed by outgoing Prime Minister Keir Starmer earlier in June, who told the House of Commons that war bonds would be \u201cjust another form of borrowing.\u201d Yet Burnham, on course to become the new prime minister in the next three weeks, may be more receptive \u2014 one of his key advisers, former Bank of England chief economist Andy Haldane, has previously supported the idea.\nWar bonds would effectively be gilts, sold to the public, with the proceeds going straight to Britain\u2019s creaking defense sector. The UK public is sitting on hundreds of billions of pounds in savings accounts and the theory goes that many people would be tempted by patriotic fervor \u2014 as well as tax breaks and the safety of government debt \u2014 to transfer some of their cash to a financial product that helps keep the country safe. Brits put about \u00a370 billion ($92.5 billion) into independent savings accounts, known as ISAs, every year, as much as \u00a320,000 of which is tax free. Much is in cash ISAs that can have low interest rates.\nThere\u2019s considerable support for the idea in Parliament, where the Liberal Democrats \u2014 a centrist opposition party \u2014 has advocated for war bonds on 25 separate occasions since the turn of the year. Senior executives in the City of London are also keen, having suggested it to Chancellor of the Exchequer Rachel Reeves.\nThe funding of the military has become a thorny issue in the UK. John Healey resigned as defense secretary earlier"
+    },
+    {
+      "headline": "Minneapolis Fed President Neel Kashkari says he expects a rate hike this year",
+      "source": "CNBC",
+      "description": "Kashkari said he sees a hike likely this year as the economy continues to feel the hit from spiking inflation.",
+      "url": "https://www.cnbc.com/2026/06/26/minneapolis-fed-president-neel-kashkari-says-he-expects-a-rate-hike-this-year.html",
+      "publishedAt": "2026-06-26T16:04:42+00:00",
+      "bucket": "rates_credit",
+      "body": "Minneapolis Federal Reserve President Neel Kashkari said Friday he has changed his outlook and now expects that one interest rate increase will be necessary this year.\nIn remarks just over a week after the Federal Open Market Committee voted to hold its benchmark rate steady, Kashkari said he sees a hike as likely this year as the economy continues to feel the hit from spiking inflation tied to fighting in the Middle East and other factors.\n\"In March, I had penciled in one rate cut by the end of the year. In June, I've changed that to one rate hike by the end of the year,\" the policymaker said during a panel discussion at the Aspen Ideas Festival. \"It's a pencil, and so we're going to have to see how the data comes in.\"\nA Commerce Department report earlier this week showed that the headline inflation rate as gauged by the Fed's preferred measure rose to 4.1%, the highest since April 2023. Stripping out food and energy costs, core inflation was at 3.4%, also marking a high since October 2023.\nInflation has been above the Fed's 2% goal for five years.\nKashkari said his approach to rates has shifted as he remains skeptical that the energy price-induced cost surges will abate soon as unease continues in the Middle East. President Donald Trump charged Friday that Iran has violated a ceasefire agreement.\n\"I don't trust Iran to honor whatever agreement has been made,\" he said. \"There's some evidence of overnight that they're already reneging on it, so I certainly am not seeing all clear coming out of the Middle East, and that makes me cautious about feeling too good that the worst is behind us.\"\nWhile much of the inflation surge has been blamed on oil prices, Kashkari cited other factors.\n\"The inflation is being driven by supply dynamics, so whether it's tariffs pushing up the price of goods that we buy from abroad, it's the fertilizer that's been disrupted because of the Strait of Hormuz and energy and oil prices from the Strait of Hormuz,\" he said. \"Then it's also being "
+    },
+    {
+      "headline": "The price of gold today, June 26, 2026 \u2014 and the best places to buy - CNBC",
+      "source": "CNBC",
+      "description": "Information about JM Bullion Precious Metals has been collected independently by Select and has not been reviewed or provided by the issuer of the\u00a0...",
+      "url": "https://www.cnbc.com/amp/select/the-price-of-gold-today-june-26-2026/",
+      "publishedAt": "2026-06-26T13:43:39+00:00",
+      "bucket": "commodities_metals",
+      "body": "The price of gold today, June 26, 2026 \u2014 and the best places to buy\nHere are three easy ways you can add the precious metal to your portfolio.\nGold's spot price \u2014 or its current trading value \u2014 today as of 9:00 a.m. ET is $4,050.07 per ounce, according to CNBC's Gold/ US Dollar Spot Price. That's slightly higher than Thursday's price, when it traded at $4,009.41 per ounce at the same time.\nGold is a safe-haven asset that investors gravitate toward when economic and political turmoil erupts, sending waves through the markets. That's because it's a reliable store of value, a hedge against inflation and can perform well during market downswings.\nWhile there are some drawbacks compared to traditional investments \u2014 such as its inability to earn dividends \u2014 there are several ways to add gold to your portfolio.\nTalk to us\nAre you living paycheck to paycheck, or do you have a financial success you're comfortable sharing with a reporter? Please fill out this quick form.\nHow to invest in gold\nBuy physical gold\nBuying gold bullion \u2014 or bars or ingots that are of high purity \u2014 is a popular way to get in on the action. You can get them from a variety of gold dealers, including online stores APMEX and JM Bullion. However, you can also source them from some retailers that you shop at every day, including Costco and Walmart.\nBuying gold coins is another common way to invest, as they can feature unique and historic designs that provide added value. Many companies sell gold coins, including APMEX and JM Bullion, which offer a wide variety of precious metals and affordable \u2014 and sometimes free \u2014 shipping.\nAPMEX Precious Metals\n- Features- APMEX is a longstanding gold dealer, selling precious metals online since 2000. It offers gold, silver and platinum in both bullion and coins. The brand offers plenty of educational resources on its website to help you make informed purchases. And, when its time to sell, APMEX also buys gold, silver and platinum from consumers. \n- Shipping- Domestic "
+    },
+    {
+      "headline": "Exuberance over earnings is becoming a problem for the stock market, according to this Wall Street veteran",
+      "source": "MarketWatch",
+      "description": "Optimism about corporate profits often comes before a fall, says Jim Paulsen",
+      "url": "https://www.marketwatch.com/story/why-this-earnings-exuberance-may-be-a-problem-for-the-stock-market-according-to-this-wall-street-veteran-20431488",
+      "publishedAt": "2026-06-26T10:47:00+00:00",
+      "bucket": "risk_geopolitics",
+      "body": null
+    },
+    {
+      "headline": "Asian LNG Buyers Expect Qatar to Let Force Majeure Lapse in July",
+      "source": "Bloomberg",
+      "description": "Asian liquefied natural gas customers of Qatar expect the supplier to let its force majeure expire in the middle of next month, as tensions in the region ease and the Persian Gulf producer ramps up exports.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/asian-lng-buyers-expect-qatar-to-let-force-majeure-lapse-in-july",
+      "publishedAt": "2026-06-26T09:16:01+00:00",
+      "bucket": "commodities_energy",
+      "body": null
+    },
+    {
+      "headline": "Gold set for 4th straight weekly slide on resilient dollar, Fed hike bets By Investing.com",
+      "source": "Investing.com",
+      "description": "Gold set for 4th straight weekly slide on resilient dollar, Fed hike bets",
+      "url": "https://www.investing.com/news/commodities-news/gold-set-for-4th-straight-weekly-slide-on-resilient-dollar-fed-hike-bets-4761985",
+      "publishedAt": "2026-06-26T04:01:00+00:00",
+      "bucket": "commodities_metals",
+      "body": null
+    },
+    {
+      "headline": "The bond market knows something about the $39 trillion national debt that Washington doesn't | Fortune",
+      "source": "Fortune",
+      "description": "A more hawkish Fed could be bad news for the record debt. The bond market decided to ignore it.",
+      "url": "https://fortune.com/2026/06/25/national-debt-inflation-bond-market/",
+      "publishedAt": "2026-06-25T21:26:18+00:00",
+      "bucket": "rates_credit",
+      "body": "The national debt\u2014a barely comprehensible $39 trillion\u2014seems, to hear economists tell it, forever one shock away from bringing the whole country down. Lately, the designated culprit is the Federal Reserve.\nThe case is relatively straightforward. On June 17, the Fed didn\u2019t raise interest rates\u2014it held them at 3.5% to 3.75%, as expected\u2014but it signaled that a hike could be coming this year, a reversal from a few months ago, when it expected to cut them instead. In his first meeting as Fed chair, Kevin Warsh made clear he\u2019s serious about getting prices under control, with the Fed\u2019s statement vowing that \u201cthe Committee will deliver price stability.\u201d\nTraders, at least initially, took the hint and nudged their bets toward higher rates, knocking stocks lower to roughly 0.5% to 1% on the day amid worries that more expensive borrowing could squeeze the debt-fueled AI build-out.\nBut it was the bond market\u2019s reaction that was telling: Short-term rates rose, but the 10-year Treasury yield, the rate that actually drives the cost of the debt, barely moved, and soon drifted lower. Why wouldn\u2019t it drift up on concerns of the national debt?\nThe government already spends more than $1 trillion a year just on interest, more than it spends on the military, health care, and all the other fast-growing lines in the budget. But a tougher Fed needn\u2019t touch that bill.\u00a0\nThe debt isn\u2019t just one big loan at a fixed rate; it\u2019s a complicated mix, because the government is constantly borrowing new money to pay off old loans, and paying whatever rate the market charges that day. When the Fed pushes rates up, only the short-term, cheaper loans get pricier.\n\u201cIt\u2019s the very front end,\u201d Eric Winograd, chief U.S. economist at AllianceBernstein and a former New York Fed staffer, told Fortune. Even if the Fed hikes, he said, slightly higher short-term rates for a year \u201cjust doesn\u2019t really move the needle.\u201d\nWhat matters more for the debt are the rates the government locks in for 10 or 30 years. And those are"
+    },
+    {
+      "headline": "SNB Must Stay Nimble for Hike or Cut to Negative Rate, IMF Says",
+      "source": "Bloomberg",
+      "description": "The Swiss National Bank must stay ready to either raise or cut interest rates if economic circumstances require it, the International Monetary Fund said.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/snb-must-stay-nimble-for-hike-or-cut-to-negative-rate-imf-says",
+      "publishedAt": "2026-06-25T09:33:36+00:00",
+      "bucket": "rates_credit",
+      "body": null
+    },
+    {
+      "headline": "NY Fed official plays down new FOMC language on ample reserves system By Reuters",
+      "source": "Investing.com",
+      "description": "NY Fed official plays down new FOMC language on ample reserves system",
+      "url": "https://www.investing.com/news/economy-news/ny-fed-official-plays-down-new-fomc-language-on-ample-reserves-system-4759331",
+      "publishedAt": "2026-06-24T22:36:53+00:00",
+      "bucket": "central_banks",
+      "body": null
+    },
+    {
+      "headline": "BOJ\u2019s Ueda Reiterates Risk of Inflation Exceeding 2% Target",
+      "source": "Bloomberg",
+      "description": "The Bank of Japan sees the risk of inflation exceeding its 2% target and will conduct additional interest-rate hikes appropriately, Governor Kazuo Ueda said in speech Wednesday that reiterated policymakers\u2019 recent messaging.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/boj-s-ueda-reiterates-risk-of-inflation-exceeding-2-target",
+      "publishedAt": "2026-06-24T07:02:54+00:00",
+      "bucket": "central_banks",
+      "body": null
+    },
+    {
+      "headline": "PBOC Adviser Sees Potential Rate Cut",
+      "source": "Bloomberg",
+      "description": "Huang Yiping, a member of the monetary policy committee at the People\u2019s Bank of China, says he sees a potential rate cut this year. He joined Bloomberg's Minmin Low on the sidelines of the World Economic Forum in Dalian and appeared on Insight with Haslinda Amin. (Source: Bloomberg)",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-24/pboc-adviser-sees-potential-rate-cut-video",
+      "publishedAt": "2026-06-24T06:38:36+00:00",
+      "bucket": "central_banks",
+      "body": null
+    },
+    {
+      "headline": "Copper Holds Losses as Dollar and Hawkish Fed Pressure Metals",
+      "source": "Bloomberg",
+      "description": "Copper and industrial metals largely held Tuesday\u2019s slump as a stronger dollar and the Federal Reserve\u2019s hawkish stance weighed on the demand outlook.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/copper-holds-losses-as-dollar-and-hawkish-fed-pressure-metals",
+      "publishedAt": "2026-06-24T03:30:36+00:00",
+      "bucket": "commodities_metals",
+      "body": null
+    },
+    {
+      "headline": "The copper crunch: inside the US-China battle for a critical global supply chain",
+      "source": "South China Morning Post",
+      "description": "Washington\u2019s efforts to rebuild the domestic copper industry are colliding with Chinese dominance in a metal central to advanced tech and defence systems.",
+      "url": "https://www.scmp.com/economy/global-economy/article/3358060/copper-crunch-inside-us-china-battle-critical-global-supply-chain",
+      "publishedAt": "2026-06-23T22:00:10+00:00",
+      "bucket": "commodities_metals",
+      "body": "The copper crunch: inside the US-China battle for a critical global supply chain\nWashington\u2019s efforts to rebuild the domestic copper industry are colliding with Chinese dominance in a metal central to advanced tech and defence systems\nAs China and the United States compete for leadership in AI, energy and other strategic sectors, a quieter but no less important contest is taking place further down the supply chain: the race to secure copper.\nThe humble metal has become one of the most vital commodities of the 21st century, powering the servers, systems and cooling infrastructure that support artificial intelligence as well as the batteries used in electric vehicles and the electronics guiding modern weapons.\nThe report will include an update on the necessity of new tariffs on refined copper imports, following a recommendation by Lutnick in a similar report last year. At that time, the commerce secretary suggested duties of 15 per cent to be enacted on the first day of 2027, rising to 30 per cent a year later.\n\u201cA single foreign producer dominates global copper smelting and refining, controlling over 50 per cent of global smelting capacity and holding four of the top five largest refining facilities,\u201d the White House wrote in a February 2025 order, which opened an investigation into copper imports under Section 232 of the 1962 Trade Expansion Act."
+    },
+    {
+      "headline": "Lagarde Sees No Need for More Forceful ECB Response to Iran War",
+      "source": "Bloomberg",
+      "description": "The European Central Bank doesn\u2019t need to react more forcefully to the fallout from the Middle East conflict because inflation is set to return to target over the medium term, President Christine Lagarde said.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-22/lagarde-sees-no-need-for-more-forceful-ecb-response-to-iran-war",
+      "publishedAt": "2026-06-22T13:00:00+00:00",
+      "bucket": "central_banks",
+      "body": null
+    }
+  ]
+}
