@@ -34,7 +34,7 @@ const FX_ORDER = {
   majors:    ['eurusd','gbpusd','usdjpy','usdchf','usdsek','usdnok','usddkk'],
   commodity: ['audusd','nzdusd','usdcad'],
   em:        ['usdcny','usdbrl','usdmxn','usdzar','usdtry'],
-  cross:     ['eurgbp','eurjpy','eursek'],
+  cross:     ['eurgbp','eurjpy','eursek','noksek','dkksek'],
   index:     ['dxy'],
 }
 

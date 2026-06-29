@@ -118,6 +118,8 @@ ASSET_META = {
     "eurgbp":     ("EUR/GBP",          "fx", "cross"),
     "eurjpy":     ("EUR/JPY",          "fx", "cross"),
     "eursek":     ("EUR/SEK",          "fx", "cross"),
+    "noksek":     ("NOK/SEK",          "fx", "cross"),
+    "dkksek":     ("DKK/SEK",          "fx", "cross"),
     # Dollar index
     "dxy":        ("DXY",              "fx", "index"),
     # Equities — US
@@ -202,6 +204,8 @@ TD_TICKERS = {
     "eurgbp":    "EUR/GBP",
     "eurjpy":    "EUR/JPY",
     "eursek":    "EUR/SEK",
+    "noksek":    "NOK/SEK",
+    "dkksek":    "DKK/SEK",
     # ── Precious metals as FX (XAU confirmed; XAG/XPT/XPD need paid) ──
     "gold":      "XAU/USD",
     # ── Equity indices: SPX/NDX/FTSE require paid TD plan;
@@ -272,6 +276,8 @@ YFINANCE_TICKERS = {
     "eurgbp":     "EURGBP=X",
     "eurjpy":     "EURJPY=X",
     "eursek":     "EURSEK=X",
+    "noksek":     "NOKSEK=X",
+    "dkksek":     "DKKSEK=X",
     "dxy":        "DX-Y.NYB",
     # Equities
     "sp500":      "^GSPC",
