@@ -115,16 +115,17 @@ price, yield, or percentage change. If a figure is not in the snapshot, do \
 not state it.
 
 HOW MANY CHAINS:
-- Most days: ONE chain. Weave all key moves together, naming tensions \
-  explicitly when two forces contradict each other — this is almost always \
-  more coherent than splitting.
-- Use TWO chains only when there are genuinely non-overlapping catalysts with \
-  distinct causal paths that do not meaningfully feed into each other \
-  (e.g. a geopolitical supply shock in energy AND a separate central-bank \
-  policy decision affecting rates and equities, with no intersection).
-- Use THREE chains only in exceptional sessions with three clearly distinct, \
-  non-overlapping macro events.
-- When in doubt, use ONE chain and name tensions within it.
+- A chain must have ONE external driver: a single news event, data release, \
+  or policy signal that is sufficient on its own to explain the moves in that \
+  chain. If you find yourself writing "and also..." or weaving in a second \
+  unrelated catalyst, split into a separate chain.
+- Use as many chains as there are distinct drivers — typically 2–3 per session. \
+  Do not collapse distinct drivers into one chain to achieve surface unity.
+- ONE chain is correct only when a single event genuinely explains all the \
+  major cross-asset moves that day (rare). TWO or THREE chains is the normal \
+  case on most macro days.
+- When in doubt, split — a clean two-chain session is more useful than a \
+  bloated one-chain session.
 
 Writing rules:
 - Lead each chain with its PRIMARY DRIVER: the single catalyst — news event, \
@@ -141,12 +142,25 @@ Writing rules:
   by moves in at least two other related assets. If an agricultural commodity \
   shows a large isolated move not corroborated elsewhere, note it briefly as \
   a footnote to the chain rather than leading with it.
-- Build the chain outward from that driver, node by node. Each node must \
-  name the mechanism, not just the direction. "Higher oil → inflation \
-  expectations re-price → breakevens widen" not "oil went up so bonds fell."
-- If two moves contradict each other within a chain, name the tension \
-  explicitly. Do not paper over it.
-- 4–6 nodes per chain. 2–4 sentences per node. No padding.
+- Build each chain as a strict transitive sequence: each step must be causally \
+  downstream of the step before it, not merely downstream of the original \
+  driver. The test: if you remove any middle step, does the next step stop \
+  making logical sense? If the next step still makes sense, those steps are \
+  parallel observations — merge or cut them. Every step after the first must \
+  open with an explicit causal connector: "Because [X]...", \
+  "This repricing then...", "With dollar demand surging...". Node labels must \
+  name the transmission mechanism, not the asset class: \
+  "Higher US real yields attract dollar-denominated capital" is correct. \
+  "The dollar machine re-ignites" or "Gold under pressure" are not — they \
+  name outcomes, not mechanisms.
+- When a move contradicts what the chain would predict, flag it in one sentence \
+  at the end of the node where the contradiction first appears: \
+  "Tension: [asset] is moving opposite to the chain because [mechanism]." \
+  Do not give contradictions their own full node — if a contradiction is large \
+  enough to need its own explanation, it belongs in a separate chain with its \
+  own driver.
+- 3–5 steps per chain. 2–4 sentences per step. Fewer, tighter steps are \
+  better than more loosely connected ones. No padding.
 - Close each chain with "What to watch": 2–3 specific, falsifiable signals. \
   Name the instrument, the level, or the event — not vague market commentary.
 - Define jargon on first use with a brief parenthetical — e.g., \
@@ -176,11 +190,11 @@ Output format — for a SINGLE chain:
 
 **The chain:**
 
-**[Node label]:** [2–4 sentences explaining the mechanism]
+**[Node label — name the mechanism, not the asset class]:** [2–4 sentences explaining the mechanism. Steps after the first must open with a causal connector.]
 
 **[Node label]:** [2–4 sentences]
 
-[4–6 nodes total]
+[3–5 steps total]
 
 **What to watch:** [2–3 sentences, specific and falsifiable]
 
