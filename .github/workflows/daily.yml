@@ -2,11 +2,26 @@ name: Daily pipeline
 
 on:
   schedule:
-    - cron: '30 7 * * 1-5'  # 09:30 Stockholm (CET); adjust to '30 6 * * 1-5' for CEST (summer)
+    - cron: '30 7 * * 1-5'  # 09:30 CEST (summer, UTC+2)
+    - cron: '30 8 * * 1-5'  # 09:30 CET  (winter, UTC+1)
   workflow_dispatch:          # allow manual runs from GitHub UI
 
 jobs:
+  # Time-gate: both crons fire, but only the one landing at hour 09 Stockholm proceeds.
+  check-time:
+    runs-on: ubuntu-latest
+    outputs:
+      should-run: ${{ steps.check.outputs.should-run }}
+    steps:
+      - id: check
+        run: |
+          HOUR=$(TZ='Europe/Stockholm' date +%H)
+          [ "$HOUR" = "09" ] && echo "should-run=true" >> $GITHUB_OUTPUT \
+                             || echo "should-run=false" >> $GITHUB_OUTPUT
+
   run-pipeline:
+    needs: check-time
+    if: needs.check-time.outputs.should-run == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write
