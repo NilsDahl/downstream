@@ -1,0 +1,42 @@
+name: Daily pipeline
+
+on:
+  schedule:
+    - cron: '30 7 * * 1-5'  # 09:30 Stockholm (CET); adjust to '30 6 * * 1-5' for CEST (summer)
+  workflow_dispatch:          # allow manual runs from GitHub UI
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          CURRENTAPI_KEY: ${{ secrets.CURRENTAPI_KEY }}
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+        run: python pipeline/run_daily.py
+
+      - name: Commit and push output
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/snapshots/${DATE}.json content/news/${DATE}.json content/drafts/${DATE}.md
+          git diff --cached --quiet || git commit -m "Pipeline run ${DATE}"
+          git push
