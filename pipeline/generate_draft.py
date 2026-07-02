@@ -328,7 +328,11 @@ def generate_draft(snapshot_path: str) -> str:
         snapshot = json.load(f)
 
     snapshot_date = snapshot.get("date", date.today().isoformat())
-    client        = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        print("ERROR: ANTHROPIC_API_KEY is not set", file=sys.stderr)
+        sys.exit(1)
+    client = anthropic.Anthropic(api_key=api_key)
 
     user_prompt = build_user_prompt(snapshot)
 

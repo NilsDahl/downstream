@@ -5,3 +5,5 @@ fredapi>=0.5.1
 pandas>=2.0.0
 feedparser>=6.0.0
 trafilatura>=1.12.0
+requests>=2.31.0
+certifi>=2024.0.0
