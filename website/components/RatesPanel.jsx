@@ -15,11 +15,7 @@ const ECONOMY_LABELS = {
 const fmtLevel = v => v == null ? '—' : v.toFixed(2) + '%'
 const fmtBps   = v => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(1) + 'bp'
 
-// Yields up = tightening = red. Yields down = easing = green.
-const bpsColor = v => {
-  if (v == null || v === 0) return 'text-subtle'
-  return v > 0 ? 'text-down' : 'text-up'
-}
+const bpsColor = v => v == null || v === 0 ? 'text-subtle' : v > 0 ? 'text-up' : 'text-down'
 
 export default function RatesPanel({ rates }) {
   const [collapsed, setCollapsed] = useState({})

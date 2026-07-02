@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { Card, CardHeader, CardContent } from '@/components/ui/card'
-import { fxDollarStrengthened } from '../lib/utils.js'
 import SourceTag from './SourceTag.jsx'
 
 const GROUP_LABELS = {
@@ -14,15 +13,7 @@ const GROUP_LABELS = {
 
 const fmtLevel = v => v == null ? '—' : v.toFixed(4)
 const fmtPct   = v => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(2) + '%'
-
-function fxColor(key, pct) {
-  if (pct == null) return 'text-subtle'
-  const isCross = !key.includes('usd') && !key.includes('dxy')
-  if (isCross) return pct > 0 ? 'text-up' : pct < 0 ? 'text-down' : 'text-subtle'
-  const strong = fxDollarStrengthened(key, pct)
-  if (strong === null) return 'text-subtle'
-  return strong ? 'text-down' : 'text-up'
-}
+const fxColor  = (_, pct) => pct == null || pct === 0 ? 'text-subtle' : pct > 0 ? 'text-up' : 'text-down'
 
 export default function FXPanel({ fx }) {
   const [collapsed, setCollapsed] = useState({})

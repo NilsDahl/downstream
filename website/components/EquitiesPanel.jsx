@@ -20,11 +20,7 @@ function fmtLevel(v) {
 
 const fmtPct  = v => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(2) + '%'
 
-function pctColor(v, isVol = false) {
-  if (v == null || v === 0) return 'text-subtle'
-  if (isVol) return v > 0 ? 'text-down' : 'text-up'
-  return v > 0 ? 'text-up' : 'text-down'
-}
+const pctColor = v => v == null || v === 0 ? 'text-subtle' : v > 0 ? 'text-up' : 'text-down'
 
 export default function EquitiesPanel({ equities }) {
   const [collapsed, setCollapsed] = useState({})
@@ -68,7 +64,7 @@ export default function EquitiesPanel({ equities }) {
                     <SourceTag source={a.source} missing={a.missing} />
                   </span>
                   <span className="text-xs text-foreground w-20 text-right">{fmtLevel(a.close)}</span>
-                  <span className={`text-xs w-16 text-right ${pctColor(a.change_pct, isVol)}`}>{fmtPct(a.change_pct)}</span>
+                  <span className={`text-xs w-16 text-right ${pctColor(a.change_pct)}`}>{fmtPct(a.change_pct)}</span>
                 </div>
               ))}
             </div>
